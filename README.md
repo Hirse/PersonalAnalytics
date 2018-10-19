@@ -44,11 +44,12 @@ This tool was developed for and used by the following researchs:
 We want to thank the following developers for providing us with the fantastic libraries:
 - MouseKeyHook https://github.com/gmamaladze/globalmousekeyhook MIT License
 - Hardcodet.NotifyIcon https://bitbucket.org/hardcodet/notifyicon-wpf 
-- Jquery https://jquery.org/license/ MIT LIcense
+- Jquery https://jquery.org/license/ MIT License
 - Masonry https://github.com/desandro/masonry MIT License
 - SQLite www.sqlite.org/copyright.html Open Domain 
 - D3 Visualization https://github.com/mbostock/d3 BSD License
 - C3.js https://github.com/masayuki0812/c3 MIT License 
 - HTML FilterTable https://github.com/koalyptus/TableFilter MIT license
 - Newtonsoft Json http://www.newtonsoft.com/json MIT license
-- OpenNLP https://github.com/AlexPoint/OpenNlp MIT license 
+- OpenNLP https://github.com/AlexPoint/OpenNlp MIT license
+- Project Nayuki https://www.nayuki.io/page/smallest-enclosing-circle LGPL

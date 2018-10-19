@@ -1,0 +1,2480 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Shared.Fakes</name>
+    </assembly>
+    <members>
+        <member name="T:Shared.Data.Extractors.Fakes.ShimArtifact">
+            <summary>Shim type of Shared.Data.Extractors.Artifact</summary>
+        </member>
+        <member name="M:Shared.Data.Extractors.Fakes.ShimArtifact.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Shared.Data.Extractors.Fakes.ShimArtifact.#ctor(Shared.Data.Extractors.Artifact)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:Shared.Data.Extractors.Fakes.ShimArtifact.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Shared.Data.Extractors.Fakes.ShimArtifact.AllInstances.DurationInMinsGet">
+            <summary>Sets the shim of Artifact.get_DurationInMins()</summary>
+        </member>
+        <member name="P:Shared.Data.Extractors.Fakes.ShimArtifact.AllInstances.DurationInMinsSetDouble">
+            <summary>Sets the shim of Artifact.set_DurationInMins(Double value)</summary>
+        </member>
+        <member name="P:Shared.Data.Extractors.Fakes.ShimArtifact.AllInstances.FileNameGet">
+            <summary>Sets the shim of Artifact.get_FileName()</summary>
+        </member>
+        <member name="P:Shared.Data.Extractors.Fakes.ShimArtifact.AllInstances.FileNameSetString">
+            <summary>Sets the shim of Artifact.set_FileName(String value)</summary>
+        </member>
+        <member name="P:Shared.Data.Extractors.Fakes.ShimArtifact.AllInstances.FilePathGet">
+            <summary>Sets the shim of Artifact.get_FilePath()</summary>
+        </member>
+        <member name="P:Shared.Data.Extractors.Fakes.ShimArtifact.AllInstances.FilePathSetString">
+            <summary>Sets the shim of Artifact.set_FilePath(String value)</summary>
+        </member>
+        <member name="M:Shared.Data.Extractors.Fakes.ShimArtifact.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Shared.Data.Extractors.Fakes.ShimArtifact.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Shared.Data.Extractors.Fakes.ShimArtifact.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Shared.Data.Extractors.Fakes.ShimArtifact.Constructor">
+            <summary>Sets the shim of Artifact.Artifact()</summary>
+        </member>
+        <member name="P:Shared.Data.Extractors.Fakes.ShimArtifact.DurationInMinsGet">
+            <summary>Sets the shim of Artifact.get_DurationInMins()</summary>
+        </member>
+        <member name="P:Shared.Data.Extractors.Fakes.ShimArtifact.DurationInMinsSetDouble">
+            <summary>Sets the shim of Artifact.set_DurationInMins(Double value)</summary>
+        </member>
+        <member name="P:Shared.Data.Extractors.Fakes.ShimArtifact.FileNameGet">
+            <summary>Sets the shim of Artifact.get_FileName()</summary>
+        </member>
+        <member name="P:Shared.Data.Extractors.Fakes.ShimArtifact.FileNameSetString">
+            <summary>Sets the shim of Artifact.set_FileName(String value)</summary>
+        </member>
+        <member name="P:Shared.Data.Extractors.Fakes.ShimArtifact.FilePathGet">
+            <summary>Sets the shim of Artifact.get_FilePath()</summary>
+        </member>
+        <member name="P:Shared.Data.Extractors.Fakes.ShimArtifact.FilePathSetString">
+            <summary>Sets the shim of Artifact.set_FilePath(String value)</summary>
+        </member>
+        <member name="T:Shared.Data.Extractors.Fakes.ShimBaseRules">
+            <summary>Shim type of Shared.Data.Extractors.BaseRules</summary>
+        </member>
+        <member name="M:Shared.Data.Extractors.Fakes.ShimBaseRules.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Shared.Data.Extractors.Fakes.ShimBaseRules.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Shared.Data.Extractors.Fakes.ShimBaseRules.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Shared.Data.Extractors.Fakes.ShimBaseRules.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Shared.Data.Extractors.Fakes.ShimBaseRules.GetRemovablesFromProcessStringListOfProgramInfo">
+            <summary>Sets the shim of BaseRules.GetRemovablesFromProcess(String process, List`1&lt;ProgramInfo&gt; rules)</summary>
+        </member>
+        <member name="P:Shared.Data.Extractors.Fakes.ShimBaseRules.RunBasisArtifactTitleCleaningString">
+            <summary>Sets the shim of BaseRules.RunBasisArtifactTitleCleaning(String title)</summary>
+        </member>
+        <member name="P:Shared.Data.Extractors.Fakes.ShimBaseRules.StaticConstructor">
+            <summary>Sets the shim of BaseRules.BaseRules()</summary>
+        </member>
+        <member name="T:Shared.Data.Extractors.Fakes.ShimExtractedItem">
+            <summary>Shim type of Shared.Data.Extractors.ExtractedItem</summary>
+        </member>
+        <member name="M:Shared.Data.Extractors.Fakes.ShimExtractedItem.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Shared.Data.Extractors.Fakes.ShimExtractedItem.#ctor(Shared.Data.Extractors.ExtractedItem)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:Shared.Data.Extractors.Fakes.ShimExtractedItem.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Shared.Data.Extractors.Fakes.ShimExtractedItem.AllInstances.DurationInMinsGet">
+            <summary>Sets the shim of ExtractedItem.get_DurationInMins()</summary>
+        </member>
+        <member name="P:Shared.Data.Extractors.Fakes.ShimExtractedItem.AllInstances.DurationInMinsSetDouble">
+            <summary>Sets the shim of ExtractedItem.set_DurationInMins(Double value)</summary>
+        </member>
+        <member name="P:Shared.Data.Extractors.Fakes.ShimExtractedItem.AllInstances.ItemNameGet">
+            <summary>Sets the shim of ExtractedItem.get_ItemName()</summary>
+        </member>
+        <member name="P:Shared.Data.Extractors.Fakes.ShimExtractedItem.AllInstances.ItemNameSetString">
+            <summary>Sets the shim of ExtractedItem.set_ItemName(String value)</summary>
+        </member>
+        <member name="M:Shared.Data.Extractors.Fakes.ShimExtractedItem.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Shared.Data.Extractors.Fakes.ShimExtractedItem.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Shared.Data.Extractors.Fakes.ShimExtractedItem.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Shared.Data.Extractors.Fakes.ShimExtractedItem.Constructor">
+            <summary>Sets the shim of ExtractedItem.ExtractedItem()</summary>
+        </member>
+        <member name="P:Shared.Data.Extractors.Fakes.ShimExtractedItem.DurationInMinsGet">
+            <summary>Sets the shim of ExtractedItem.get_DurationInMins()</summary>
+        </member>
+        <member name="P:Shared.Data.Extractors.Fakes.ShimExtractedItem.DurationInMinsSetDouble">
+            <summary>Sets the shim of ExtractedItem.set_DurationInMins(Double value)</summary>
+        </member>
+        <member name="P:Shared.Data.Extractors.Fakes.ShimExtractedItem.ItemNameGet">
+            <summary>Sets the shim of ExtractedItem.get_ItemName()</summary>
+        </member>
+        <member name="P:Shared.Data.Extractors.Fakes.ShimExtractedItem.ItemNameSetString">
+            <summary>Sets the shim of ExtractedItem.set_ItemName(String value)</summary>
+        </member>
+        <member name="T:Shared.Data.Extractors.Fakes.ShimProgramInfo">
+            <summary>Shim type of Shared.Data.Extractors.ProgramInfo</summary>
+        </member>
+        <member name="M:Shared.Data.Extractors.Fakes.ShimProgramInfo.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Shared.Data.Extractors.Fakes.ShimProgramInfo.#ctor(Shared.Data.Extractors.ProgramInfo)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:Shared.Data.Extractors.Fakes.ShimProgramInfo.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Shared.Data.Extractors.Fakes.ShimProgramInfo.AllInstances.FileExtensionsGet">
+            <summary>Sets the shim of ProgramInfo.get_FileExtensions()</summary>
+        </member>
+        <member name="P:Shared.Data.Extractors.Fakes.ShimProgramInfo.AllInstances.FileExtensionsSetListOfString">
+            <summary>Sets the shim of ProgramInfo.set_FileExtensions(List`1&lt;String&gt; value)</summary>
+        </member>
+        <member name="P:Shared.Data.Extractors.Fakes.ShimProgramInfo.AllInstances.ProcessNameGet">
+            <summary>Sets the shim of ProgramInfo.get_ProcessName()</summary>
+        </member>
+        <member name="P:Shared.Data.Extractors.Fakes.ShimProgramInfo.AllInstances.ProcessNameSetString">
+            <summary>Sets the shim of ProgramInfo.set_ProcessName(String value)</summary>
+        </member>
+        <member name="P:Shared.Data.Extractors.Fakes.ShimProgramInfo.AllInstances.RemovablesRegexGet">
+            <summary>Sets the shim of ProgramInfo.get_RemovablesRegex()</summary>
+        </member>
+        <member name="P:Shared.Data.Extractors.Fakes.ShimProgramInfo.AllInstances.RemovablesRegexSetListOfString">
+            <summary>Sets the shim of ProgramInfo.set_RemovablesRegex(List`1&lt;String&gt; value)</summary>
+        </member>
+        <member name="M:Shared.Data.Extractors.Fakes.ShimProgramInfo.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Shared.Data.Extractors.Fakes.ShimProgramInfo.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Shared.Data.Extractors.Fakes.ShimProgramInfo.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Shared.Data.Extractors.Fakes.ShimProgramInfo.ConstructorStringListOfString">
+            <summary>Sets the shim of ProgramInfo.ProgramInfo(String pN, List`1&lt;String&gt; r)</summary>
+        </member>
+        <member name="P:Shared.Data.Extractors.Fakes.ShimProgramInfo.ConstructorStringListOfStringListOfString">
+            <summary>Sets the shim of ProgramInfo.ProgramInfo(String pN, List`1&lt;String&gt; fE, List`1&lt;String&gt; r)</summary>
+        </member>
+        <member name="P:Shared.Data.Extractors.Fakes.ShimProgramInfo.ConstructorStringListOfStringString">
+            <summary>Sets the shim of ProgramInfo.ProgramInfo(String pN, List`1&lt;String&gt; fE, String r)</summary>
+        </member>
+        <member name="P:Shared.Data.Extractors.Fakes.ShimProgramInfo.ConstructorStringString">
+            <summary>Sets the shim of ProgramInfo.ProgramInfo(String pN, String r)</summary>
+        </member>
+        <member name="P:Shared.Data.Extractors.Fakes.ShimProgramInfo.ConstructorStringStringListOfString">
+            <summary>Sets the shim of ProgramInfo.ProgramInfo(String pN, String fE, List`1&lt;String&gt; r)</summary>
+        </member>
+        <member name="P:Shared.Data.Extractors.Fakes.ShimProgramInfo.ConstructorStringStringString">
+            <summary>Sets the shim of ProgramInfo.ProgramInfo(String pN, String fE, String r)</summary>
+        </member>
+        <member name="P:Shared.Data.Extractors.Fakes.ShimProgramInfo.FileExtensionsGet">
+            <summary>Sets the shim of ProgramInfo.get_FileExtensions()</summary>
+        </member>
+        <member name="P:Shared.Data.Extractors.Fakes.ShimProgramInfo.FileExtensionsSetListOfString">
+            <summary>Sets the shim of ProgramInfo.set_FileExtensions(List`1&lt;String&gt; value)</summary>
+        </member>
+        <member name="P:Shared.Data.Extractors.Fakes.ShimProgramInfo.ProcessNameGet">
+            <summary>Sets the shim of ProgramInfo.get_ProcessName()</summary>
+        </member>
+        <member name="P:Shared.Data.Extractors.Fakes.ShimProgramInfo.ProcessNameSetString">
+            <summary>Sets the shim of ProgramInfo.set_ProcessName(String value)</summary>
+        </member>
+        <member name="P:Shared.Data.Extractors.Fakes.ShimProgramInfo.RemovablesRegexGet">
+            <summary>Sets the shim of ProgramInfo.get_RemovablesRegex()</summary>
+        </member>
+        <member name="P:Shared.Data.Extractors.Fakes.ShimProgramInfo.RemovablesRegexSetListOfString">
+            <summary>Sets the shim of ProgramInfo.set_RemovablesRegex(List`1&lt;String&gt; value)</summary>
+        </member>
+        <member name="T:Shared.Data.Extractors.Fakes.ShimWindowTitleArtifactExtractor">
+            <summary>Shim type of Shared.Data.Extractors.WindowTitleArtifactExtractor</summary>
+        </member>
+        <member name="M:Shared.Data.Extractors.Fakes.ShimWindowTitleArtifactExtractor.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Shared.Data.Extractors.Fakes.ShimWindowTitleArtifactExtractor.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Shared.Data.Extractors.Fakes.ShimWindowTitleArtifactExtractor.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Shared.Data.Extractors.Fakes.ShimWindowTitleArtifactExtractor.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Shared.Data.Extractors.Fakes.ShimWindowTitleArtifactExtractor.CleanWindowTitleStringString">
+            <summary>Sets the shim of WindowTitleArtifactExtractor.CleanWindowTitle(String process, String title)</summary>
+        </member>
+        <member name="P:Shared.Data.Extractors.Fakes.ShimWindowTitleArtifactExtractor.GetArtifactDetailsStringString">
+            <summary>Sets the shim of WindowTitleArtifactExtractor.GetArtifactDetails(String process, String windowTitle)</summary>
+        </member>
+        <member name="P:Shared.Data.Extractors.Fakes.ShimWindowTitleArtifactExtractor.GetFileExtensionFromFileNameString">
+            <summary>Sets the shim of WindowTitleArtifactExtractor.GetFileExtensionFromFileName(String fileName)</summary>
+        </member>
+        <member name="P:Shared.Data.Extractors.Fakes.ShimWindowTitleArtifactExtractor.GetFileExtensionsFromProcessString">
+            <summary>Sets the shim of WindowTitleArtifactExtractor.GetFileExtensionsFromProcess(String process)</summary>
+        </member>
+        <member name="P:Shared.Data.Extractors.Fakes.ShimWindowTitleArtifactExtractor.GetFileNameFromPathString">
+            <summary>Sets the shim of WindowTitleArtifactExtractor.GetFileNameFromPath(String path)</summary>
+        </member>
+        <member name="P:Shared.Data.Extractors.Fakes.ShimWindowTitleArtifactExtractor.GetFileNameWithoutExtensionString">
+            <summary>Sets the shim of WindowTitleArtifactExtractor.GetFileNameWithoutExtension(String path)</summary>
+        </member>
+        <member name="P:Shared.Data.Extractors.Fakes.ShimWindowTitleArtifactExtractor.GetFilesWorkedOnDateTimeOffset">
+            <summary>Sets the shim of WindowTitleArtifactExtractor.GetFilesWorkedOn(DateTimeOffset date)</summary>
+        </member>
+        <member name="P:Shared.Data.Extractors.Fakes.ShimWindowTitleArtifactExtractor.GetSqlForProgramsToSearch">
+            <summary>Sets the shim of WindowTitleArtifactExtractor.GetSqlForProgramsToSearch()</summary>
+        </member>
+        <member name="P:Shared.Data.Extractors.Fakes.ShimWindowTitleArtifactExtractor.ValidateOrAddExtensionStringString">
+            <summary>Sets the shim of WindowTitleArtifactExtractor.ValidateOrAddExtension(String fileName, String process)</summary>
+        </member>
+        <member name="T:Shared.Data.Extractors.Fakes.ShimWindowTitleCodeExtractor">
+            <summary>Shim type of Shared.Data.Extractors.WindowTitleCodeExtractor</summary>
+        </member>
+        <member name="M:Shared.Data.Extractors.Fakes.ShimWindowTitleCodeExtractor.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Shared.Data.Extractors.Fakes.ShimWindowTitleCodeExtractor.#ctor(Shared.Data.Extractors.WindowTitleCodeExtractor)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:Shared.Data.Extractors.Fakes.ShimWindowTitleCodeExtractor.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="M:Shared.Data.Extractors.Fakes.ShimWindowTitleCodeExtractor.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Shared.Data.Extractors.Fakes.ShimWindowTitleCodeExtractor.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Shared.Data.Extractors.Fakes.ShimWindowTitleCodeExtractor.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Shared.Data.Extractors.Fakes.ShimWindowTitleCodeExtractor.Constructor">
+            <summary>Sets the shim of WindowTitleCodeExtractor.WindowTitleCodeExtractor()</summary>
+        </member>
+        <member name="P:Shared.Data.Extractors.Fakes.ShimWindowTitleCodeExtractor.GetCodeFlowWindowTitlesDateTimeOffset">
+            <summary>Sets the shim of WindowTitleCodeExtractor.GetCodeFlowWindowTitles(DateTimeOffset date)</summary>
+        </member>
+        <member name="P:Shared.Data.Extractors.Fakes.ShimWindowTitleCodeExtractor.GetCodeReviewsDoneDateTimeOffset">
+            <summary>Sets the shim of WindowTitleCodeExtractor.GetCodeReviewsDone(DateTimeOffset date)</summary>
+        </member>
+        <member name="P:Shared.Data.Extractors.Fakes.ShimWindowTitleCodeExtractor.GetProjectNameString">
+            <summary>Sets the shim of WindowTitleCodeExtractor.GetProjectName(String windowTitle)</summary>
+        </member>
+        <member name="P:Shared.Data.Extractors.Fakes.ShimWindowTitleCodeExtractor.GetReviewNameString">
+            <summary>Sets the shim of WindowTitleCodeExtractor.GetReviewName(String windowTitle)</summary>
+        </member>
+        <member name="P:Shared.Data.Extractors.Fakes.ShimWindowTitleCodeExtractor.GetVisualStudioProjectsDateTimeOffset">
+            <summary>Sets the shim of WindowTitleCodeExtractor.GetVisualStudioProjects(DateTimeOffset date)</summary>
+        </member>
+        <member name="P:Shared.Data.Extractors.Fakes.ShimWindowTitleCodeExtractor.GetVisualStudioWindowTitlesDateTimeOffset">
+            <summary>Sets the shim of WindowTitleCodeExtractor.GetVisualStudioWindowTitles(DateTimeOffset date)</summary>
+        </member>
+        <member name="P:Shared.Data.Extractors.Fakes.ShimWindowTitleCodeExtractor.GetVsReviewNameString">
+            <summary>Sets the shim of WindowTitleCodeExtractor.GetVsReviewName(String windowTitle)</summary>
+        </member>
+        <member name="P:Shared.Data.Extractors.Fakes.ShimWindowTitleCodeExtractor.RunAndParseQueryString">
+            <summary>Sets the shim of WindowTitleCodeExtractor.RunAndParseQuery(String query)</summary>
+        </member>
+        <member name="T:Shared.Data.Extractors.Fakes.ShimWindowTitleEmailExtractor">
+            <summary>Shim type of Shared.Data.Extractors.WindowTitleEmailExtractor</summary>
+        </member>
+        <member name="M:Shared.Data.Extractors.Fakes.ShimWindowTitleEmailExtractor.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Shared.Data.Extractors.Fakes.ShimWindowTitleEmailExtractor.#ctor(Shared.Data.Extractors.WindowTitleEmailExtractor)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:Shared.Data.Extractors.Fakes.ShimWindowTitleEmailExtractor.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="M:Shared.Data.Extractors.Fakes.ShimWindowTitleEmailExtractor.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Shared.Data.Extractors.Fakes.ShimWindowTitleEmailExtractor.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Shared.Data.Extractors.Fakes.ShimWindowTitleEmailExtractor.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Shared.Data.Extractors.Fakes.ShimWindowTitleEmailExtractor.CleanWindowTitleString">
+            <summary>Sets the shim of WindowTitleEmailExtractor.CleanWindowTitle(String windowTitle)</summary>
+        </member>
+        <member name="P:Shared.Data.Extractors.Fakes.ShimWindowTitleEmailExtractor.Constructor">
+            <summary>Sets the shim of WindowTitleEmailExtractor.WindowTitleEmailExtractor()</summary>
+        </member>
+        <member name="P:Shared.Data.Extractors.Fakes.ShimWindowTitleEmailExtractor.GetTimeSpentInOutlookDateTimeOffset">
+            <summary>Sets the shim of WindowTitleEmailExtractor.GetTimeSpentInOutlook(DateTimeOffset date)</summary>
+        </member>
+        <member name="T:Shared.Data.Extractors.Fakes.ShimWindowTitlePeopleExtractor">
+            <summary>Shim type of Shared.Data.Extractors.WindowTitlePeopleExtractor</summary>
+        </member>
+        <member name="M:Shared.Data.Extractors.Fakes.ShimWindowTitlePeopleExtractor.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Shared.Data.Extractors.Fakes.ShimWindowTitlePeopleExtractor.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Shared.Data.Extractors.Fakes.ShimWindowTitlePeopleExtractor.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Shared.Data.Extractors.Fakes.ShimWindowTitlePeopleExtractor.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="T:Shared.Data.Extractors.Fakes.ShimWindowTitleWebsitesExtractor">
+            <summary>Shim type of Shared.Data.Extractors.WindowTitleWebsitesExtractor</summary>
+        </member>
+        <member name="M:Shared.Data.Extractors.Fakes.ShimWindowTitleWebsitesExtractor.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Shared.Data.Extractors.Fakes.ShimWindowTitleWebsitesExtractor.#ctor(Shared.Data.Extractors.WindowTitleWebsitesExtractor)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:Shared.Data.Extractors.Fakes.ShimWindowTitleWebsitesExtractor.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="M:Shared.Data.Extractors.Fakes.ShimWindowTitleWebsitesExtractor.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Shared.Data.Extractors.Fakes.ShimWindowTitleWebsitesExtractor.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Shared.Data.Extractors.Fakes.ShimWindowTitleWebsitesExtractor.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Shared.Data.Extractors.Fakes.ShimWindowTitleWebsitesExtractor.CleanWindowTitleStringString">
+            <summary>Sets the shim of WindowTitleWebsitesExtractor.CleanWindowTitle(String process, String websiteTitle)</summary>
+        </member>
+        <member name="P:Shared.Data.Extractors.Fakes.ShimWindowTitleWebsitesExtractor.Constructor">
+            <summary>Sets the shim of WindowTitleWebsitesExtractor.WindowTitleWebsitesExtractor()</summary>
+        </member>
+        <member name="P:Shared.Data.Extractors.Fakes.ShimWindowTitleWebsitesExtractor.GetSqlForProgramsToSearch">
+            <summary>Sets the shim of WindowTitleWebsitesExtractor.GetSqlForProgramsToSearch()</summary>
+        </member>
+        <member name="P:Shared.Data.Extractors.Fakes.ShimWindowTitleWebsitesExtractor.GetWebsiteDetailsStringString">
+            <summary>Sets the shim of WindowTitleWebsitesExtractor.GetWebsiteDetails(String process, String windowTitle)</summary>
+        </member>
+        <member name="P:Shared.Data.Extractors.Fakes.ShimWindowTitleWebsitesExtractor.GetWebsitesVisitedDateTimeOffset">
+            <summary>Sets the shim of WindowTitleWebsitesExtractor.GetWebsitesVisited(DateTimeOffset date)</summary>
+        </member>
+        <member name="T:Shared.Data.Extractors.Fakes.StubArtifact">
+            <summary>Stub type of Shared.Data.Extractors.Artifact</summary>
+        </member>
+        <member name="M:Shared.Data.Extractors.Fakes.StubArtifact.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:Shared.Data.Extractors.Fakes.StubArtifact.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:Shared.Data.Extractors.Fakes.StubArtifact.InitializeStub">
+            <summary>Initializes a new instance of type StubArtifact</summary>
+        </member>
+        <member name="P:Shared.Data.Extractors.Fakes.StubArtifact.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Shared.Data.Extractors.Fakes.StubArtifact.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Shared.Data.Extractors.Fakes.StubExtractedItem">
+            <summary>Stub type of Shared.Data.Extractors.ExtractedItem</summary>
+        </member>
+        <member name="M:Shared.Data.Extractors.Fakes.StubExtractedItem.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:Shared.Data.Extractors.Fakes.StubExtractedItem.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:Shared.Data.Extractors.Fakes.StubExtractedItem.InitializeStub">
+            <summary>Initializes a new instance of type StubExtractedItem</summary>
+        </member>
+        <member name="P:Shared.Data.Extractors.Fakes.StubExtractedItem.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Shared.Data.Extractors.Fakes.StubExtractedItem.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Shared.Data.Extractors.Fakes.StubProgramInfo">
+            <summary>Stub type of Shared.Data.Extractors.ProgramInfo</summary>
+        </member>
+        <member name="M:Shared.Data.Extractors.Fakes.StubProgramInfo.#ctor(System.String,System.String)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Shared.Data.Extractors.Fakes.StubProgramInfo.#ctor(System.String,System.Collections.Generic.List{System.String})">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Shared.Data.Extractors.Fakes.StubProgramInfo.#ctor(System.String,System.String,System.String)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Shared.Data.Extractors.Fakes.StubProgramInfo.#ctor(System.String,System.String,System.Collections.Generic.List{System.String})">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Shared.Data.Extractors.Fakes.StubProgramInfo.#ctor(System.String,System.Collections.Generic.List{System.String},System.String)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Shared.Data.Extractors.Fakes.StubProgramInfo.#ctor(System.String,System.Collections.Generic.List{System.String},System.Collections.Generic.List{System.String})">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:Shared.Data.Extractors.Fakes.StubProgramInfo.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:Shared.Data.Extractors.Fakes.StubProgramInfo.InitializeStub">
+            <summary>Initializes a new instance of type StubProgramInfo</summary>
+        </member>
+        <member name="P:Shared.Data.Extractors.Fakes.StubProgramInfo.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Shared.Data.Extractors.Fakes.StubProgramInfo.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Shared.Data.Extractors.Fakes.StubWindowTitleCodeExtractor">
+            <summary>Stub type of Shared.Data.Extractors.WindowTitleCodeExtractor</summary>
+        </member>
+        <member name="M:Shared.Data.Extractors.Fakes.StubWindowTitleCodeExtractor.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:Shared.Data.Extractors.Fakes.StubWindowTitleCodeExtractor.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:Shared.Data.Extractors.Fakes.StubWindowTitleCodeExtractor.InitializeStub">
+            <summary>Initializes a new instance of type StubWindowTitleCodeExtractor</summary>
+        </member>
+        <member name="P:Shared.Data.Extractors.Fakes.StubWindowTitleCodeExtractor.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Shared.Data.Extractors.Fakes.StubWindowTitleCodeExtractor.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Shared.Data.Extractors.Fakes.StubWindowTitleEmailExtractor">
+            <summary>Stub type of Shared.Data.Extractors.WindowTitleEmailExtractor</summary>
+        </member>
+        <member name="M:Shared.Data.Extractors.Fakes.StubWindowTitleEmailExtractor.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:Shared.Data.Extractors.Fakes.StubWindowTitleEmailExtractor.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:Shared.Data.Extractors.Fakes.StubWindowTitleEmailExtractor.InitializeStub">
+            <summary>Initializes a new instance of type StubWindowTitleEmailExtractor</summary>
+        </member>
+        <member name="P:Shared.Data.Extractors.Fakes.StubWindowTitleEmailExtractor.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Shared.Data.Extractors.Fakes.StubWindowTitleEmailExtractor.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Shared.Data.Extractors.Fakes.StubWindowTitleWebsitesExtractor">
+            <summary>Stub type of Shared.Data.Extractors.WindowTitleWebsitesExtractor</summary>
+        </member>
+        <member name="M:Shared.Data.Extractors.Fakes.StubWindowTitleWebsitesExtractor.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:Shared.Data.Extractors.Fakes.StubWindowTitleWebsitesExtractor.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:Shared.Data.Extractors.Fakes.StubWindowTitleWebsitesExtractor.InitializeStub">
+            <summary>Initializes a new instance of type StubWindowTitleWebsitesExtractor</summary>
+        </member>
+        <member name="P:Shared.Data.Extractors.Fakes.StubWindowTitleWebsitesExtractor.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Shared.Data.Extractors.Fakes.StubWindowTitleWebsitesExtractor.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Shared.Data.Fakes.ShimDatabase">
+            <summary>Shim type of Shared.Data.Database</summary>
+        </member>
+        <member name="M:Shared.Data.Fakes.ShimDatabase.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Shared.Data.Fakes.ShimDatabase.#ctor(Shared.Data.Database)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:Shared.Data.Fakes.ShimDatabase.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="M:Shared.Data.Fakes.ShimDatabase.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Shared.Data.Fakes.ShimDatabase.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimDatabase.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimDatabase.Constructor">
+            <summary>Sets the shim of Database.Database()</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimDatabase.GetDatabaseSavePathString">
+            <summary>Sets the shim of Database.GetDatabaseSavePath(String exportPath)</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimDatabase.GetInstance">
+            <summary>Sets the shim of Database.GetInstance()</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimDatabase.GetLocalDatabaseSavePath">
+            <summary>Sets the shim of Database.GetLocalDatabaseSavePath()</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimDatabase.GetSettingsDatabaseSavePath">
+            <summary>Sets the shim of Database.GetSettingsDatabaseSavePath()</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimDatabase.GetSettingsSavePathString">
+            <summary>Sets the shim of Database.GetSettingsSavePath(String exportPath)</summary>
+        </member>
+        <member name="T:Shared.Data.Fakes.ShimDatabaseImplementation">
+            <summary>Shim type of Shared.Data.DatabaseImplementation</summary>
+        </member>
+        <member name="M:Shared.Data.Fakes.ShimDatabaseImplementation.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Shared.Data.Fakes.ShimDatabaseImplementation.#ctor(Shared.Data.DatabaseImplementation)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:Shared.Data.Fakes.ShimDatabaseImplementation.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimDatabaseImplementation.AllInstances.Connect">
+            <summary>Sets the shim of DatabaseImplementation.Connect()</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimDatabaseImplementation.AllInstances.CreateLogTable">
+            <summary>Sets the shim of DatabaseImplementation.CreateLogTable()</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimDatabaseImplementation.AllInstances.CreateSettingsTable">
+            <summary>Sets the shim of DatabaseImplementation.CreateSettingsTable()</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimDatabaseImplementation.AllInstances.CreateTimeZoneTable">
+            <summary>Sets the shim of DatabaseImplementation.CreateTimeZoneTable()</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimDatabaseImplementation.AllInstances.Disconnect">
+            <summary>Sets the shim of DatabaseImplementation.Disconnect()</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimDatabaseImplementation.AllInstances.Dispose">
+            <summary>Sets the shim of DatabaseImplementation.Dispose()</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimDatabaseImplementation.AllInstances.ExecuteBatchQueriesStringIEnumerableOfObjectArray">
+            <summary>Sets the shim of DatabaseImplementation.ExecuteBatchQueries(String query, IEnumerable`1&lt;Object[]&gt; parameterList)</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimDatabaseImplementation.AllInstances.ExecuteDefaultQueryStringObjectArray">
+            <summary>Sets the shim of DatabaseImplementation.ExecuteDefaultQuery(String query, Object[] parameter)</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimDatabaseImplementation.AllInstances.ExecuteReadQueryStringObjectArray">
+            <summary>Sets the shim of DatabaseImplementation.ExecuteReadQuery(String query, Object[] parameter)</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimDatabaseImplementation.AllInstances.ExecuteScalar2StringObjectArray">
+            <summary>Sets the shim of DatabaseImplementation.ExecuteScalar2(String query, Object[] parameter)</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimDatabaseImplementation.AllInstances.ExecuteScalar3StringObjectArray">
+            <summary>Sets the shim of DatabaseImplementation.ExecuteScalar3(String query, Object[] parameter)</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimDatabaseImplementation.AllInstances.ExecuteScalarStringObjectArray">
+            <summary>Sets the shim of DatabaseImplementation.ExecuteScalar(String query, Object[] parameter)</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimDatabaseImplementation.AllInstances.GetCommandStringObjectArray">
+            <summary>Sets the shim of DatabaseImplementation.GetCommand(String query, Object[] parameter)</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimDatabaseImplementation.AllInstances.GetDateFilteringStringForQueryVisTypeDateTimeOffsetString">
+            <summary>Sets the shim of DatabaseImplementation.GetDateFilteringStringForQuery(VisType type, DateTimeOffset date, String datePropertyName)</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimDatabaseImplementation.AllInstances.GetDbPragmaVersion">
+            <summary>Sets the shim of DatabaseImplementation.GetDbPragmaVersion()</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimDatabaseImplementation.AllInstances.GetLastTimeZoneEntry">
+            <summary>Sets the shim of DatabaseImplementation.GetLastTimeZoneEntry()</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimDatabaseImplementation.AllInstances.GetSettingsBoolStringBoolean">
+            <summary>Sets the shim of DatabaseImplementation.GetSettingsBool(String key, Boolean byDefault)</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimDatabaseImplementation.AllInstances.GetSettingsDateStringDateTimeOffset">
+            <summary>Sets the shim of DatabaseImplementation.GetSettingsDate(String key, DateTimeOffset byDefault)</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimDatabaseImplementation.AllInstances.GetSettingsIntStringInt32">
+            <summary>Sets the shim of DatabaseImplementation.GetSettingsInt(String key, Int32 byDefault)</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimDatabaseImplementation.AllInstances.GetSettingsStringStringString">
+            <summary>Sets the shim of DatabaseImplementation.GetSettingsString(String key, String byDefault)</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimDatabaseImplementation.AllInstances.GetUserWorkEndDateTimeOffset">
+            <summary>Sets the shim of DatabaseImplementation.GetUserWorkEnd(DateTimeOffset date)</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimDatabaseImplementation.AllInstances.GetUserWorkStartDateTimeOffset">
+            <summary>Sets the shim of DatabaseImplementation.GetUserWorkStart(DateTimeOffset date)</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimDatabaseImplementation.AllInstances.HasSettingString">
+            <summary>Sets the shim of DatabaseImplementation.HasSetting(String key)</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimDatabaseImplementation.AllInstances.HasTableString">
+            <summary>Sets the shim of DatabaseImplementation.HasTable(String tableName)</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimDatabaseImplementation.AllInstances.IsConnected">
+            <summary>Sets the shim of DatabaseImplementation.IsConnected()</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimDatabaseImplementation.AllInstances.LogErrorString">
+            <summary>Sets the shim of DatabaseImplementation.LogError(String message)</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimDatabaseImplementation.AllInstances.LogErrorUnknownString">
+            <summary>Sets the shim of DatabaseImplementation.LogErrorUnknown(String tracker)</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimDatabaseImplementation.AllInstances.LogInfoString">
+            <summary>Sets the shim of DatabaseImplementation.LogInfo(String message)</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimDatabaseImplementation.AllInstances.LogTimeZoneChangeTimeZoneInfo">
+            <summary>Sets the shim of DatabaseImplementation.LogTimeZoneChange(TimeZoneInfo currentTimeZone)</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimDatabaseImplementation.AllInstances.LogWarningString">
+            <summary>Sets the shim of DatabaseImplementation.LogWarning(String message)</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimDatabaseImplementation.AllInstances.QBoolean">
+            <summary>Sets the shim of DatabaseImplementation.Q(Boolean str)</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimDatabaseImplementation.AllInstances.QDateDateTime">
+            <summary>Sets the shim of DatabaseImplementation.QDate(DateTime dateTime)</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimDatabaseImplementation.AllInstances.QInt32">
+            <summary>Sets the shim of DatabaseImplementation.Q(Int32 str)</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimDatabaseImplementation.AllInstances.QInt64">
+            <summary>Sets the shim of DatabaseImplementation.Q(Int64 str)</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimDatabaseImplementation.AllInstances.QString">
+            <summary>Sets the shim of DatabaseImplementation.Q(String str)</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimDatabaseImplementation.AllInstances.QTime2DateTime">
+            <summary>Sets the shim of DatabaseImplementation.QTime2(DateTime dateTime)</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimDatabaseImplementation.AllInstances.QTimeDateTime">
+            <summary>Sets the shim of DatabaseImplementation.QTime(DateTime dateTime)</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimDatabaseImplementation.AllInstances.Reconnect">
+            <summary>Sets the shim of DatabaseImplementation.Reconnect()</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimDatabaseImplementation.AllInstances.SetSettingsStringBoolean">
+            <summary>Sets the shim of DatabaseImplementation.SetSettings(String key, Boolean value)</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimDatabaseImplementation.AllInstances.SetSettingsStringString">
+            <summary>Sets the shim of DatabaseImplementation.SetSettings(String key, String value)</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimDatabaseImplementation.AllInstances.UpdateDbPragmaVersionInt32">
+            <summary>Sets the shim of DatabaseImplementation.UpdateDbPragmaVersion(Int32 version)</summary>
+        </member>
+        <member name="M:Shared.Data.Fakes.ShimDatabaseImplementation.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Shared.Data.Fakes.ShimDatabaseImplementation.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimDatabaseImplementation.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Shared.Data.Fakes.ShimDatabaseImplementation.Bind(System.IDisposable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimDatabaseImplementation.Connect">
+            <summary>Sets the shim of DatabaseImplementation.Connect()</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimDatabaseImplementation.ConstructorString">
+            <summary>Sets the shim of DatabaseImplementation.DatabaseImplementation(String dbFilePath)</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimDatabaseImplementation.CreateLogTable">
+            <summary>Sets the shim of DatabaseImplementation.CreateLogTable()</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimDatabaseImplementation.CreateSettingsTable">
+            <summary>Sets the shim of DatabaseImplementation.CreateSettingsTable()</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimDatabaseImplementation.CreateTimeZoneTable">
+            <summary>Sets the shim of DatabaseImplementation.CreateTimeZoneTable()</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimDatabaseImplementation.Disconnect">
+            <summary>Sets the shim of DatabaseImplementation.Disconnect()</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimDatabaseImplementation.Dispose">
+            <summary>Sets the shim of DatabaseImplementation.Dispose()</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimDatabaseImplementation.ExecuteBatchQueriesStringIEnumerableOfObjectArray">
+            <summary>Sets the shim of DatabaseImplementation.ExecuteBatchQueries(String query, IEnumerable`1&lt;Object[]&gt; parameterList)</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimDatabaseImplementation.ExecuteDefaultQueryStringObjectArray">
+            <summary>Sets the shim of DatabaseImplementation.ExecuteDefaultQuery(String query, Object[] parameter)</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimDatabaseImplementation.ExecuteReadQueryStringObjectArray">
+            <summary>Sets the shim of DatabaseImplementation.ExecuteReadQuery(String query, Object[] parameter)</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimDatabaseImplementation.ExecuteScalar2StringObjectArray">
+            <summary>Sets the shim of DatabaseImplementation.ExecuteScalar2(String query, Object[] parameter)</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimDatabaseImplementation.ExecuteScalar3StringObjectArray">
+            <summary>Sets the shim of DatabaseImplementation.ExecuteScalar3(String query, Object[] parameter)</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimDatabaseImplementation.ExecuteScalarStringObjectArray">
+            <summary>Sets the shim of DatabaseImplementation.ExecuteScalar(String query, Object[] parameter)</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimDatabaseImplementation.GetCommandStringObjectArray">
+            <summary>Sets the shim of DatabaseImplementation.GetCommand(String query, Object[] parameter)</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimDatabaseImplementation.GetDateFilteringStringForQueryVisTypeDateTimeOffsetString">
+            <summary>Sets the shim of DatabaseImplementation.GetDateFilteringStringForQuery(VisType type, DateTimeOffset date, String datePropertyName)</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimDatabaseImplementation.GetDbPragmaVersion">
+            <summary>Sets the shim of DatabaseImplementation.GetDbPragmaVersion()</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimDatabaseImplementation.GetLastTimeZoneEntry">
+            <summary>Sets the shim of DatabaseImplementation.GetLastTimeZoneEntry()</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimDatabaseImplementation.GetSettingsBoolStringBoolean">
+            <summary>Sets the shim of DatabaseImplementation.GetSettingsBool(String key, Boolean byDefault)</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimDatabaseImplementation.GetSettingsDateStringDateTimeOffset">
+            <summary>Sets the shim of DatabaseImplementation.GetSettingsDate(String key, DateTimeOffset byDefault)</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimDatabaseImplementation.GetSettingsIntStringInt32">
+            <summary>Sets the shim of DatabaseImplementation.GetSettingsInt(String key, Int32 byDefault)</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimDatabaseImplementation.GetSettingsStringStringString">
+            <summary>Sets the shim of DatabaseImplementation.GetSettingsString(String key, String byDefault)</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimDatabaseImplementation.GetUserWorkEndDateTimeOffset">
+            <summary>Sets the shim of DatabaseImplementation.GetUserWorkEnd(DateTimeOffset date)</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimDatabaseImplementation.GetUserWorkStartDateTimeOffset">
+            <summary>Sets the shim of DatabaseImplementation.GetUserWorkStart(DateTimeOffset date)</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimDatabaseImplementation.HasSettingString">
+            <summary>Sets the shim of DatabaseImplementation.HasSetting(String key)</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimDatabaseImplementation.HasTableString">
+            <summary>Sets the shim of DatabaseImplementation.HasTable(String tableName)</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimDatabaseImplementation.IsConnected">
+            <summary>Sets the shim of DatabaseImplementation.IsConnected()</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimDatabaseImplementation.LogErrorString">
+            <summary>Sets the shim of DatabaseImplementation.LogError(String message)</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimDatabaseImplementation.LogErrorUnknownString">
+            <summary>Sets the shim of DatabaseImplementation.LogErrorUnknown(String tracker)</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimDatabaseImplementation.LogInfoString">
+            <summary>Sets the shim of DatabaseImplementation.LogInfo(String message)</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimDatabaseImplementation.LogTimeZoneChangeTimeZoneInfo">
+            <summary>Sets the shim of DatabaseImplementation.LogTimeZoneChange(TimeZoneInfo currentTimeZone)</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimDatabaseImplementation.LogWarningString">
+            <summary>Sets the shim of DatabaseImplementation.LogWarning(String message)</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimDatabaseImplementation.QBoolean">
+            <summary>Sets the shim of DatabaseImplementation.Q(Boolean str)</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimDatabaseImplementation.QDateDateTime">
+            <summary>Sets the shim of DatabaseImplementation.QDate(DateTime dateTime)</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimDatabaseImplementation.QInt32">
+            <summary>Sets the shim of DatabaseImplementation.Q(Int32 str)</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimDatabaseImplementation.QInt64">
+            <summary>Sets the shim of DatabaseImplementation.Q(Int64 str)</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimDatabaseImplementation.QString">
+            <summary>Sets the shim of DatabaseImplementation.Q(String str)</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimDatabaseImplementation.QTime2DateTime">
+            <summary>Sets the shim of DatabaseImplementation.QTime2(DateTime dateTime)</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimDatabaseImplementation.QTimeDateTime">
+            <summary>Sets the shim of DatabaseImplementation.QTime(DateTime dateTime)</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimDatabaseImplementation.Reconnect">
+            <summary>Sets the shim of DatabaseImplementation.Reconnect()</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimDatabaseImplementation.SetSettingsStringBoolean">
+            <summary>Sets the shim of DatabaseImplementation.SetSettings(String key, Boolean value)</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimDatabaseImplementation.SetSettingsStringString">
+            <summary>Sets the shim of DatabaseImplementation.SetSettings(String key, String value)</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimDatabaseImplementation.UpdateDbPragmaVersionInt32">
+            <summary>Sets the shim of DatabaseImplementation.UpdateDbPragmaVersion(Int32 version)</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimDatabaseImplementation.WriteQueryToLogStringIEnumerableBoolean">
+            <summary>Sets the shim of DatabaseImplementation.WriteQueryToLog(String query, IEnumerable parameter, Boolean force)</summary>
+        </member>
+        <member name="T:Shared.Data.Fakes.ShimFocusedWorkDto">
+            <summary>Shim type of Shared.Data.FocusedWorkDto</summary>
+        </member>
+        <member name="M:Shared.Data.Fakes.ShimFocusedWorkDto.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Shared.Data.Fakes.ShimFocusedWorkDto.#ctor(Shared.Data.FocusedWorkDto)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:Shared.Data.Fakes.ShimFocusedWorkDto.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimFocusedWorkDto.AllInstances.DurationInSecGet">
+            <summary>Sets the shim of FocusedWorkDto.get_DurationInSec()</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimFocusedWorkDto.AllInstances.DurationInSecSetInt32">
+            <summary>Sets the shim of FocusedWorkDto.set_DurationInSec(Int32 value)</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimFocusedWorkDto.AllInstances.FromGet">
+            <summary>Sets the shim of FocusedWorkDto.get_From()</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimFocusedWorkDto.AllInstances.FromSetDateTime">
+            <summary>Sets the shim of FocusedWorkDto.set_From(DateTime value)</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimFocusedWorkDto.AllInstances.ProcessGet">
+            <summary>Sets the shim of FocusedWorkDto.get_Process()</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimFocusedWorkDto.AllInstances.ProcessSetString">
+            <summary>Sets the shim of FocusedWorkDto.set_Process(String value)</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimFocusedWorkDto.AllInstances.ToGet">
+            <summary>Sets the shim of FocusedWorkDto.get_To()</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimFocusedWorkDto.AllInstances.ToSetDateTime">
+            <summary>Sets the shim of FocusedWorkDto.set_To(DateTime value)</summary>
+        </member>
+        <member name="M:Shared.Data.Fakes.ShimFocusedWorkDto.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Shared.Data.Fakes.ShimFocusedWorkDto.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimFocusedWorkDto.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimFocusedWorkDto.ConstructorStringInt32DateTimeDateTime">
+            <summary>Sets the shim of FocusedWorkDto.FocusedWorkDto(String process, Int32 durationInSec, DateTime from, DateTime to)</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimFocusedWorkDto.DurationInSecGet">
+            <summary>Sets the shim of FocusedWorkDto.get_DurationInSec()</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimFocusedWorkDto.DurationInSecSetInt32">
+            <summary>Sets the shim of FocusedWorkDto.set_DurationInSec(Int32 value)</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimFocusedWorkDto.FromGet">
+            <summary>Sets the shim of FocusedWorkDto.get_From()</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimFocusedWorkDto.FromSetDateTime">
+            <summary>Sets the shim of FocusedWorkDto.set_From(DateTime value)</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimFocusedWorkDto.ProcessGet">
+            <summary>Sets the shim of FocusedWorkDto.get_Process()</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimFocusedWorkDto.ProcessSetString">
+            <summary>Sets the shim of FocusedWorkDto.set_Process(String value)</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimFocusedWorkDto.ToGet">
+            <summary>Sets the shim of FocusedWorkDto.get_To()</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimFocusedWorkDto.ToSetDateTime">
+            <summary>Sets the shim of FocusedWorkDto.set_To(DateTime value)</summary>
+        </member>
+        <member name="T:Shared.Data.Fakes.ShimHash">
+            <summary>Shim type of Shared.Data.Hash</summary>
+        </member>
+        <member name="M:Shared.Data.Fakes.ShimHash.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Shared.Data.Fakes.ShimHash.#ctor(Shared.Data.Hash)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:Shared.Data.Fakes.ShimHash.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimHash.AllInstances.InvokeObjectArray">
+            <summary>Sets the shim of Hash.Invoke(Object[] args)</summary>
+        </member>
+        <member name="M:Shared.Data.Fakes.ShimHash.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Shared.Data.Fakes.ShimHash.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimHash.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Shared.Data.Fakes.ShimHash.Bind(System.IDisposable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimHash.Constructor">
+            <summary>Sets the shim of Hash.Hash()</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimHash.InvokeObjectArray">
+            <summary>Sets the shim of Hash.Invoke(Object[] args)</summary>
+        </member>
+        <member name="T:Shared.Data.Fakes.ShimProductivityTimeDto">
+            <summary>Shim type of Shared.Data.ProductivityTimeDto</summary>
+        </member>
+        <member name="M:Shared.Data.Fakes.ShimProductivityTimeDto.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Shared.Data.Fakes.ShimProductivityTimeDto.#ctor(Shared.Data.ProductivityTimeDto)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:Shared.Data.Fakes.ShimProductivityTimeDto.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimProductivityTimeDto.AllInstances.TimeGet">
+            <summary>Sets the shim of ProductivityTimeDto.get_Time()</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimProductivityTimeDto.AllInstances.TimeSetInt64">
+            <summary>Sets the shim of ProductivityTimeDto.set_Time(Int64 value)</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimProductivityTimeDto.AllInstances.UserProductvityGet">
+            <summary>Sets the shim of ProductivityTimeDto.get_UserProductvity()</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimProductivityTimeDto.AllInstances.UserProductvitySetInt32">
+            <summary>Sets the shim of ProductivityTimeDto.set_UserProductvity(Int32 value)</summary>
+        </member>
+        <member name="M:Shared.Data.Fakes.ShimProductivityTimeDto.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Shared.Data.Fakes.ShimProductivityTimeDto.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimProductivityTimeDto.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimProductivityTimeDto.Constructor">
+            <summary>Sets the shim of ProductivityTimeDto.ProductivityTimeDto()</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimProductivityTimeDto.TimeGet">
+            <summary>Sets the shim of ProductivityTimeDto.get_Time()</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimProductivityTimeDto.TimeSetInt64">
+            <summary>Sets the shim of ProductivityTimeDto.set_Time(Int64 value)</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimProductivityTimeDto.UserProductvityGet">
+            <summary>Sets the shim of ProductivityTimeDto.get_UserProductvity()</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimProductivityTimeDto.UserProductvitySetInt32">
+            <summary>Sets the shim of ProductivityTimeDto.set_UserProductvity(Int32 value)</summary>
+        </member>
+        <member name="T:Shared.Data.Fakes.ShimSettingsDto">
+            <summary>Shim type of Shared.Data.SettingsDto</summary>
+        </member>
+        <member name="M:Shared.Data.Fakes.ShimSettingsDto.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Shared.Data.Fakes.ShimSettingsDto.#ctor(Shared.Data.SettingsDto)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:Shared.Data.Fakes.ShimSettingsDto.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimSettingsDto.AllInstances.FitbitTokenRevokEnabledGet">
+            <summary>Sets the shim of SettingsDto.get_FitbitTokenRevokEnabled()</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimSettingsDto.AllInstances.FitbitTokenRevokEnabledSetNullableOfBoolean">
+            <summary>Sets the shim of SettingsDto.set_FitbitTokenRevokEnabled(Nullable`1&lt;Boolean&gt; value)</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimSettingsDto.AllInstances.FitbitTokenRevokedGet">
+            <summary>Sets the shim of SettingsDto.get_FitbitTokenRevoked()</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimSettingsDto.AllInstances.FitbitTokenRevokedSetNullableOfBoolean">
+            <summary>Sets the shim of SettingsDto.set_FitbitTokenRevoked(Nullable`1&lt;Boolean&gt; value)</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimSettingsDto.AllInstances.FitbitTrackerEnabledGet">
+            <summary>Sets the shim of SettingsDto.get_FitbitTrackerEnabled()</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimSettingsDto.AllInstances.FitbitTrackerEnabledSetNullableOfBoolean">
+            <summary>Sets the shim of SettingsDto.set_FitbitTrackerEnabled(Nullable`1&lt;Boolean&gt; value)</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimSettingsDto.AllInstances.Office365ApiEnabledGet">
+            <summary>Sets the shim of SettingsDto.get_Office365ApiEnabled()</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimSettingsDto.AllInstances.Office365ApiEnabledSetNullableOfBoolean">
+            <summary>Sets the shim of SettingsDto.set_Office365ApiEnabled(Nullable`1&lt;Boolean&gt; value)</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimSettingsDto.AllInstances.OpenRetrospectionInFullScreenGet">
+            <summary>Sets the shim of SettingsDto.get_OpenRetrospectionInFullScreen()</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimSettingsDto.AllInstances.OpenRetrospectionInFullScreenSetNullableOfBoolean">
+            <summary>Sets the shim of SettingsDto.set_OpenRetrospectionInFullScreen(Nullable`1&lt;Boolean&gt; value)</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimSettingsDto.AllInstances.PolarTrackerEnabledGet">
+            <summary>Sets the shim of SettingsDto.get_PolarTrackerEnabled()</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimSettingsDto.AllInstances.PolarTrackerEnabledSetNullableOfBoolean">
+            <summary>Sets the shim of SettingsDto.set_PolarTrackerEnabled(Nullable`1&lt;Boolean&gt; value)</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimSettingsDto.AllInstances.PopUpEnabledGet">
+            <summary>Sets the shim of SettingsDto.get_PopUpEnabled()</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimSettingsDto.AllInstances.PopUpEnabledSetNullableOfBoolean">
+            <summary>Sets the shim of SettingsDto.set_PopUpEnabled(Nullable`1&lt;Boolean&gt; value)</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimSettingsDto.AllInstances.PopUpIntervalGet">
+            <summary>Sets the shim of SettingsDto.get_PopUpInterval()</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimSettingsDto.AllInstances.PopUpIntervalSetNullableOfInt32">
+            <summary>Sets the shim of SettingsDto.set_PopUpInterval(Nullable`1&lt;Int32&gt; value)</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimSettingsDto.AllInstances.TimeSpentHideMeetingsWithoutAttendeesEnabledGet">
+            <summary>Sets the shim of SettingsDto.get_TimeSpentHideMeetingsWithoutAttendeesEnabled()</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimSettingsDto.AllInstances.TimeSpentHideMeetingsWithoutAttendeesEnabledSetNullableOfBoolean">
+            <summary>Sets the shim of SettingsDto.set_TimeSpentHideMeetingsWithoutAttendeesEnabled(Nullable`1&lt;Boolean&gt; value)</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimSettingsDto.AllInstances.TimeSpentShowEmailsEnabledGet">
+            <summary>Sets the shim of SettingsDto.get_TimeSpentShowEmailsEnabled()</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimSettingsDto.AllInstances.TimeSpentShowEmailsEnabledSetNullableOfBoolean">
+            <summary>Sets the shim of SettingsDto.set_TimeSpentShowEmailsEnabled(Nullable`1&lt;Boolean&gt; value)</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimSettingsDto.AllInstances.TimeSpentShowProgramsEnabledGet">
+            <summary>Sets the shim of SettingsDto.get_TimeSpentShowProgramsEnabled()</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimSettingsDto.AllInstances.TimeSpentShowProgramsEnabledSetNullableOfBoolean">
+            <summary>Sets the shim of SettingsDto.set_TimeSpentShowProgramsEnabled(Nullable`1&lt;Boolean&gt; value)</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimSettingsDto.AllInstances.UserInputTrackerEnabledGet">
+            <summary>Sets the shim of SettingsDto.get_UserInputTrackerEnabled()</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimSettingsDto.AllInstances.UserInputTrackerEnabledSetNullableOfBoolean">
+            <summary>Sets the shim of SettingsDto.set_UserInputTrackerEnabled(Nullable`1&lt;Boolean&gt; value)</summary>
+        </member>
+        <member name="M:Shared.Data.Fakes.ShimSettingsDto.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Shared.Data.Fakes.ShimSettingsDto.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimSettingsDto.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimSettingsDto.Constructor">
+            <summary>Sets the shim of SettingsDto.SettingsDto()</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimSettingsDto.FitbitTokenRevokEnabledGet">
+            <summary>Sets the shim of SettingsDto.get_FitbitTokenRevokEnabled()</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimSettingsDto.FitbitTokenRevokEnabledSetNullableOfBoolean">
+            <summary>Sets the shim of SettingsDto.set_FitbitTokenRevokEnabled(Nullable`1&lt;Boolean&gt; value)</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimSettingsDto.FitbitTokenRevokedGet">
+            <summary>Sets the shim of SettingsDto.get_FitbitTokenRevoked()</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimSettingsDto.FitbitTokenRevokedSetNullableOfBoolean">
+            <summary>Sets the shim of SettingsDto.set_FitbitTokenRevoked(Nullable`1&lt;Boolean&gt; value)</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimSettingsDto.FitbitTrackerEnabledGet">
+            <summary>Sets the shim of SettingsDto.get_FitbitTrackerEnabled()</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimSettingsDto.FitbitTrackerEnabledSetNullableOfBoolean">
+            <summary>Sets the shim of SettingsDto.set_FitbitTrackerEnabled(Nullable`1&lt;Boolean&gt; value)</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimSettingsDto.Office365ApiEnabledGet">
+            <summary>Sets the shim of SettingsDto.get_Office365ApiEnabled()</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimSettingsDto.Office365ApiEnabledSetNullableOfBoolean">
+            <summary>Sets the shim of SettingsDto.set_Office365ApiEnabled(Nullable`1&lt;Boolean&gt; value)</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimSettingsDto.OpenRetrospectionInFullScreenGet">
+            <summary>Sets the shim of SettingsDto.get_OpenRetrospectionInFullScreen()</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimSettingsDto.OpenRetrospectionInFullScreenSetNullableOfBoolean">
+            <summary>Sets the shim of SettingsDto.set_OpenRetrospectionInFullScreen(Nullable`1&lt;Boolean&gt; value)</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimSettingsDto.PolarTrackerEnabledGet">
+            <summary>Sets the shim of SettingsDto.get_PolarTrackerEnabled()</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimSettingsDto.PolarTrackerEnabledSetNullableOfBoolean">
+            <summary>Sets the shim of SettingsDto.set_PolarTrackerEnabled(Nullable`1&lt;Boolean&gt; value)</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimSettingsDto.PopUpEnabledGet">
+            <summary>Sets the shim of SettingsDto.get_PopUpEnabled()</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimSettingsDto.PopUpEnabledSetNullableOfBoolean">
+            <summary>Sets the shim of SettingsDto.set_PopUpEnabled(Nullable`1&lt;Boolean&gt; value)</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimSettingsDto.PopUpIntervalGet">
+            <summary>Sets the shim of SettingsDto.get_PopUpInterval()</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimSettingsDto.PopUpIntervalSetNullableOfInt32">
+            <summary>Sets the shim of SettingsDto.set_PopUpInterval(Nullable`1&lt;Int32&gt; value)</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimSettingsDto.TimeSpentHideMeetingsWithoutAttendeesEnabledGet">
+            <summary>Sets the shim of SettingsDto.get_TimeSpentHideMeetingsWithoutAttendeesEnabled()</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimSettingsDto.TimeSpentHideMeetingsWithoutAttendeesEnabledSetNullableOfBoolean">
+            <summary>Sets the shim of SettingsDto.set_TimeSpentHideMeetingsWithoutAttendeesEnabled(Nullable`1&lt;Boolean&gt; value)</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimSettingsDto.TimeSpentShowEmailsEnabledGet">
+            <summary>Sets the shim of SettingsDto.get_TimeSpentShowEmailsEnabled()</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimSettingsDto.TimeSpentShowEmailsEnabledSetNullableOfBoolean">
+            <summary>Sets the shim of SettingsDto.set_TimeSpentShowEmailsEnabled(Nullable`1&lt;Boolean&gt; value)</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimSettingsDto.TimeSpentShowProgramsEnabledGet">
+            <summary>Sets the shim of SettingsDto.get_TimeSpentShowProgramsEnabled()</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimSettingsDto.TimeSpentShowProgramsEnabledSetNullableOfBoolean">
+            <summary>Sets the shim of SettingsDto.set_TimeSpentShowProgramsEnabled(Nullable`1&lt;Boolean&gt; value)</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimSettingsDto.UserInputTrackerEnabledGet">
+            <summary>Sets the shim of SettingsDto.get_UserInputTrackerEnabled()</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimSettingsDto.UserInputTrackerEnabledSetNullableOfBoolean">
+            <summary>Sets the shim of SettingsDto.set_UserInputTrackerEnabled(Nullable`1&lt;Boolean&gt; value)</summary>
+        </member>
+        <member name="T:Shared.Data.Fakes.ShimStartEndTimeDto">
+            <summary>Shim type of Shared.Data.StartEndTimeDto</summary>
+        </member>
+        <member name="M:Shared.Data.Fakes.ShimStartEndTimeDto.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Shared.Data.Fakes.ShimStartEndTimeDto.#ctor(Shared.Data.StartEndTimeDto)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:Shared.Data.Fakes.ShimStartEndTimeDto.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimStartEndTimeDto.AllInstances.EndTimeGet">
+            <summary>Sets the shim of StartEndTimeDto.get_EndTime()</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimStartEndTimeDto.AllInstances.EndTimeSetInt64">
+            <summary>Sets the shim of StartEndTimeDto.set_EndTime(Int64 value)</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimStartEndTimeDto.AllInstances.StartTimeGet">
+            <summary>Sets the shim of StartEndTimeDto.get_StartTime()</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimStartEndTimeDto.AllInstances.StartTimeSetInt64">
+            <summary>Sets the shim of StartEndTimeDto.set_StartTime(Int64 value)</summary>
+        </member>
+        <member name="M:Shared.Data.Fakes.ShimStartEndTimeDto.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Shared.Data.Fakes.ShimStartEndTimeDto.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimStartEndTimeDto.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimStartEndTimeDto.Constructor">
+            <summary>Sets the shim of StartEndTimeDto.StartEndTimeDto()</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimStartEndTimeDto.EndTimeGet">
+            <summary>Sets the shim of StartEndTimeDto.get_EndTime()</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimStartEndTimeDto.EndTimeSetInt64">
+            <summary>Sets the shim of StartEndTimeDto.set_EndTime(Int64 value)</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimStartEndTimeDto.StartTimeGet">
+            <summary>Sets the shim of StartEndTimeDto.get_StartTime()</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimStartEndTimeDto.StartTimeSetInt64">
+            <summary>Sets the shim of StartEndTimeDto.set_StartTime(Int64 value)</summary>
+        </member>
+        <member name="T:Shared.Data.Fakes.ShimTasksWorkedOnTimeDto">
+            <summary>Shim type of Shared.Data.TasksWorkedOnTimeDto</summary>
+        </member>
+        <member name="M:Shared.Data.Fakes.ShimTasksWorkedOnTimeDto.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Shared.Data.Fakes.ShimTasksWorkedOnTimeDto.#ctor(Shared.Data.TasksWorkedOnTimeDto)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:Shared.Data.Fakes.ShimTasksWorkedOnTimeDto.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimTasksWorkedOnTimeDto.AllInstances.TasksWorkedOnGet">
+            <summary>Sets the shim of TasksWorkedOnTimeDto.get_TasksWorkedOn()</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimTasksWorkedOnTimeDto.AllInstances.TasksWorkedOnSetInt32">
+            <summary>Sets the shim of TasksWorkedOnTimeDto.set_TasksWorkedOn(Int32 value)</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimTasksWorkedOnTimeDto.AllInstances.TimeGet">
+            <summary>Sets the shim of TasksWorkedOnTimeDto.get_Time()</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimTasksWorkedOnTimeDto.AllInstances.TimeSetInt64">
+            <summary>Sets the shim of TasksWorkedOnTimeDto.set_Time(Int64 value)</summary>
+        </member>
+        <member name="M:Shared.Data.Fakes.ShimTasksWorkedOnTimeDto.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Shared.Data.Fakes.ShimTasksWorkedOnTimeDto.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimTasksWorkedOnTimeDto.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimTasksWorkedOnTimeDto.Constructor">
+            <summary>Sets the shim of TasksWorkedOnTimeDto.TasksWorkedOnTimeDto()</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimTasksWorkedOnTimeDto.TasksWorkedOnGet">
+            <summary>Sets the shim of TasksWorkedOnTimeDto.get_TasksWorkedOn()</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimTasksWorkedOnTimeDto.TasksWorkedOnSetInt32">
+            <summary>Sets the shim of TasksWorkedOnTimeDto.set_TasksWorkedOn(Int32 value)</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimTasksWorkedOnTimeDto.TimeGet">
+            <summary>Sets the shim of TasksWorkedOnTimeDto.get_Time()</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.ShimTasksWorkedOnTimeDto.TimeSetInt64">
+            <summary>Sets the shim of TasksWorkedOnTimeDto.set_Time(Int64 value)</summary>
+        </member>
+        <member name="T:Shared.Data.Fakes.StubDatabase">
+            <summary>Stub type of Shared.Data.Database</summary>
+        </member>
+        <member name="M:Shared.Data.Fakes.StubDatabase.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.StubDatabase.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:Shared.Data.Fakes.StubDatabase.InitializeStub">
+            <summary>Initializes a new instance of type StubDatabase</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.StubDatabase.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.StubDatabase.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Shared.Data.Fakes.StubFocusedWorkDto">
+            <summary>Stub type of Shared.Data.FocusedWorkDto</summary>
+        </member>
+        <member name="M:Shared.Data.Fakes.StubFocusedWorkDto.#ctor(System.String,System.Int32,System.DateTime,System.DateTime)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.StubFocusedWorkDto.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:Shared.Data.Fakes.StubFocusedWorkDto.InitializeStub">
+            <summary>Initializes a new instance of type StubFocusedWorkDto</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.StubFocusedWorkDto.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.StubFocusedWorkDto.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Shared.Data.Fakes.StubHash">
+            <summary>Stub type of Shared.Data.Hash</summary>
+        </member>
+        <member name="M:Shared.Data.Fakes.StubHash.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.StubHash.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:Shared.Data.Fakes.StubHash.Compare(System.String,System.String)">
+            <summary>Sets the stub of SQLiteFunction.Compare(String param1, String param2)</summary>
+        </member>
+        <member name="F:Shared.Data.Fakes.StubHash.CompareStringString">
+            <summary>Sets the stub of SQLiteFunction.Compare(String param1, String param2)</summary>
+        </member>
+        <member name="M:Shared.Data.Fakes.StubHash.Dispose(System.Boolean)">
+            <summary>Sets the stub of SQLiteFunction.Dispose(Boolean disposing)</summary>
+        </member>
+        <member name="F:Shared.Data.Fakes.StubHash.DisposeBoolean">
+            <summary>Sets the stub of SQLiteFunction.Dispose(Boolean disposing)</summary>
+        </member>
+        <member name="M:Shared.Data.Fakes.StubHash.Final(System.Object)">
+            <summary>Sets the stub of SQLiteFunction.Final(Object contextData)</summary>
+        </member>
+        <member name="F:Shared.Data.Fakes.StubHash.FinalObject">
+            <summary>Sets the stub of SQLiteFunction.Final(Object contextData)</summary>
+        </member>
+        <member name="M:Shared.Data.Fakes.StubHash.InitializeStub">
+            <summary>Initializes a new instance of type StubHash</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.StubHash.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.StubHash.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="M:Shared.Data.Fakes.StubHash.Invoke(System.Object[])">
+            <summary>Sets the stub of Hash.Invoke(Object[] args)</summary>
+        </member>
+        <member name="F:Shared.Data.Fakes.StubHash.InvokeObjectArray">
+            <summary>Sets the stub of Hash.Invoke(Object[] args)</summary>
+        </member>
+        <member name="M:Shared.Data.Fakes.StubHash.Step(System.Object[],System.Int32,System.Object@)">
+            <summary>Sets the stub of SQLiteFunction.Step(Object[] args, Int32 stepNumber, Object&amp; contextData)</summary>
+        </member>
+        <member name="F:Shared.Data.Fakes.StubHash.StepObjectArrayInt32ObjectRef">
+            <summary>Sets the stub of SQLiteFunction.Step(Object[] args, Int32 stepNumber, Object&amp; contextData)</summary>
+        </member>
+        <member name="T:Shared.Data.Fakes.StubProductivityTimeDto">
+            <summary>Stub type of Shared.Data.ProductivityTimeDto</summary>
+        </member>
+        <member name="M:Shared.Data.Fakes.StubProductivityTimeDto.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.StubProductivityTimeDto.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:Shared.Data.Fakes.StubProductivityTimeDto.InitializeStub">
+            <summary>Initializes a new instance of type StubProductivityTimeDto</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.StubProductivityTimeDto.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.StubProductivityTimeDto.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Shared.Data.Fakes.StubSettingsDto">
+            <summary>Stub type of Shared.Data.SettingsDto</summary>
+        </member>
+        <member name="M:Shared.Data.Fakes.StubSettingsDto.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.StubSettingsDto.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:Shared.Data.Fakes.StubSettingsDto.InitializeStub">
+            <summary>Initializes a new instance of type StubSettingsDto</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.StubSettingsDto.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.StubSettingsDto.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Shared.Data.Fakes.StubStartEndTimeDto">
+            <summary>Stub type of Shared.Data.StartEndTimeDto</summary>
+        </member>
+        <member name="M:Shared.Data.Fakes.StubStartEndTimeDto.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.StubStartEndTimeDto.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:Shared.Data.Fakes.StubStartEndTimeDto.InitializeStub">
+            <summary>Initializes a new instance of type StubStartEndTimeDto</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.StubStartEndTimeDto.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.StubStartEndTimeDto.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Shared.Data.Fakes.StubTasksWorkedOnTimeDto">
+            <summary>Stub type of Shared.Data.TasksWorkedOnTimeDto</summary>
+        </member>
+        <member name="M:Shared.Data.Fakes.StubTasksWorkedOnTimeDto.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.StubTasksWorkedOnTimeDto.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:Shared.Data.Fakes.StubTasksWorkedOnTimeDto.InitializeStub">
+            <summary>Initializes a new instance of type StubTasksWorkedOnTimeDto</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.StubTasksWorkedOnTimeDto.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Shared.Data.Fakes.StubTasksWorkedOnTimeDto.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Shared.Fakes.ShimBaseTracker">
+            <summary>Shim type of Shared.BaseTracker</summary>
+        </member>
+        <member name="M:Shared.Fakes.ShimBaseTracker.#ctor(Shared.BaseTracker)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:Shared.Fakes.ShimBaseTracker.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Shared.Fakes.ShimBaseTracker.AllInstances.GetStartScreens">
+            <summary>Sets the shim of BaseTracker.GetStartScreens()</summary>
+        </member>
+        <member name="P:Shared.Fakes.ShimBaseTracker.AllInstances.GetStatus">
+            <summary>Sets the shim of BaseTracker.GetStatus()</summary>
+        </member>
+        <member name="P:Shared.Fakes.ShimBaseTracker.AllInstances.GetVisualizationsDayDateTimeOffset">
+            <summary>Sets the shim of BaseTracker.GetVisualizationsDay(DateTimeOffset date)</summary>
+        </member>
+        <member name="P:Shared.Fakes.ShimBaseTracker.AllInstances.GetVisualizationsWeekDateTimeOffset">
+            <summary>Sets the shim of BaseTracker.GetVisualizationsWeek(DateTimeOffset date)</summary>
+        </member>
+        <member name="P:Shared.Fakes.ShimBaseTracker.AllInstances.IsFirstStartGet">
+            <summary>Sets the shim of BaseTracker.get_IsFirstStart()</summary>
+        </member>
+        <member name="P:Shared.Fakes.ShimBaseTracker.AllInstances.IsFirstStartSetBoolean">
+            <summary>Sets the shim of BaseTracker.set_IsFirstStart(Boolean value)</summary>
+        </member>
+        <member name="P:Shared.Fakes.ShimBaseTracker.AllInstances.IsRunningGet">
+            <summary>Sets the shim of BaseTracker.get_IsRunning()</summary>
+        </member>
+        <member name="P:Shared.Fakes.ShimBaseTracker.AllInstances.IsRunningSetBoolean">
+            <summary>Sets the shim of BaseTracker.set_IsRunning(Boolean value)</summary>
+        </member>
+        <member name="P:Shared.Fakes.ShimBaseTracker.AllInstances.NameGet">
+            <summary>Sets the shim of BaseTracker.get_Name()</summary>
+        </member>
+        <member name="P:Shared.Fakes.ShimBaseTracker.AllInstances.NameSetString">
+            <summary>Sets the shim of BaseTracker.set_Name(String value)</summary>
+        </member>
+        <member name="M:Shared.Fakes.ShimBaseTracker.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Shared.Fakes.ShimBaseTracker.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Shared.Fakes.ShimBaseTracker.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Shared.Fakes.ShimBaseTracker.Bind(Shared.ITracker)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:Shared.Fakes.ShimBaseTracker.Constructor">
+            <summary>Sets the shim of BaseTracker.BaseTracker()</summary>
+        </member>
+        <member name="P:Shared.Fakes.ShimBaseTracker.GetStartScreens">
+            <summary>Sets the shim of BaseTracker.GetStartScreens()</summary>
+        </member>
+        <member name="P:Shared.Fakes.ShimBaseTracker.GetStatus">
+            <summary>Sets the shim of BaseTracker.GetStatus()</summary>
+        </member>
+        <member name="P:Shared.Fakes.ShimBaseTracker.GetVisualizationsDayDateTimeOffset">
+            <summary>Sets the shim of BaseTracker.GetVisualizationsDay(DateTimeOffset date)</summary>
+        </member>
+        <member name="P:Shared.Fakes.ShimBaseTracker.GetVisualizationsWeekDateTimeOffset">
+            <summary>Sets the shim of BaseTracker.GetVisualizationsWeek(DateTimeOffset date)</summary>
+        </member>
+        <member name="P:Shared.Fakes.ShimBaseTracker.IsFirstStartGet">
+            <summary>Sets the shim of BaseTracker.get_IsFirstStart()</summary>
+        </member>
+        <member name="P:Shared.Fakes.ShimBaseTracker.IsFirstStartSetBoolean">
+            <summary>Sets the shim of BaseTracker.set_IsFirstStart(Boolean value)</summary>
+        </member>
+        <member name="P:Shared.Fakes.ShimBaseTracker.IsRunningGet">
+            <summary>Sets the shim of BaseTracker.get_IsRunning()</summary>
+        </member>
+        <member name="P:Shared.Fakes.ShimBaseTracker.IsRunningSetBoolean">
+            <summary>Sets the shim of BaseTracker.set_IsRunning(Boolean value)</summary>
+        </member>
+        <member name="P:Shared.Fakes.ShimBaseTracker.NameGet">
+            <summary>Sets the shim of BaseTracker.get_Name()</summary>
+        </member>
+        <member name="P:Shared.Fakes.ShimBaseTracker.NameSetString">
+            <summary>Sets the shim of BaseTracker.set_Name(String value)</summary>
+        </member>
+        <member name="T:Shared.Fakes.ShimBaseTrackerDisposable">
+            <summary>Shim type of Shared.BaseTrackerDisposable</summary>
+        </member>
+        <member name="M:Shared.Fakes.ShimBaseTrackerDisposable.#ctor(Shared.BaseTrackerDisposable)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:Shared.Fakes.ShimBaseTrackerDisposable.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Shared.Fakes.ShimBaseTrackerDisposable.AllInstances.Dispose">
+            <summary>Sets the shim of BaseTrackerDisposable.Dispose()</summary>
+        </member>
+        <member name="P:Shared.Fakes.ShimBaseTrackerDisposable.AllInstances.DisposeBoolean">
+            <summary>Sets the shim of BaseTrackerDisposable.Dispose(Boolean disposing)</summary>
+        </member>
+        <member name="M:Shared.Fakes.ShimBaseTrackerDisposable.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Shared.Fakes.ShimBaseTrackerDisposable.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Shared.Fakes.ShimBaseTrackerDisposable.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Shared.Fakes.ShimBaseTrackerDisposable.Bind(Shared.ITracker)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:Shared.Fakes.ShimBaseTrackerDisposable.Bind(System.IDisposable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:Shared.Fakes.ShimBaseTrackerDisposable.Constructor">
+            <summary>Sets the shim of BaseTrackerDisposable.BaseTrackerDisposable()</summary>
+        </member>
+        <member name="P:Shared.Fakes.ShimBaseTrackerDisposable.Dispose">
+            <summary>Sets the shim of BaseTrackerDisposable.Dispose()</summary>
+        </member>
+        <member name="P:Shared.Fakes.ShimBaseTrackerDisposable.DisposeBoolean">
+            <summary>Sets the shim of BaseTrackerDisposable.Dispose(Boolean disposing)</summary>
+        </member>
+        <member name="T:Shared.Fakes.ShimBaseVisualization">
+            <summary>Shim type of Shared.BaseVisualization</summary>
+        </member>
+        <member name="M:Shared.Fakes.ShimBaseVisualization.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Shared.Fakes.ShimBaseVisualization.#ctor(Shared.BaseVisualization)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:Shared.Fakes.ShimBaseVisualization.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Shared.Fakes.ShimBaseVisualization.AllInstances.GetHtml">
+            <summary>Sets the shim of BaseVisualization.GetHtml()</summary>
+        </member>
+        <member name="P:Shared.Fakes.ShimBaseVisualization.AllInstances.IsEnabledGet">
+            <summary>Sets the shim of BaseVisualization.get_IsEnabled()</summary>
+        </member>
+        <member name="P:Shared.Fakes.ShimBaseVisualization.AllInstances.IsEnabledSetBoolean">
+            <summary>Sets the shim of BaseVisualization.set_IsEnabled(Boolean value)</summary>
+        </member>
+        <member name="P:Shared.Fakes.ShimBaseVisualization.AllInstances.OrderGet">
+            <summary>Sets the shim of BaseVisualization.get_Order()</summary>
+        </member>
+        <member name="P:Shared.Fakes.ShimBaseVisualization.AllInstances.OrderSetInt32">
+            <summary>Sets the shim of BaseVisualization.set_Order(Int32 value)</summary>
+        </member>
+        <member name="P:Shared.Fakes.ShimBaseVisualization.AllInstances.SizeGet">
+            <summary>Sets the shim of BaseVisualization.get_Size()</summary>
+        </member>
+        <member name="P:Shared.Fakes.ShimBaseVisualization.AllInstances.SizeSetVisSize">
+            <summary>Sets the shim of BaseVisualization.set_Size(VisSize value)</summary>
+        </member>
+        <member name="P:Shared.Fakes.ShimBaseVisualization.AllInstances.TitleGet">
+            <summary>Sets the shim of BaseVisualization.get_Title()</summary>
+        </member>
+        <member name="P:Shared.Fakes.ShimBaseVisualization.AllInstances.TitleSetString">
+            <summary>Sets the shim of BaseVisualization.set_Title(String value)</summary>
+        </member>
+        <member name="P:Shared.Fakes.ShimBaseVisualization.AllInstances.TypeGet">
+            <summary>Sets the shim of BaseVisualization.get_Type()</summary>
+        </member>
+        <member name="P:Shared.Fakes.ShimBaseVisualization.AllInstances.TypeSetVisType">
+            <summary>Sets the shim of BaseVisualization.set_Type(VisType value)</summary>
+        </member>
+        <member name="M:Shared.Fakes.ShimBaseVisualization.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Shared.Fakes.ShimBaseVisualization.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Shared.Fakes.ShimBaseVisualization.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Shared.Fakes.ShimBaseVisualization.Constructor">
+            <summary>Sets the shim of BaseVisualization.BaseVisualization()</summary>
+        </member>
+        <member name="P:Shared.Fakes.ShimBaseVisualization.GetHtml">
+            <summary>Sets the shim of BaseVisualization.GetHtml()</summary>
+        </member>
+        <member name="P:Shared.Fakes.ShimBaseVisualization.IsEnabledGet">
+            <summary>Sets the shim of BaseVisualization.get_IsEnabled()</summary>
+        </member>
+        <member name="P:Shared.Fakes.ShimBaseVisualization.IsEnabledSetBoolean">
+            <summary>Sets the shim of BaseVisualization.set_IsEnabled(Boolean value)</summary>
+        </member>
+        <member name="P:Shared.Fakes.ShimBaseVisualization.OrderGet">
+            <summary>Sets the shim of BaseVisualization.get_Order()</summary>
+        </member>
+        <member name="P:Shared.Fakes.ShimBaseVisualization.OrderSetInt32">
+            <summary>Sets the shim of BaseVisualization.set_Order(Int32 value)</summary>
+        </member>
+        <member name="P:Shared.Fakes.ShimBaseVisualization.SizeGet">
+            <summary>Sets the shim of BaseVisualization.get_Size()</summary>
+        </member>
+        <member name="P:Shared.Fakes.ShimBaseVisualization.SizeSetVisSize">
+            <summary>Sets the shim of BaseVisualization.set_Size(VisSize value)</summary>
+        </member>
+        <member name="P:Shared.Fakes.ShimBaseVisualization.TitleGet">
+            <summary>Sets the shim of BaseVisualization.get_Title()</summary>
+        </member>
+        <member name="P:Shared.Fakes.ShimBaseVisualization.TitleSetString">
+            <summary>Sets the shim of BaseVisualization.set_Title(String value)</summary>
+        </member>
+        <member name="P:Shared.Fakes.ShimBaseVisualization.TypeGet">
+            <summary>Sets the shim of BaseVisualization.get_Type()</summary>
+        </member>
+        <member name="P:Shared.Fakes.ShimBaseVisualization.TypeSetVisType">
+            <summary>Sets the shim of BaseVisualization.set_Type(VisType value)</summary>
+        </member>
+        <member name="T:Shared.Fakes.ShimBaseVisualizer">
+            <summary>Shim type of Shared.BaseVisualizer</summary>
+        </member>
+        <member name="M:Shared.Fakes.ShimBaseVisualizer.#ctor(Shared.BaseVisualizer)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:Shared.Fakes.ShimBaseVisualizer.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Shared.Fakes.ShimBaseVisualizer.AllInstances.CreateDatabaseTablesIfNotExist">
+            <summary>Sets the shim of BaseVisualizer.CreateDatabaseTablesIfNotExist()</summary>
+        </member>
+        <member name="P:Shared.Fakes.ShimBaseVisualizer.AllInstances.GetStartScreens">
+            <summary>Sets the shim of BaseVisualizer.GetStartScreens()</summary>
+        </member>
+        <member name="P:Shared.Fakes.ShimBaseVisualizer.AllInstances.GetStatus">
+            <summary>Sets the shim of BaseVisualizer.GetStatus()</summary>
+        </member>
+        <member name="P:Shared.Fakes.ShimBaseVisualizer.AllInstances.GetVisualizationsDayDateTimeOffset">
+            <summary>Sets the shim of BaseVisualizer.GetVisualizationsDay(DateTimeOffset date)</summary>
+        </member>
+        <member name="P:Shared.Fakes.ShimBaseVisualizer.AllInstances.GetVisualizationsWeekDateTimeOffset">
+            <summary>Sets the shim of BaseVisualizer.GetVisualizationsWeek(DateTimeOffset date)</summary>
+        </member>
+        <member name="P:Shared.Fakes.ShimBaseVisualizer.AllInstances.IsFirstStartGet">
+            <summary>Sets the shim of BaseVisualizer.get_IsFirstStart()</summary>
+        </member>
+        <member name="P:Shared.Fakes.ShimBaseVisualizer.AllInstances.IsFirstStartSetBoolean">
+            <summary>Sets the shim of BaseVisualizer.set_IsFirstStart(Boolean value)</summary>
+        </member>
+        <member name="P:Shared.Fakes.ShimBaseVisualizer.AllInstances.IsRunningGet">
+            <summary>Sets the shim of BaseVisualizer.get_IsRunning()</summary>
+        </member>
+        <member name="P:Shared.Fakes.ShimBaseVisualizer.AllInstances.IsRunningSetBoolean">
+            <summary>Sets the shim of BaseVisualizer.set_IsRunning(Boolean value)</summary>
+        </member>
+        <member name="P:Shared.Fakes.ShimBaseVisualizer.AllInstances.NameGet">
+            <summary>Sets the shim of BaseVisualizer.get_Name()</summary>
+        </member>
+        <member name="P:Shared.Fakes.ShimBaseVisualizer.AllInstances.NameSetString">
+            <summary>Sets the shim of BaseVisualizer.set_Name(String value)</summary>
+        </member>
+        <member name="P:Shared.Fakes.ShimBaseVisualizer.AllInstances.Start">
+            <summary>Sets the shim of BaseVisualizer.Start()</summary>
+        </member>
+        <member name="P:Shared.Fakes.ShimBaseVisualizer.AllInstances.Stop">
+            <summary>Sets the shim of BaseVisualizer.Stop()</summary>
+        </member>
+        <member name="P:Shared.Fakes.ShimBaseVisualizer.AllInstances.UpdateDatabaseTablesInt32">
+            <summary>Sets the shim of BaseVisualizer.UpdateDatabaseTables(Int32 version)</summary>
+        </member>
+        <member name="M:Shared.Fakes.ShimBaseVisualizer.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Shared.Fakes.ShimBaseVisualizer.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Shared.Fakes.ShimBaseVisualizer.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Shared.Fakes.ShimBaseVisualizer.Bind(Shared.ITracker)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:Shared.Fakes.ShimBaseVisualizer.Constructor">
+            <summary>Sets the shim of BaseVisualizer.BaseVisualizer()</summary>
+        </member>
+        <member name="P:Shared.Fakes.ShimBaseVisualizer.CreateDatabaseTablesIfNotExist">
+            <summary>Sets the shim of BaseVisualizer.CreateDatabaseTablesIfNotExist()</summary>
+        </member>
+        <member name="P:Shared.Fakes.ShimBaseVisualizer.GetStartScreens">
+            <summary>Sets the shim of BaseVisualizer.GetStartScreens()</summary>
+        </member>
+        <member name="P:Shared.Fakes.ShimBaseVisualizer.GetStatus">
+            <summary>Sets the shim of BaseVisualizer.GetStatus()</summary>
+        </member>
+        <member name="P:Shared.Fakes.ShimBaseVisualizer.GetVisualizationsDayDateTimeOffset">
+            <summary>Sets the shim of BaseVisualizer.GetVisualizationsDay(DateTimeOffset date)</summary>
+        </member>
+        <member name="P:Shared.Fakes.ShimBaseVisualizer.GetVisualizationsWeekDateTimeOffset">
+            <summary>Sets the shim of BaseVisualizer.GetVisualizationsWeek(DateTimeOffset date)</summary>
+        </member>
+        <member name="P:Shared.Fakes.ShimBaseVisualizer.IsFirstStartGet">
+            <summary>Sets the shim of BaseVisualizer.get_IsFirstStart()</summary>
+        </member>
+        <member name="P:Shared.Fakes.ShimBaseVisualizer.IsFirstStartSetBoolean">
+            <summary>Sets the shim of BaseVisualizer.set_IsFirstStart(Boolean value)</summary>
+        </member>
+        <member name="P:Shared.Fakes.ShimBaseVisualizer.IsRunningGet">
+            <summary>Sets the shim of BaseVisualizer.get_IsRunning()</summary>
+        </member>
+        <member name="P:Shared.Fakes.ShimBaseVisualizer.IsRunningSetBoolean">
+            <summary>Sets the shim of BaseVisualizer.set_IsRunning(Boolean value)</summary>
+        </member>
+        <member name="P:Shared.Fakes.ShimBaseVisualizer.NameGet">
+            <summary>Sets the shim of BaseVisualizer.get_Name()</summary>
+        </member>
+        <member name="P:Shared.Fakes.ShimBaseVisualizer.NameSetString">
+            <summary>Sets the shim of BaseVisualizer.set_Name(String value)</summary>
+        </member>
+        <member name="P:Shared.Fakes.ShimBaseVisualizer.Start">
+            <summary>Sets the shim of BaseVisualizer.Start()</summary>
+        </member>
+        <member name="P:Shared.Fakes.ShimBaseVisualizer.Stop">
+            <summary>Sets the shim of BaseVisualizer.Stop()</summary>
+        </member>
+        <member name="P:Shared.Fakes.ShimBaseVisualizer.UpdateDatabaseTablesInt32">
+            <summary>Sets the shim of BaseVisualizer.UpdateDatabaseTables(Int32 version)</summary>
+        </member>
+        <member name="T:Shared.Fakes.ShimDict">
+            <summary>Shim type of Shared.Dict</summary>
+        </member>
+        <member name="M:Shared.Fakes.ShimDict.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Shared.Fakes.ShimDict.#ctor(Shared.Dict)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:Shared.Fakes.ShimDict.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="M:Shared.Fakes.ShimDict.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Shared.Fakes.ShimDict.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Shared.Fakes.ShimDict.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Shared.Fakes.ShimDict.Constructor">
+            <summary>Sets the shim of Dict.Dict()</summary>
+        </member>
+        <member name="P:Shared.Fakes.ShimDict.StaticConstructor">
+            <summary>Sets the shim of Dict.Dict()</summary>
+        </member>
+        <member name="T:Shared.Fakes.ShimLogger">
+            <summary>Shim type of Shared.Logger</summary>
+        </member>
+        <member name="M:Shared.Fakes.ShimLogger.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Shared.Fakes.ShimLogger.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Shared.Fakes.ShimLogger.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Shared.Fakes.ShimLogger.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Shared.Fakes.ShimLogger.GetLogPath">
+            <summary>Sets the shim of Logger.GetLogPath()</summary>
+        </member>
+        <member name="P:Shared.Fakes.ShimLogger.LogExceptionTextWriter">
+            <summary>Sets the shim of Logger.Log(Exception e, TextWriter w)</summary>
+        </member>
+        <member name="P:Shared.Fakes.ShimLogger.WriteToConsoleString">
+            <summary>Sets the shim of Logger.WriteToConsole(String message)</summary>
+        </member>
+        <member name="P:Shared.Fakes.ShimLogger.WriteToLogFileException">
+            <summary>Sets the shim of Logger.WriteToLogFile(Exception e)</summary>
+        </member>
+        <member name="T:Shared.Fakes.ShimSettings">
+            <summary>Shim type of Shared.Settings</summary>
+        </member>
+        <member name="M:Shared.Fakes.ShimSettings.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Shared.Fakes.ShimSettings.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Shared.Fakes.ShimSettings.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Shared.Fakes.ShimSettings.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Shared.Fakes.ShimSettings.DarkGrayColorBrushGet">
+            <summary>Sets the shim of Settings.get_DarkGrayColorBrush()</summary>
+        </member>
+        <member name="P:Shared.Fakes.ShimSettings.GrayColorBrushGet">
+            <summary>Sets the shim of Settings.get_GrayColorBrush()</summary>
+        </member>
+        <member name="P:Shared.Fakes.ShimSettings.RetrospectionColorBrushGet">
+            <summary>Sets the shim of Settings.get_RetrospectionColorBrush()</summary>
+        </member>
+        <member name="P:Shared.Fakes.ShimSettings.StaticConstructor">
+            <summary>Sets the shim of Settings.Settings()</summary>
+        </member>
+        <member name="T:Shared.Fakes.StubBaseTracker">
+            <summary>Stub type of Shared.BaseTracker</summary>
+        </member>
+        <member name="M:Shared.Fakes.StubBaseTracker.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Shared.Fakes.StubBaseTracker.AttachBackingFieldToIsFirstStart">
+            <summary>Attaches delegates to emulate StubBaseTracker.IsFirstStart as a property with a backing field.</summary>
+        </member>
+        <member name="P:Shared.Fakes.StubBaseTracker.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:Shared.Fakes.StubBaseTracker.CreateDatabaseTablesIfNotExist">
+            <summary>Sets the stub of BaseTracker.CreateDatabaseTablesIfNotExist()</summary>
+        </member>
+        <member name="F:Shared.Fakes.StubBaseTracker.CreateDatabaseTablesIfNotExist01">
+            <summary>Sets the stub of BaseTracker.CreateDatabaseTablesIfNotExist()</summary>
+        </member>
+        <member name="M:Shared.Fakes.StubBaseTracker.GetStartScreens">
+            <summary>Sets the stub of BaseTracker.GetStartScreens()</summary>
+        </member>
+        <member name="F:Shared.Fakes.StubBaseTracker.GetStartScreens01">
+            <summary>Sets the stub of BaseTracker.GetStartScreens()</summary>
+        </member>
+        <member name="M:Shared.Fakes.StubBaseTracker.GetStatus">
+            <summary>Sets the stub of BaseTracker.GetStatus()</summary>
+        </member>
+        <member name="F:Shared.Fakes.StubBaseTracker.GetStatus01">
+            <summary>Sets the stub of BaseTracker.GetStatus()</summary>
+        </member>
+        <member name="M:Shared.Fakes.StubBaseTracker.GetVersion">
+            <summary>Sets the stub of BaseTracker.GetVersion()</summary>
+        </member>
+        <member name="F:Shared.Fakes.StubBaseTracker.GetVersion01">
+            <summary>Sets the stub of BaseTracker.GetVersion()</summary>
+        </member>
+        <member name="M:Shared.Fakes.StubBaseTracker.GetVisualizationsDay(System.DateTimeOffset)">
+            <summary>Sets the stub of BaseTracker.GetVisualizationsDay(DateTimeOffset date)</summary>
+        </member>
+        <member name="F:Shared.Fakes.StubBaseTracker.GetVisualizationsDayDateTimeOffset">
+            <summary>Sets the stub of BaseTracker.GetVisualizationsDay(DateTimeOffset date)</summary>
+        </member>
+        <member name="M:Shared.Fakes.StubBaseTracker.GetVisualizationsWeek(System.DateTimeOffset)">
+            <summary>Sets the stub of BaseTracker.GetVisualizationsWeek(DateTimeOffset date)</summary>
+        </member>
+        <member name="F:Shared.Fakes.StubBaseTracker.GetVisualizationsWeekDateTimeOffset">
+            <summary>Sets the stub of BaseTracker.GetVisualizationsWeek(DateTimeOffset date)</summary>
+        </member>
+        <member name="M:Shared.Fakes.StubBaseTracker.InitializeStub">
+            <summary>Initializes a new instance of type StubBaseTracker</summary>
+        </member>
+        <member name="P:Shared.Fakes.StubBaseTracker.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Shared.Fakes.StubBaseTracker.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="M:Shared.Fakes.StubBaseTracker.IsEnabled">
+            <summary>Sets the stub of BaseTracker.IsEnabled()</summary>
+        </member>
+        <member name="F:Shared.Fakes.StubBaseTracker.IsEnabled01">
+            <summary>Sets the stub of BaseTracker.IsEnabled()</summary>
+        </member>
+        <member name="P:Shared.Fakes.StubBaseTracker.IsFirstStart">
+            <summary>Sets the stub of BaseTracker.get_IsFirstStart()</summary>
+        </member>
+        <member name="F:Shared.Fakes.StubBaseTracker.IsFirstStartGet">
+            <summary>Sets the stub of BaseTracker.get_IsFirstStart()</summary>
+        </member>
+        <member name="F:Shared.Fakes.StubBaseTracker.IsFirstStartSetBoolean">
+            <summary>Sets the stub of BaseTracker.set_IsFirstStart(Boolean value)</summary>
+        </member>
+        <member name="M:Shared.Fakes.StubBaseTracker.Start">
+            <summary>Sets the stub of BaseTracker.Start()</summary>
+        </member>
+        <member name="F:Shared.Fakes.StubBaseTracker.Start01">
+            <summary>Sets the stub of BaseTracker.Start()</summary>
+        </member>
+        <member name="M:Shared.Fakes.StubBaseTracker.Stop">
+            <summary>Sets the stub of BaseTracker.Stop()</summary>
+        </member>
+        <member name="F:Shared.Fakes.StubBaseTracker.Stop01">
+            <summary>Sets the stub of BaseTracker.Stop()</summary>
+        </member>
+        <member name="M:Shared.Fakes.StubBaseTracker.UpdateDatabaseTables(System.Int32)">
+            <summary>Sets the stub of BaseTracker.UpdateDatabaseTables(Int32 version)</summary>
+        </member>
+        <member name="F:Shared.Fakes.StubBaseTracker.UpdateDatabaseTablesInt32">
+            <summary>Sets the stub of BaseTracker.UpdateDatabaseTables(Int32 version)</summary>
+        </member>
+        <member name="T:Shared.Fakes.StubBaseTrackerDisposable">
+            <summary>Stub type of Shared.BaseTrackerDisposable</summary>
+        </member>
+        <member name="M:Shared.Fakes.StubBaseTrackerDisposable.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Shared.Fakes.StubBaseTrackerDisposable.AttachBackingFieldToIsFirstStart">
+            <summary>Attaches delegates to emulate StubBaseTrackerDisposable.IsFirstStart as a property with a backing field.</summary>
+        </member>
+        <member name="P:Shared.Fakes.StubBaseTrackerDisposable.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:Shared.Fakes.StubBaseTrackerDisposable.CreateDatabaseTablesIfNotExist">
+            <summary>Sets the stub of BaseTracker.CreateDatabaseTablesIfNotExist()</summary>
+        </member>
+        <member name="F:Shared.Fakes.StubBaseTrackerDisposable.CreateDatabaseTablesIfNotExist01">
+            <summary>Sets the stub of BaseTracker.CreateDatabaseTablesIfNotExist()</summary>
+        </member>
+        <member name="M:Shared.Fakes.StubBaseTrackerDisposable.Dispose(System.Boolean)">
+            <summary>Sets the stub of BaseTrackerDisposable.Dispose(Boolean disposing)</summary>
+        </member>
+        <member name="F:Shared.Fakes.StubBaseTrackerDisposable.DisposeBoolean">
+            <summary>Sets the stub of BaseTrackerDisposable.Dispose(Boolean disposing)</summary>
+        </member>
+        <member name="M:Shared.Fakes.StubBaseTrackerDisposable.GetStartScreens">
+            <summary>Sets the stub of BaseTracker.GetStartScreens()</summary>
+        </member>
+        <member name="F:Shared.Fakes.StubBaseTrackerDisposable.GetStartScreens01">
+            <summary>Sets the stub of BaseTracker.GetStartScreens()</summary>
+        </member>
+        <member name="M:Shared.Fakes.StubBaseTrackerDisposable.GetStatus">
+            <summary>Sets the stub of BaseTracker.GetStatus()</summary>
+        </member>
+        <member name="F:Shared.Fakes.StubBaseTrackerDisposable.GetStatus01">
+            <summary>Sets the stub of BaseTracker.GetStatus()</summary>
+        </member>
+        <member name="M:Shared.Fakes.StubBaseTrackerDisposable.GetVersion">
+            <summary>Sets the stub of BaseTracker.GetVersion()</summary>
+        </member>
+        <member name="F:Shared.Fakes.StubBaseTrackerDisposable.GetVersion01">
+            <summary>Sets the stub of BaseTracker.GetVersion()</summary>
+        </member>
+        <member name="M:Shared.Fakes.StubBaseTrackerDisposable.GetVisualizationsDay(System.DateTimeOffset)">
+            <summary>Sets the stub of BaseTracker.GetVisualizationsDay(DateTimeOffset date)</summary>
+        </member>
+        <member name="F:Shared.Fakes.StubBaseTrackerDisposable.GetVisualizationsDayDateTimeOffset">
+            <summary>Sets the stub of BaseTracker.GetVisualizationsDay(DateTimeOffset date)</summary>
+        </member>
+        <member name="M:Shared.Fakes.StubBaseTrackerDisposable.GetVisualizationsWeek(System.DateTimeOffset)">
+            <summary>Sets the stub of BaseTracker.GetVisualizationsWeek(DateTimeOffset date)</summary>
+        </member>
+        <member name="F:Shared.Fakes.StubBaseTrackerDisposable.GetVisualizationsWeekDateTimeOffset">
+            <summary>Sets the stub of BaseTracker.GetVisualizationsWeek(DateTimeOffset date)</summary>
+        </member>
+        <member name="M:Shared.Fakes.StubBaseTrackerDisposable.InitializeStub">
+            <summary>Initializes a new instance of type StubBaseTrackerDisposable</summary>
+        </member>
+        <member name="P:Shared.Fakes.StubBaseTrackerDisposable.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Shared.Fakes.StubBaseTrackerDisposable.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="M:Shared.Fakes.StubBaseTrackerDisposable.IsEnabled">
+            <summary>Sets the stub of BaseTracker.IsEnabled()</summary>
+        </member>
+        <member name="F:Shared.Fakes.StubBaseTrackerDisposable.IsEnabled01">
+            <summary>Sets the stub of BaseTracker.IsEnabled()</summary>
+        </member>
+        <member name="P:Shared.Fakes.StubBaseTrackerDisposable.IsFirstStart">
+            <summary>Sets the stub of BaseTracker.get_IsFirstStart()</summary>
+        </member>
+        <member name="F:Shared.Fakes.StubBaseTrackerDisposable.IsFirstStartGet">
+            <summary>Sets the stub of BaseTracker.get_IsFirstStart()</summary>
+        </member>
+        <member name="F:Shared.Fakes.StubBaseTrackerDisposable.IsFirstStartSetBoolean">
+            <summary>Sets the stub of BaseTracker.set_IsFirstStart(Boolean value)</summary>
+        </member>
+        <member name="M:Shared.Fakes.StubBaseTrackerDisposable.Start">
+            <summary>Sets the stub of BaseTracker.Start()</summary>
+        </member>
+        <member name="F:Shared.Fakes.StubBaseTrackerDisposable.Start01">
+            <summary>Sets the stub of BaseTracker.Start()</summary>
+        </member>
+        <member name="M:Shared.Fakes.StubBaseTrackerDisposable.Stop">
+            <summary>Sets the stub of BaseTracker.Stop()</summary>
+        </member>
+        <member name="F:Shared.Fakes.StubBaseTrackerDisposable.Stop01">
+            <summary>Sets the stub of BaseTracker.Stop()</summary>
+        </member>
+        <member name="M:Shared.Fakes.StubBaseTrackerDisposable.UpdateDatabaseTables(System.Int32)">
+            <summary>Sets the stub of BaseTracker.UpdateDatabaseTables(Int32 version)</summary>
+        </member>
+        <member name="F:Shared.Fakes.StubBaseTrackerDisposable.UpdateDatabaseTablesInt32">
+            <summary>Sets the stub of BaseTracker.UpdateDatabaseTables(Int32 version)</summary>
+        </member>
+        <member name="T:Shared.Fakes.StubBaseVisualization">
+            <summary>Stub type of Shared.BaseVisualization</summary>
+        </member>
+        <member name="M:Shared.Fakes.StubBaseVisualization.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:Shared.Fakes.StubBaseVisualization.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:Shared.Fakes.StubBaseVisualization.GetHtml">
+            <summary>Sets the stub of BaseVisualization.GetHtml()</summary>
+        </member>
+        <member name="F:Shared.Fakes.StubBaseVisualization.GetHtml01">
+            <summary>Sets the stub of BaseVisualization.GetHtml()</summary>
+        </member>
+        <member name="M:Shared.Fakes.StubBaseVisualization.InitializeStub">
+            <summary>Initializes a new instance of type StubBaseVisualization</summary>
+        </member>
+        <member name="P:Shared.Fakes.StubBaseVisualization.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Shared.Fakes.StubBaseVisualization.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Shared.Fakes.StubBaseVisualizer">
+            <summary>Stub type of Shared.BaseVisualizer</summary>
+        </member>
+        <member name="M:Shared.Fakes.StubBaseVisualizer.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:Shared.Fakes.StubBaseVisualizer.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:Shared.Fakes.StubBaseVisualizer.CreateDatabaseTablesIfNotExist">
+            <summary>Sets the stub of BaseVisualizer.CreateDatabaseTablesIfNotExist()</summary>
+        </member>
+        <member name="F:Shared.Fakes.StubBaseVisualizer.CreateDatabaseTablesIfNotExist01">
+            <summary>Sets the stub of BaseVisualizer.CreateDatabaseTablesIfNotExist()</summary>
+        </member>
+        <member name="M:Shared.Fakes.StubBaseVisualizer.GetStartScreens">
+            <summary>Sets the stub of BaseVisualizer.GetStartScreens()</summary>
+        </member>
+        <member name="F:Shared.Fakes.StubBaseVisualizer.GetStartScreens01">
+            <summary>Sets the stub of BaseVisualizer.GetStartScreens()</summary>
+        </member>
+        <member name="M:Shared.Fakes.StubBaseVisualizer.GetStatus">
+            <summary>Sets the stub of BaseVisualizer.GetStatus()</summary>
+        </member>
+        <member name="F:Shared.Fakes.StubBaseVisualizer.GetStatus01">
+            <summary>Sets the stub of BaseVisualizer.GetStatus()</summary>
+        </member>
+        <member name="M:Shared.Fakes.StubBaseVisualizer.GetVersion">
+            <summary>Sets the stub of BaseVisualizer.GetVersion()</summary>
+        </member>
+        <member name="F:Shared.Fakes.StubBaseVisualizer.GetVersion01">
+            <summary>Sets the stub of BaseVisualizer.GetVersion()</summary>
+        </member>
+        <member name="M:Shared.Fakes.StubBaseVisualizer.GetVisualizationsDay(System.DateTimeOffset)">
+            <summary>Sets the stub of BaseVisualizer.GetVisualizationsDay(DateTimeOffset date)</summary>
+        </member>
+        <member name="F:Shared.Fakes.StubBaseVisualizer.GetVisualizationsDayDateTimeOffset">
+            <summary>Sets the stub of BaseVisualizer.GetVisualizationsDay(DateTimeOffset date)</summary>
+        </member>
+        <member name="M:Shared.Fakes.StubBaseVisualizer.GetVisualizationsWeek(System.DateTimeOffset)">
+            <summary>Sets the stub of BaseVisualizer.GetVisualizationsWeek(DateTimeOffset date)</summary>
+        </member>
+        <member name="F:Shared.Fakes.StubBaseVisualizer.GetVisualizationsWeekDateTimeOffset">
+            <summary>Sets the stub of BaseVisualizer.GetVisualizationsWeek(DateTimeOffset date)</summary>
+        </member>
+        <member name="M:Shared.Fakes.StubBaseVisualizer.InitializeStub">
+            <summary>Initializes a new instance of type StubBaseVisualizer</summary>
+        </member>
+        <member name="P:Shared.Fakes.StubBaseVisualizer.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Shared.Fakes.StubBaseVisualizer.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="M:Shared.Fakes.StubBaseVisualizer.IsEnabled">
+            <summary>Sets the stub of BaseVisualizer.IsEnabled()</summary>
+        </member>
+        <member name="F:Shared.Fakes.StubBaseVisualizer.IsEnabled01">
+            <summary>Sets the stub of BaseVisualizer.IsEnabled()</summary>
+        </member>
+        <member name="M:Shared.Fakes.StubBaseVisualizer.Start">
+            <summary>Sets the stub of BaseVisualizer.Start()</summary>
+        </member>
+        <member name="F:Shared.Fakes.StubBaseVisualizer.Start01">
+            <summary>Sets the stub of BaseVisualizer.Start()</summary>
+        </member>
+        <member name="M:Shared.Fakes.StubBaseVisualizer.Stop">
+            <summary>Sets the stub of BaseVisualizer.Stop()</summary>
+        </member>
+        <member name="F:Shared.Fakes.StubBaseVisualizer.Stop01">
+            <summary>Sets the stub of BaseVisualizer.Stop()</summary>
+        </member>
+        <member name="M:Shared.Fakes.StubBaseVisualizer.UpdateDatabaseTables(System.Int32)">
+            <summary>Sets the stub of BaseVisualizer.UpdateDatabaseTables(Int32 version)</summary>
+        </member>
+        <member name="F:Shared.Fakes.StubBaseVisualizer.UpdateDatabaseTablesInt32">
+            <summary>Sets the stub of BaseVisualizer.UpdateDatabaseTables(Int32 version)</summary>
+        </member>
+        <member name="T:Shared.Fakes.StubDict">
+            <summary>Stub type of Shared.Dict</summary>
+        </member>
+        <member name="M:Shared.Fakes.StubDict.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:Shared.Fakes.StubDict.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:Shared.Fakes.StubDict.InitializeStub">
+            <summary>Initializes a new instance of type StubDict</summary>
+        </member>
+        <member name="P:Shared.Fakes.StubDict.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Shared.Fakes.StubDict.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Shared.Fakes.StubIFirstStartScreen">
+            <summary>Stub type of Shared.IFirstStartScreen</summary>
+        </member>
+        <member name="M:Shared.Fakes.StubIFirstStartScreen.#ctor">
+            <summary>Initializes a new instance of type StubIFirstStartScreen</summary>
+        </member>
+        <member name="F:Shared.Fakes.StubIFirstStartScreen.GetTitle">
+            <summary>Sets the stub of IFirstStartScreen.GetTitle()</summary>
+        </member>
+        <member name="F:Shared.Fakes.StubIFirstStartScreen.NextClicked">
+            <summary>Sets the stub of IFirstStartScreen.NextClicked()</summary>
+        </member>
+        <member name="F:Shared.Fakes.StubIFirstStartScreen.PreviousClicked">
+            <summary>Sets the stub of IFirstStartScreen.PreviousClicked()</summary>
+        </member>
+        <member name="M:Shared.Fakes.StubIFirstStartScreen.Shared#IFirstStartScreen#GetTitle">
+            <summary>Sets the stub of IFirstStartScreen.GetTitle()</summary>
+        </member>
+        <member name="M:Shared.Fakes.StubIFirstStartScreen.Shared#IFirstStartScreen#NextClicked">
+            <summary>Sets the stub of IFirstStartScreen.NextClicked()</summary>
+        </member>
+        <member name="M:Shared.Fakes.StubIFirstStartScreen.Shared#IFirstStartScreen#PreviousClicked">
+            <summary>Sets the stub of IFirstStartScreen.PreviousClicked()</summary>
+        </member>
+        <member name="T:Shared.Fakes.StubITracker">
+            <summary>Stub type of Shared.ITracker</summary>
+        </member>
+        <member name="M:Shared.Fakes.StubITracker.#ctor">
+            <summary>Initializes a new instance of type StubITracker</summary>
+        </member>
+        <member name="M:Shared.Fakes.StubITracker.AttachBackingFieldToIsFirstStart">
+            <summary>Attaches delegates to emulate StubITracker.IsFirstStart as a property with a backing field.</summary>
+        </member>
+        <member name="M:Shared.Fakes.StubITracker.AttachBackingFieldToIsRunning">
+            <summary>Attaches delegates to emulate StubITracker.IsRunning as a property with a backing field.</summary>
+        </member>
+        <member name="M:Shared.Fakes.StubITracker.AttachBackingFieldToName">
+            <summary>Attaches delegates to emulate StubITracker.Name as a property with a backing field.</summary>
+        </member>
+        <member name="F:Shared.Fakes.StubITracker.CreateDatabaseTablesIfNotExist">
+            <summary>Sets the stub of ITracker.CreateDatabaseTablesIfNotExist()</summary>
+        </member>
+        <member name="F:Shared.Fakes.StubITracker.GetStartScreens">
+            <summary>Sets the stub of ITracker.GetStartScreens()</summary>
+        </member>
+        <member name="F:Shared.Fakes.StubITracker.GetStatus">
+            <summary>Sets the stub of ITracker.GetStatus()</summary>
+        </member>
+        <member name="F:Shared.Fakes.StubITracker.GetVersion">
+            <summary>Sets the stub of ITracker.GetVersion()</summary>
+        </member>
+        <member name="F:Shared.Fakes.StubITracker.GetVisualizationsDayDateTimeOffset">
+            <summary>Sets the stub of ITracker.GetVisualizationsDay(DateTimeOffset date)</summary>
+        </member>
+        <member name="F:Shared.Fakes.StubITracker.GetVisualizationsWeekDateTimeOffset">
+            <summary>Sets the stub of ITracker.GetVisualizationsWeek(DateTimeOffset date)</summary>
+        </member>
+        <member name="F:Shared.Fakes.StubITracker.IsEnabled">
+            <summary>Sets the stub of ITracker.IsEnabled()</summary>
+        </member>
+        <member name="P:Shared.Fakes.StubITracker.Shared#ITracker#IsFirstStart">
+            <summary>Sets the stub of ITracker.get_IsFirstStart()</summary>
+        </member>
+        <member name="F:Shared.Fakes.StubITracker.IsFirstStartGet">
+            <summary>Sets the stub of ITracker.get_IsFirstStart()</summary>
+        </member>
+        <member name="F:Shared.Fakes.StubITracker.IsFirstStartSetBoolean">
+            <summary>Sets the stub of ITracker.set_IsFirstStart(Boolean value)</summary>
+        </member>
+        <member name="P:Shared.Fakes.StubITracker.Shared#ITracker#IsRunning">
+            <summary>Sets the stub of ITracker.get_IsRunning()</summary>
+        </member>
+        <member name="F:Shared.Fakes.StubITracker.IsRunningGet">
+            <summary>Sets the stub of ITracker.get_IsRunning()</summary>
+        </member>
+        <member name="F:Shared.Fakes.StubITracker.IsRunningSetBoolean">
+            <summary>Sets the stub of ITracker.set_IsRunning(Boolean value)</summary>
+        </member>
+        <member name="P:Shared.Fakes.StubITracker.Shared#ITracker#Name">
+            <summary>Sets the stub of ITracker.get_Name()</summary>
+        </member>
+        <member name="F:Shared.Fakes.StubITracker.NameGet">
+            <summary>Sets the stub of ITracker.get_Name()</summary>
+        </member>
+        <member name="F:Shared.Fakes.StubITracker.NameSetString">
+            <summary>Sets the stub of ITracker.set_Name(String value)</summary>
+        </member>
+        <member name="M:Shared.Fakes.StubITracker.Shared#ITracker#CreateDatabaseTablesIfNotExist">
+            <summary>Sets the stub of ITracker.CreateDatabaseTablesIfNotExist()</summary>
+        </member>
+        <member name="M:Shared.Fakes.StubITracker.Shared#ITracker#GetStartScreens">
+            <summary>Sets the stub of ITracker.GetStartScreens()</summary>
+        </member>
+        <member name="M:Shared.Fakes.StubITracker.Shared#ITracker#GetStatus">
+            <summary>Sets the stub of ITracker.GetStatus()</summary>
+        </member>
+        <member name="M:Shared.Fakes.StubITracker.Shared#ITracker#GetVersion">
+            <summary>Sets the stub of ITracker.GetVersion()</summary>
+        </member>
+        <member name="M:Shared.Fakes.StubITracker.Shared#ITracker#GetVisualizationsDay(System.DateTimeOffset)">
+            <summary>Sets the stub of ITracker.GetVisualizationsDay(DateTimeOffset date)</summary>
+        </member>
+        <member name="M:Shared.Fakes.StubITracker.Shared#ITracker#GetVisualizationsWeek(System.DateTimeOffset)">
+            <summary>Sets the stub of ITracker.GetVisualizationsWeek(DateTimeOffset date)</summary>
+        </member>
+        <member name="M:Shared.Fakes.StubITracker.Shared#ITracker#IsEnabled">
+            <summary>Sets the stub of ITracker.IsEnabled()</summary>
+        </member>
+        <member name="M:Shared.Fakes.StubITracker.Shared#ITracker#Start">
+            <summary>Sets the stub of ITracker.Start()</summary>
+        </member>
+        <member name="M:Shared.Fakes.StubITracker.Shared#ITracker#Stop">
+            <summary>Sets the stub of ITracker.Stop()</summary>
+        </member>
+        <member name="M:Shared.Fakes.StubITracker.Shared#ITracker#UpdateDatabaseTables(System.Int32)">
+            <summary>Sets the stub of ITracker.UpdateDatabaseTables(Int32 version)</summary>
+        </member>
+        <member name="F:Shared.Fakes.StubITracker.Start">
+            <summary>Sets the stub of ITracker.Start()</summary>
+        </member>
+        <member name="F:Shared.Fakes.StubITracker.Stop">
+            <summary>Sets the stub of ITracker.Stop()</summary>
+        </member>
+        <member name="F:Shared.Fakes.StubITracker.UpdateDatabaseTablesInt32">
+            <summary>Sets the stub of ITracker.UpdateDatabaseTables(Int32 version)</summary>
+        </member>
+        <member name="T:Shared.Fakes.StubIVisualization">
+            <summary>Stub type of Shared.IVisualization</summary>
+        </member>
+        <member name="M:Shared.Fakes.StubIVisualization.#ctor">
+            <summary>Initializes a new instance of type StubIVisualization</summary>
+        </member>
+        <member name="M:Shared.Fakes.StubIVisualization.AttachBackingFieldToIsEnabled">
+            <summary>Attaches delegates to emulate StubIVisualization.IsEnabled as a property with a backing field.</summary>
+        </member>
+        <member name="M:Shared.Fakes.StubIVisualization.AttachBackingFieldToOrder">
+            <summary>Attaches delegates to emulate StubIVisualization.Order as a property with a backing field.</summary>
+        </member>
+        <member name="F:Shared.Fakes.StubIVisualization.GetHtml">
+            <summary>Sets the stub of IVisualization.GetHtml()</summary>
+        </member>
+        <member name="P:Shared.Fakes.StubIVisualization.Shared#IVisualization#IsEnabled">
+            <summary>Sets the stub of IVisualization.get_IsEnabled()</summary>
+        </member>
+        <member name="F:Shared.Fakes.StubIVisualization.IsEnabledGet">
+            <summary>Sets the stub of IVisualization.get_IsEnabled()</summary>
+        </member>
+        <member name="F:Shared.Fakes.StubIVisualization.IsEnabledSetBoolean">
+            <summary>Sets the stub of IVisualization.set_IsEnabled(Boolean value)</summary>
+        </member>
+        <member name="P:Shared.Fakes.StubIVisualization.Shared#IVisualization#Order">
+            <summary>Sets the stub of IVisualization.get_Order()</summary>
+        </member>
+        <member name="F:Shared.Fakes.StubIVisualization.OrderGet">
+            <summary>Sets the stub of IVisualization.get_Order()</summary>
+        </member>
+        <member name="F:Shared.Fakes.StubIVisualization.OrderSetInt32">
+            <summary>Sets the stub of IVisualization.set_Order(Int32 value)</summary>
+        </member>
+        <member name="M:Shared.Fakes.StubIVisualization.Shared#IVisualization#GetHtml">
+            <summary>Sets the stub of IVisualization.GetHtml()</summary>
+        </member>
+        <member name="P:Shared.Fakes.StubIVisualization.Shared#IVisualization#Size">
+            <summary>Sets the stub of IVisualization.get_Size()</summary>
+        </member>
+        <member name="F:Shared.Fakes.StubIVisualization.SizeGet">
+            <summary>Sets the stub of IVisualization.get_Size()</summary>
+        </member>
+        <member name="P:Shared.Fakes.StubIVisualization.Shared#IVisualization#Title">
+            <summary>Sets the stub of IVisualization.get_Title()</summary>
+        </member>
+        <member name="F:Shared.Fakes.StubIVisualization.TitleGet">
+            <summary>Sets the stub of IVisualization.get_Title()</summary>
+        </member>
+        <member name="P:Shared.Fakes.StubIVisualization.Shared#IVisualization#Type">
+            <summary>Sets the stub of IVisualization.get_Type()</summary>
+        </member>
+        <member name="F:Shared.Fakes.StubIVisualization.TypeGet">
+            <summary>Sets the stub of IVisualization.get_Type()</summary>
+        </member>
+        <member name="T:Shared.Helpers.Fakes.ShimDateTimeHelper">
+            <summary>Shim type of Shared.Helpers.DateTimeHelper</summary>
+        </member>
+        <member name="M:Shared.Helpers.Fakes.ShimDateTimeHelper.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Shared.Helpers.Fakes.ShimDateTimeHelper.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Shared.Helpers.Fakes.ShimDateTimeHelper.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Shared.Helpers.Fakes.ShimDateTimeHelper.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Shared.Helpers.Fakes.ShimDateTimeHelper.DateTimeFromJavascriptTimestampInt64">
+            <summary>Sets the shim of DateTimeHelper.DateTimeFromJavascriptTimestamp(Int64 date)</summary>
+        </member>
+        <member name="P:Shared.Helpers.Fakes.ShimDateTimeHelper.GetEndOfDayDateTimeOffset">
+            <summary>Sets the shim of DateTimeHelper.GetEndOfDay(DateTimeOffset date)</summary>
+        </member>
+        <member name="P:Shared.Helpers.Fakes.ShimDateTimeHelper.GetFirstDayOfWeek_Iso8801DateTimeOffset">
+            <summary>Sets the shim of DateTimeHelper.GetFirstDayOfWeek_Iso8801(DateTimeOffset date)</summary>
+        </member>
+        <member name="P:Shared.Helpers.Fakes.ShimDateTimeHelper.GetLastDayOfWeek_Iso8801DateTimeOffset">
+            <summary>Sets the shim of DateTimeHelper.GetLastDayOfWeek_Iso8801(DateTimeOffset date)</summary>
+        </member>
+        <member name="P:Shared.Helpers.Fakes.ShimDateTimeHelper.GetShortestDayNameDateTimeOffset">
+            <summary>Sets the shim of DateTimeHelper.GetShortestDayName(DateTimeOffset date)</summary>
+        </member>
+        <member name="P:Shared.Helpers.Fakes.ShimDateTimeHelper.GetShortestDayNameInt32">
+            <summary>Sets the shim of DateTimeHelper.GetShortestDayName(Int32 dayNumber)</summary>
+        </member>
+        <member name="P:Shared.Helpers.Fakes.ShimDateTimeHelper.GetStartOfDayDateTimeOffset">
+            <summary>Sets the shim of DateTimeHelper.GetStartOfDay(DateTimeOffset date)</summary>
+        </member>
+        <member name="P:Shared.Helpers.Fakes.ShimDateTimeHelper.GetWeekOfYear_Iso8601DateTime">
+            <summary>Sets the shim of DateTimeHelper.GetWeekOfYear_Iso8601(DateTime time)</summary>
+        </member>
+        <member name="P:Shared.Helpers.Fakes.ShimDateTimeHelper.JavascriptTimestampFromDateTimeDateTime">
+            <summary>Sets the shim of DateTimeHelper.JavascriptTimestampFromDateTime(DateTime date)</summary>
+        </member>
+        <member name="P:Shared.Helpers.Fakes.ShimDateTimeHelper.RoundUpDateTimeTimeSpan">
+            <summary>Sets the shim of DateTimeHelper.RoundUp(DateTime dt, TimeSpan d)</summary>
+        </member>
+        <member name="T:Shared.Helpers.Fakes.ShimFeedbackHelper">
+            <summary>Shim type of Shared.Helpers.FeedbackHelper</summary>
+        </member>
+        <member name="M:Shared.Helpers.Fakes.ShimFeedbackHelper.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Shared.Helpers.Fakes.ShimFeedbackHelper.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Shared.Helpers.Fakes.ShimFeedbackHelper.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Shared.Helpers.Fakes.ShimFeedbackHelper.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Shared.Helpers.Fakes.ShimFeedbackHelper.CreateFeedbackMailtoStringStringStringString">
+            <summary>Sets the shim of FeedbackHelper.CreateFeedbackMailtoString(String subject, String publishedAppVersion, String body)</summary>
+        </member>
+        <member name="P:Shared.Helpers.Fakes.ShimFeedbackHelper.SendFeedbackStringStringString">
+            <summary>Sets the shim of FeedbackHelper.SendFeedback(String subject, String body, String appVersion)</summary>
+        </member>
+        <member name="T:Shared.Helpers.Fakes.ShimFeedbackThumbs">
+            <summary>Shim type of Shared.Helpers.FeedbackThumbs</summary>
+        </member>
+        <member name="M:Shared.Helpers.Fakes.ShimFeedbackThumbs.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Shared.Helpers.Fakes.ShimFeedbackThumbs.#ctor(Shared.Helpers.FeedbackThumbs)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:Shared.Helpers.Fakes.ShimFeedbackThumbs.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Shared.Helpers.Fakes.ShimFeedbackThumbs.AllInstances.GetFeedbackThumbsUpDownIVisualizationDateTimeOffset">
+            <summary>Sets the shim of FeedbackThumbs.GetFeedbackThumbsUpDown(IVisualization vis, DateTimeOffset date)</summary>
+        </member>
+        <member name="P:Shared.Helpers.Fakes.ShimFeedbackThumbs.AllInstances.SetFeedbackVisTypeDateTimeOffsetStringInt32Int32">
+            <summary>Sets the shim of FeedbackThumbs.SetFeedback(VisType type, DateTimeOffset date, String visName, Int32 up, Int32 down)</summary>
+        </member>
+        <member name="M:Shared.Helpers.Fakes.ShimFeedbackThumbs.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Shared.Helpers.Fakes.ShimFeedbackThumbs.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Shared.Helpers.Fakes.ShimFeedbackThumbs.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Shared.Helpers.Fakes.ShimFeedbackThumbs.Constructor">
+            <summary>Sets the shim of FeedbackThumbs.FeedbackThumbs()</summary>
+        </member>
+        <member name="P:Shared.Helpers.Fakes.ShimFeedbackThumbs.CreateFeedbackTable">
+            <summary>Sets the shim of FeedbackThumbs.CreateFeedbackTable()</summary>
+        </member>
+        <member name="P:Shared.Helpers.Fakes.ShimFeedbackThumbs.GetFeedbackThumbsUpDownIVisualizationDateTimeOffset">
+            <summary>Sets the shim of FeedbackThumbs.GetFeedbackThumbsUpDown(IVisualization vis, DateTimeOffset date)</summary>
+        </member>
+        <member name="P:Shared.Helpers.Fakes.ShimFeedbackThumbs.GetInstance">
+            <summary>Sets the shim of FeedbackThumbs.GetInstance()</summary>
+        </member>
+        <member name="P:Shared.Helpers.Fakes.ShimFeedbackThumbs.SetFeedbackVisTypeDateTimeOffsetStringInt32Int32">
+            <summary>Sets the shim of FeedbackThumbs.SetFeedback(VisType type, DateTimeOffset date, String visName, Int32 up, Int32 down)</summary>
+        </member>
+        <member name="T:Shared.Helpers.Fakes.ShimFormatStringHelper">
+            <summary>Shim type of Shared.Helpers.FormatStringHelper</summary>
+        </member>
+        <member name="M:Shared.Helpers.Fakes.ShimFormatStringHelper.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Shared.Helpers.Fakes.ShimFormatStringHelper.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Shared.Helpers.Fakes.ShimFormatStringHelper.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Shared.Helpers.Fakes.ShimFormatStringHelper.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Shared.Helpers.Fakes.ShimFormatStringHelper.FirstLetterToUpperString">
+            <summary>Sets the shim of FormatStringHelper.FirstLetterToUpper(String str)</summary>
+        </member>
+        <member name="T:Shared.Helpers.Fakes.ShimProcessNameHelper">
+            <summary>Shim type of Shared.Helpers.ProcessNameHelper</summary>
+        </member>
+        <member name="M:Shared.Helpers.Fakes.ShimProcessNameHelper.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Shared.Helpers.Fakes.ShimProcessNameHelper.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Shared.Helpers.Fakes.ShimProcessNameHelper.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Shared.Helpers.Fakes.ShimProcessNameHelper.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Shared.Helpers.Fakes.ShimProcessNameHelper.GetFileDescriptionFromProcessString">
+            <summary>Sets the shim of ProcessNameHelper.GetFileDescriptionFromProcess(String process)</summary>
+        </member>
+        <member name="P:Shared.Helpers.Fakes.ShimProcessNameHelper.GetFileDescriptionString">
+            <summary>Sets the shim of ProcessNameHelper.GetFileDescription(String process)</summary>
+        </member>
+        <member name="T:Shared.Helpers.Fakes.ShimVersionHelper">
+            <summary>Shim type of Shared.Helpers.VersionHelper</summary>
+        </member>
+        <member name="M:Shared.Helpers.Fakes.ShimVersionHelper.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Shared.Helpers.Fakes.ShimVersionHelper.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Shared.Helpers.Fakes.ShimVersionHelper.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Shared.Helpers.Fakes.ShimVersionHelper.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Shared.Helpers.Fakes.ShimVersionHelper.GetFormattedVersionVersion">
+            <summary>Sets the shim of VersionHelper.GetFormattedVersion(Version v)</summary>
+        </member>
+        <member name="T:Shared.Helpers.Fakes.ShimVisHelper">
+            <summary>Shim type of Shared.Helpers.VisHelper</summary>
+        </member>
+        <member name="M:Shared.Helpers.Fakes.ShimVisHelper.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Shared.Helpers.Fakes.ShimVisHelper.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Shared.Helpers.Fakes.ShimVisHelper.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Shared.Helpers.Fakes.ShimVisHelper.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Shared.Helpers.Fakes.ShimVisHelper.CreateChartHtmlTitleString">
+            <summary>Sets the shim of VisHelper.CreateChartHtmlTitle(String visName)</summary>
+        </member>
+        <member name="P:Shared.Helpers.Fakes.ShimVisHelper.ErrorString">
+            <summary>Sets the shim of VisHelper.Error(String message)</summary>
+        </member>
+        <member name="P:Shared.Helpers.Fakes.ShimVisHelper.FormatChartTitleString">
+            <summary>Sets the shim of VisHelper.FormatChartTitle(String title)</summary>
+        </member>
+        <member name="P:Shared.Helpers.Fakes.ShimVisHelper.NotEnoughDataString">
+            <summary>Sets the shim of VisHelper.NotEnoughData(String message)</summary>
+        </member>
+        <member name="P:Shared.Helpers.Fakes.ShimVisHelper.PrepareTimeAxisDateTimeOffsetDictionaryOfDateTimeInt32Int32">
+            <summary>Sets the shim of VisHelper.PrepareTimeAxis(DateTimeOffset date, Dictionary`2&lt;DateTime,Int32&gt; dto, Int32 interval)</summary>
+        </member>
+    </members>
+</doc>

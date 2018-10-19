@@ -1,0 +1,23 @@
+C:\Users\Jan\git\PersonalAnalytics\src\client\AM.PA.MonitoringTool\TobiiTrackerTests\Fakes\Shared.fakes : warning : Cannot generate stub for Shared.VisType: type is a value type.
+C:\Users\Jan\git\PersonalAnalytics\src\client\AM.PA.MonitoringTool\TobiiTrackerTests\Fakes\Shared.fakes : warning : Cannot generate stub for Shared.VisSize: type is a value type.
+C:\Users\Jan\git\PersonalAnalytics\src\client\AM.PA.MonitoringTool\TobiiTrackerTests\Fakes\Shared.fakes : warning : Cannot generate stub for Shared.Logger: type is sealed.
+C:\Users\Jan\git\PersonalAnalytics\src\client\AM.PA.MonitoringTool\TobiiTrackerTests\Fakes\Shared.fakes : warning : Cannot generate stub for Shared.Settings: type is sealed.
+C:\Users\Jan\git\PersonalAnalytics\src\client\AM.PA.MonitoringTool\TobiiTrackerTests\Fakes\Shared.fakes : warning : Cannot generate stub for Shared.Helpers.DateTimeHelper: type is sealed.
+C:\Users\Jan\git\PersonalAnalytics\src\client\AM.PA.MonitoringTool\TobiiTrackerTests\Fakes\Shared.fakes : warning : Cannot generate stub for Shared.Helpers.FeedbackHelper: type is sealed.
+C:\Users\Jan\git\PersonalAnalytics\src\client\AM.PA.MonitoringTool\TobiiTrackerTests\Fakes\Shared.fakes : warning : Cannot generate stub for Shared.Helpers.FeedbackThumbs: type is sealed.
+C:\Users\Jan\git\PersonalAnalytics\src\client\AM.PA.MonitoringTool\TobiiTrackerTests\Fakes\Shared.fakes : warning : Cannot generate stub for Shared.Helpers.FormatStringHelper: type is sealed.
+C:\Users\Jan\git\PersonalAnalytics\src\client\AM.PA.MonitoringTool\TobiiTrackerTests\Fakes\Shared.fakes : warning : Cannot generate stub for Shared.Helpers.ProcessNameHelper: type is sealed.
+C:\Users\Jan\git\PersonalAnalytics\src\client\AM.PA.MonitoringTool\TobiiTrackerTests\Fakes\Shared.fakes : warning : Cannot generate stub for Shared.Helpers.VersionHelper: type is sealed.
+C:\Users\Jan\git\PersonalAnalytics\src\client\AM.PA.MonitoringTool\TobiiTrackerTests\Fakes\Shared.fakes : warning : Cannot generate stub for Shared.Helpers.VisHelper: type is sealed.
+C:\Users\Jan\git\PersonalAnalytics\src\client\AM.PA.MonitoringTool\TobiiTrackerTests\Fakes\Shared.fakes : warning : Cannot generate stub for Shared.Data.LogType: type is a value type.
+C:\Users\Jan\git\PersonalAnalytics\src\client\AM.PA.MonitoringTool\TobiiTrackerTests\Fakes\Shared.fakes : warning : Cannot generate stub for Shared.Data.DatabaseImplementation: type is sealed.
+C:\Users\Jan\git\PersonalAnalytics\src\client\AM.PA.MonitoringTool\TobiiTrackerTests\Fakes\Shared.fakes : warning : Cannot generate stub for Shared.Data.Extractors.BaseRules: type is sealed.
+C:\Users\Jan\git\PersonalAnalytics\src\client\AM.PA.MonitoringTool\TobiiTrackerTests\Fakes\Shared.fakes : warning : Cannot generate stub for Shared.Data.Extractors.WindowTitleArtifactExtractor: type is sealed.
+C:\Users\Jan\git\PersonalAnalytics\src\client\AM.PA.MonitoringTool\TobiiTrackerTests\Fakes\Shared.fakes : warning : Cannot generate stub for Shared.Data.Extractors.WindowTitlePeopleExtractor: type is sealed.
+C:\Users\Jan\git\PersonalAnalytics\src\client\AM.PA.MonitoringTool\TobiiTrackerTests\Fakes\Shared.fakes : warning : Cannot generate shim for Shared.IFirstStartScreen: type is an interface.
+C:\Users\Jan\git\PersonalAnalytics\src\client\AM.PA.MonitoringTool\TobiiTrackerTests\Fakes\Shared.fakes : warning : Cannot generate shim for Shared.ITracker: type is an interface.
+C:\Users\Jan\git\PersonalAnalytics\src\client\AM.PA.MonitoringTool\TobiiTrackerTests\Fakes\Shared.fakes : warning : Cannot generate shim for Shared.VisType: type is an enum.
+C:\Users\Jan\git\PersonalAnalytics\src\client\AM.PA.MonitoringTool\TobiiTrackerTests\Fakes\Shared.fakes : warning : Cannot generate shim for Shared.VisSize: type is an enum.
+C:\Users\Jan\git\PersonalAnalytics\src\client\AM.PA.MonitoringTool\TobiiTrackerTests\Fakes\Shared.fakes : warning : Cannot generate shim for Shared.IVisualization: type is an interface.
+C:\Users\Jan\git\PersonalAnalytics\src\client\AM.PA.MonitoringTool\TobiiTrackerTests\Fakes\Shared.fakes : warning : Cannot generate shim for Shared.Data.LogType: type is an enum.
+C:\Users\Jan\git\PersonalAnalytics\src\client\AM.PA.MonitoringTool\TobiiTrackerTests\Fakes\Shared.fakes : warning : Cannot generate shim for Shared.Data.DatabaseImplementation+<>c__DisplayClass10_0: type is not supported because of internal limitations.

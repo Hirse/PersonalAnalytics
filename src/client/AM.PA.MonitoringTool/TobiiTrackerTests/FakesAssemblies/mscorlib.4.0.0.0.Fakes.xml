@@ -1,0 +1,149 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>mscorlib.4.0.0.0.Fakes</name>
+    </assembly>
+    <members>
+        <member name="T:System.Fakes.ShimDateTime">
+            <summary>Shim type of System.DateTime</summary>
+        </member>
+        <member name="M:System.Fakes.ShimDateTime.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="P:System.Fakes.ShimDateTime.AdditionOpDateTimeTimeSpan">
+            <summary>Sets the shim of DateTime.op_Addition(DateTime d, TimeSpan t)</summary>
+        </member>
+        <member name="T:System.Fakes.ShimDateTime.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="M:System.Fakes.ShimDateTime.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:System.Fakes.ShimDateTime.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:System.Fakes.ShimDateTime.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:System.Fakes.ShimDateTime.CompareDateTimeDateTime">
+            <summary>Sets the shim of DateTime.Compare(DateTime t1, DateTime t2)</summary>
+        </member>
+        <member name="P:System.Fakes.ShimDateTime.DateToTicksInt32Int32Int32">
+            <summary>Sets the shim of DateTime.DateToTicks(Int32 year, Int32 month, Int32 day)</summary>
+        </member>
+        <member name="P:System.Fakes.ShimDateTime.DaysInMonthInt32Int32">
+            <summary>Sets the shim of DateTime.DaysInMonth(Int32 year, Int32 month)</summary>
+        </member>
+        <member name="P:System.Fakes.ShimDateTime.DoubleDateToTicksDouble">
+            <summary>Sets the shim of DateTime.DoubleDateToTicks(Double value)</summary>
+        </member>
+        <member name="P:System.Fakes.ShimDateTime.EqualityOpDateTimeDateTime">
+            <summary>Sets the shim of DateTime.op_Equality(DateTime d1, DateTime d2)</summary>
+        </member>
+        <member name="P:System.Fakes.ShimDateTime.EqualsDateTimeDateTime">
+            <summary>Sets the shim of DateTime.Equals(DateTime t1, DateTime t2)</summary>
+        </member>
+        <member name="P:System.Fakes.ShimDateTime.FromBinaryInt64">
+            <summary>Sets the shim of DateTime.FromBinary(Int64 dateData)</summary>
+        </member>
+        <member name="P:System.Fakes.ShimDateTime.FromBinaryRawInt64">
+            <summary>Sets the shim of DateTime.FromBinaryRaw(Int64 dateData)</summary>
+        </member>
+        <member name="P:System.Fakes.ShimDateTime.FromFileTimeInt64">
+            <summary>Sets the shim of DateTime.FromFileTime(Int64 fileTime)</summary>
+        </member>
+        <member name="P:System.Fakes.ShimDateTime.FromFileTimeUtcInt64">
+            <summary>Sets the shim of DateTime.FromFileTimeUtc(Int64 fileTime)</summary>
+        </member>
+        <member name="P:System.Fakes.ShimDateTime.FromOADateDouble">
+            <summary>Sets the shim of DateTime.FromOADate(Double d)</summary>
+        </member>
+        <member name="P:System.Fakes.ShimDateTime.GreaterThanOpDateTimeDateTime">
+            <summary>Sets the shim of DateTime.op_GreaterThan(DateTime t1, DateTime t2)</summary>
+        </member>
+        <member name="P:System.Fakes.ShimDateTime.GreaterThanOrEqualOpDateTimeDateTime">
+            <summary>Sets the shim of DateTime.op_GreaterThanOrEqual(DateTime t1, DateTime t2)</summary>
+        </member>
+        <member name="P:System.Fakes.ShimDateTime.InequalityOpDateTimeDateTime">
+            <summary>Sets the shim of DateTime.op_Inequality(DateTime d1, DateTime d2)</summary>
+        </member>
+        <member name="P:System.Fakes.ShimDateTime.InternalFromFileTimeInt64">
+            <summary>Sets the shim of DateTime.InternalFromFileTime(Int64 fileTime)</summary>
+        </member>
+        <member name="P:System.Fakes.ShimDateTime.InternalToFileTimeInt64">
+            <summary>Sets the shim of DateTime.InternalToFileTime(Int64 ticks)</summary>
+        </member>
+        <member name="P:System.Fakes.ShimDateTime.IsLeapYearInt32">
+            <summary>Sets the shim of DateTime.IsLeapYear(Int32 year)</summary>
+        </member>
+        <member name="P:System.Fakes.ShimDateTime.IsValidTimeWithLeapSecondsInt32Int32Int32Int32Int32Int32DateTimeKind">
+            <summary>Sets the shim of DateTime.IsValidTimeWithLeapSeconds(Int32 year, Int32 month, Int32 day, Int32 hour, Int32 minute, Int32 second, DateTimeKind kind)</summary>
+        </member>
+        <member name="P:System.Fakes.ShimDateTime.LessThanOpDateTimeDateTime">
+            <summary>Sets the shim of DateTime.op_LessThan(DateTime t1, DateTime t2)</summary>
+        </member>
+        <member name="P:System.Fakes.ShimDateTime.LessThanOrEqualOpDateTimeDateTime">
+            <summary>Sets the shim of DateTime.op_LessThanOrEqual(DateTime t1, DateTime t2)</summary>
+        </member>
+        <member name="P:System.Fakes.ShimDateTime.NowGet">
+            <summary>Sets the shim of DateTime.get_Now()</summary>
+        </member>
+        <member name="P:System.Fakes.ShimDateTime.ParseExactStringStringArrayIFormatProviderDateTimeStyles">
+            <summary>Sets the shim of DateTime.ParseExact(String s, String[] formats, IFormatProvider provider, DateTimeStyles style)</summary>
+        </member>
+        <member name="P:System.Fakes.ShimDateTime.ParseExactStringStringIFormatProvider">
+            <summary>Sets the shim of DateTime.ParseExact(String s, String format, IFormatProvider provider)</summary>
+        </member>
+        <member name="P:System.Fakes.ShimDateTime.ParseExactStringStringIFormatProviderDateTimeStyles">
+            <summary>Sets the shim of DateTime.ParseExact(String s, String format, IFormatProvider provider, DateTimeStyles style)</summary>
+        </member>
+        <member name="P:System.Fakes.ShimDateTime.ParseString">
+            <summary>Sets the shim of DateTime.Parse(String s)</summary>
+        </member>
+        <member name="P:System.Fakes.ShimDateTime.ParseStringIFormatProvider">
+            <summary>Sets the shim of DateTime.Parse(String s, IFormatProvider provider)</summary>
+        </member>
+        <member name="P:System.Fakes.ShimDateTime.ParseStringIFormatProviderDateTimeStyles">
+            <summary>Sets the shim of DateTime.Parse(String s, IFormatProvider provider, DateTimeStyles styles)</summary>
+        </member>
+        <member name="P:System.Fakes.ShimDateTime.SpecifyKindDateTimeDateTimeKind">
+            <summary>Sets the shim of DateTime.SpecifyKind(DateTime value, DateTimeKind kind)</summary>
+        </member>
+        <member name="P:System.Fakes.ShimDateTime.StaticConstructor">
+            <summary>Sets the shim of DateTime.DateTime()</summary>
+        </member>
+        <member name="P:System.Fakes.ShimDateTime.SubtractionOpDateTimeDateTime">
+            <summary>Sets the shim of DateTime.op_Subtraction(DateTime d1, DateTime d2)</summary>
+        </member>
+        <member name="P:System.Fakes.ShimDateTime.SubtractionOpDateTimeTimeSpan">
+            <summary>Sets the shim of DateTime.op_Subtraction(DateTime d, TimeSpan t)</summary>
+        </member>
+        <member name="P:System.Fakes.ShimDateTime.TicksToOADateInt64">
+            <summary>Sets the shim of DateTime.TicksToOADate(Int64 value)</summary>
+        </member>
+        <member name="P:System.Fakes.ShimDateTime.TimeToTicksInt32Int32Int32">
+            <summary>Sets the shim of DateTime.TimeToTicks(Int32 hour, Int32 minute, Int32 second)</summary>
+        </member>
+        <member name="P:System.Fakes.ShimDateTime.TodayGet">
+            <summary>Sets the shim of DateTime.get_Today()</summary>
+        </member>
+        <member name="P:System.Fakes.ShimDateTime.TryCreateInt32Int32Int32Int32Int32Int32Int32DateTimeOut">
+            <summary>Sets the shim of DateTime.TryCreate(Int32 year, Int32 month, Int32 day, Int32 hour, Int32 minute, Int32 second, Int32 millisecond, DateTime&amp; result)</summary>
+        </member>
+        <member name="P:System.Fakes.ShimDateTime.TryParseExactStringStringArrayIFormatProviderDateTimeStylesDateTimeOut">
+            <summary>Sets the shim of DateTime.TryParseExact(String s, String[] formats, IFormatProvider provider, DateTimeStyles style, DateTime&amp; result)</summary>
+        </member>
+        <member name="P:System.Fakes.ShimDateTime.TryParseExactStringStringIFormatProviderDateTimeStylesDateTimeOut">
+            <summary>Sets the shim of DateTime.TryParseExact(String s, String format, IFormatProvider provider, DateTimeStyles style, DateTime&amp; result)</summary>
+        </member>
+        <member name="P:System.Fakes.ShimDateTime.TryParseStringDateTimeOut">
+            <summary>Sets the shim of DateTime.TryParse(String s, DateTime&amp; result)</summary>
+        </member>
+        <member name="P:System.Fakes.ShimDateTime.TryParseStringIFormatProviderDateTimeStylesDateTimeOut">
+            <summary>Sets the shim of DateTime.TryParse(String s, IFormatProvider provider, DateTimeStyles styles, DateTime&amp; result)</summary>
+        </member>
+        <member name="P:System.Fakes.ShimDateTime.UtcNowGet">
+            <summary>Sets the shim of DateTime.get_UtcNow()</summary>
+        </member>
+    </members>
+</doc>

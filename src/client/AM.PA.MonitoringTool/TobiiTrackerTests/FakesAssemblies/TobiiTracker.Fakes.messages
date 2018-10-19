@@ -1,0 +1,13 @@
+C:\Users\Jan\git\PersonalAnalytics\src\client\AM.PA.MonitoringTool\TobiiTrackerTests\Fakes\TobiiTracker.fakes : warning : Cannot generate stub for TobiiTracker.FixationContextCollector: type has no family visible contructors.
+C:\Users\Jan\git\PersonalAnalytics\src\client\AM.PA.MonitoringTool\TobiiTrackerTests\Fakes\TobiiTracker.fakes : warning : Cannot generate stub for TobiiTracker.FixationContextProvider: type has no family visible contructors.
+C:\Users\Jan\git\PersonalAnalytics\src\client\AM.PA.MonitoringTool\TobiiTrackerTests\Fakes\TobiiTracker.fakes : warning : Cannot generate stub for TobiiTracker.FixationSummaryCollector: type has no family visible contructors.
+C:\Users\Jan\git\PersonalAnalytics\src\client\AM.PA.MonitoringTool\TobiiTrackerTests\Fakes\TobiiTracker.fakes : warning : Cannot generate stub for TobiiTracker.FixationSummaryProvider: type has no family visible contructors.
+C:\Users\Jan\git\PersonalAnalytics\src\client\AM.PA.MonitoringTool\TobiiTrackerTests\Fakes\TobiiTracker.fakes : warning : Cannot generate stub for TobiiTracker.Settings: type is sealed.
+C:\Users\Jan\git\PersonalAnalytics\src\client\AM.PA.MonitoringTool\TobiiTrackerTests\Fakes\TobiiTracker.fakes : warning : Cannot generate stub for TobiiTracker.Helpers.Circle: type is a value type.
+C:\Users\Jan\git\PersonalAnalytics\src\client\AM.PA.MonitoringTool\TobiiTrackerTests\Fakes\TobiiTracker.fakes : warning : Cannot generate stub for TobiiTracker.Helpers.NativeMethods: type is sealed.
+C:\Users\Jan\git\PersonalAnalytics\src\client\AM.PA.MonitoringTool\TobiiTrackerTests\Fakes\TobiiTracker.fakes : warning : Cannot generate stub for TobiiTracker.Helpers.Point: type is a value type.
+C:\Users\Jan\git\PersonalAnalytics\src\client\AM.PA.MonitoringTool\TobiiTrackerTests\Fakes\TobiiTracker.fakes : warning : Cannot generate stub for TobiiTracker.Helpers.SmallestEnclosingCircle: type is sealed.
+C:\Users\Jan\git\PersonalAnalytics\src\client\AM.PA.MonitoringTool\TobiiTrackerTests\Fakes\TobiiTracker.fakes : warning : Cannot generate stub for TobiiTracker.Data.Queries: type is sealed.
+C:\Users\Jan\git\PersonalAnalytics\src\client\AM.PA.MonitoringTool\TobiiTrackerTests\Fakes\TobiiTracker.fakes : warning : Cannot generate stub for TobiiTracker.Data.FixationContextEntry: type is a value type.
+C:\Users\Jan\git\PersonalAnalytics\src\client\AM.PA.MonitoringTool\TobiiTrackerTests\Fakes\TobiiTracker.fakes : warning : Cannot generate stub for TobiiTracker.Data.FixationSummaryEntry: type is a value type.
+C:\Users\Jan\git\PersonalAnalytics\src\client\AM.PA.MonitoringTool\TobiiTrackerTests\Fakes\TobiiTracker.fakes : warning : Cannot generate shim for TobiiTracker.Data.Queries+<>c: type is not supported because of internal limitations.
