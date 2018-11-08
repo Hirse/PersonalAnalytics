@@ -1,7 +1,9 @@
 ﻿using Shared;
+using System.Collections.Generic;
 using System.Reflection;
 using Tobii.Interaction;
 using TobiiTracker.Data;
+using TobiiTracker.Helpers;
 
 namespace TobiiTracker
 {
@@ -9,12 +11,12 @@ namespace TobiiTracker
     {
         private bool _disposed;
         private Host _host;
-        private FixationContextCollector _fixationContextCollector;
-        private FixationSummaryCollector _fixationSummaryCollector;
+        private readonly List<IStoppable> _stoppables;
 
         public Daemon()
         {
             Name = "Tobii Tracker";
+            _stoppables = new List<IStoppable>();
         }
 
         protected override void Dispose(bool disposing)
@@ -33,21 +35,46 @@ namespace TobiiTracker
         public override void Start()
         {
             _host = new Host();
+            _stoppables.Clear();
+
+#pragma warning disable 162
+            // ReSharper disable HeuristicUnreachableCode
             // ReSharper disable once ConditionIsAlwaysTrueOrFalse
             if (Settings.FixationContextEnabled)
             {
                 var fixationContextProvider = new FixationContextProvider(_host);
-                _fixationContextCollector = new FixationContextCollector();
-                fixationContextProvider.FixationStarted += _fixationContextCollector.Collect;
-                fixationContextProvider.Start();
+                var fixationContextCollector = new FixationContextCollector();
+                fixationContextProvider.FixationStarted += fixationContextCollector.Collect;
+                _stoppables.Add(fixationContextProvider);
+                _stoppables.Add(fixationContextCollector);
             }
             // ReSharper disable once ConditionIsAlwaysTrueOrFalse
             if (Settings.FixationSummaryEnabled)
             {
                 var fixationSummaryProvider = new FixationSummaryProvider(_host);
-                _fixationSummaryCollector = new FixationSummaryCollector();
-                fixationSummaryProvider.FixationEnded += _fixationSummaryCollector.Collect;
-                fixationSummaryProvider.Start();
+                var fixationSummaryCollector = new FixationSummaryCollector();
+                fixationSummaryProvider.FixationEnded += fixationSummaryCollector.Collect;
+                _stoppables.Add(fixationSummaryProvider);
+                _stoppables.Add(fixationSummaryCollector);
+            }
+            // ReSharper disable once ConditionIsAlwaysTrueOrFalse
+            if (Settings.FixationWindowHighlightEnabled)
+            {
+                var fixationWindowProvider = new FixationWindowProvider(_host);
+                var fixationWindowCollector = new FixationWindowCollector();
+                var fixationWindowConsumer = new FixationWindowConsumer(new HighlighterOverlay());
+                fixationWindowProvider.FixationStarted += fixationWindowCollector.Collect;
+                fixationWindowProvider.FixationStarted += fixationWindowConsumer.Collect;
+                _stoppables.Add(fixationWindowProvider);
+                _stoppables.Add(fixationWindowCollector);
+                _stoppables.Add(fixationWindowConsumer);
+            }
+            // ReSharper restore HeuristicUnreachableCode
+#pragma warning restore 162
+
+            foreach (var stoppable in _stoppables)
+            {
+                stoppable.Start();
             }
 
             IsRunning = true;
@@ -56,8 +83,10 @@ namespace TobiiTracker
         public override void Stop()
         {
             _host.DisableConnection();
-            _fixationContextCollector.Stop();
-            _fixationSummaryCollector.Stop();
+            foreach (var stoppable in _stoppables)
+            {
+                stoppable.Stop();
+            }
             IsRunning = false;
         }
 

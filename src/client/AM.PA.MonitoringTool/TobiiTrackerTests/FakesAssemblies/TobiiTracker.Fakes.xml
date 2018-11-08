@@ -40,6 +40,24 @@
         <member name="P:TobiiTracker.Data.Fakes.ShimFixationSummaryEntry.Behavior">
             <summary>Assigns the behavior for all methods of the shimmed type</summary>
         </member>
+        <member name="T:TobiiTracker.Data.Fakes.ShimFixationWindowEntry">
+            <summary>Shim type of TobiiTracker.Data.FixationWindowEntry</summary>
+        </member>
+        <member name="M:TobiiTracker.Data.Fakes.ShimFixationWindowEntry.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="T:TobiiTracker.Data.Fakes.ShimFixationWindowEntry.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="M:TobiiTracker.Data.Fakes.ShimFixationWindowEntry.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:TobiiTracker.Data.Fakes.ShimFixationWindowEntry.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:TobiiTracker.Data.Fakes.ShimFixationWindowEntry.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
         <member name="T:TobiiTracker.Data.Fakes.ShimQueries">
             <summary>Shim type of TobiiTracker.Data.Queries</summary>
         </member>
@@ -59,10 +77,13 @@
             <summary>Sets the shim of Queries.CreateTables()</summary>
         </member>
         <member name="P:TobiiTracker.Data.Fakes.ShimQueries.SaveFixationContextEntriesIEnumerableOfFixationContextEntry">
-            <summary>Sets the shim of Queries.SaveFixationContextEntries(IEnumerable`1&lt;FixationContextEntry&gt; fixationStartEntries)</summary>
+            <summary>Sets the shim of Queries.SaveFixationContextEntries(IEnumerable`1&lt;FixationContextEntry&gt; fixationContextEntries)</summary>
         </member>
         <member name="P:TobiiTracker.Data.Fakes.ShimQueries.SaveFixationSummaryEntriesIEnumerableOfFixationSummaryEntry">
-            <summary>Sets the shim of Queries.SaveFixationSummaryEntries(IEnumerable`1&lt;FixationSummaryEntry&gt; fixationEntries)</summary>
+            <summary>Sets the shim of Queries.SaveFixationSummaryEntries(IEnumerable`1&lt;FixationSummaryEntry&gt; fixationSummaryEntries)</summary>
+        </member>
+        <member name="P:TobiiTracker.Data.Fakes.ShimQueries.SaveFixationWindowEntriesIEnumerableOfFixationWindowEntry">
+            <summary>Sets the shim of Queries.SaveFixationWindowEntries(IEnumerable`1&lt;FixationWindowEntry&gt; fixationWindowEntries)</summary>
         </member>
         <member name="T:TobiiTracker.Fakes.ShimDaemon">
             <summary>Shim type of TobiiTracker.Daemon</summary>
@@ -154,8 +175,17 @@
         <member name="P:TobiiTracker.Fakes.ShimFixationContextCollector.AllInstances.SaveConditionallyInt32">
             <summary>Sets the shim of FixationContextCollector.SaveConditionally(Int32 threshold)</summary>
         </member>
+        <member name="P:TobiiTracker.Fakes.ShimFixationContextCollector.AllInstances.Start">
+            <summary>Sets the shim of FixationContextCollector.Start()</summary>
+        </member>
         <member name="P:TobiiTracker.Fakes.ShimFixationContextCollector.AllInstances.Stop">
             <summary>Sets the shim of FixationContextCollector.Stop()</summary>
+        </member>
+        <member name="P:TobiiTracker.Fakes.ShimFixationContextCollector.AllInstances.StoppedGet">
+            <summary>Sets the shim of FixationContextCollector.get_Stopped()</summary>
+        </member>
+        <member name="P:TobiiTracker.Fakes.ShimFixationContextCollector.AllInstances.StoppedSetBoolean">
+            <summary>Sets the shim of FixationContextCollector.set_Stopped(Boolean value)</summary>
         </member>
         <member name="M:TobiiTracker.Fakes.ShimFixationContextCollector.BehaveAsCurrent">
             <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
@@ -166,6 +196,9 @@
         <member name="P:TobiiTracker.Fakes.ShimFixationContextCollector.Behavior">
             <summary>Assigns the behavior for all methods of the shimmed type</summary>
         </member>
+        <member name="M:TobiiTracker.Fakes.ShimFixationContextCollector.Bind(TobiiTracker.Helpers.IStoppable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
         <member name="P:TobiiTracker.Fakes.ShimFixationContextCollector.CollectObjectFixationContextEntry">
             <summary>Sets the shim of FixationContextCollector.Collect(Object sender, FixationContextEntry fixationContextEntry)</summary>
         </member>
@@ -175,8 +208,17 @@
         <member name="P:TobiiTracker.Fakes.ShimFixationContextCollector.SaveConditionallyInt32">
             <summary>Sets the shim of FixationContextCollector.SaveConditionally(Int32 threshold)</summary>
         </member>
+        <member name="P:TobiiTracker.Fakes.ShimFixationContextCollector.Start">
+            <summary>Sets the shim of FixationContextCollector.Start()</summary>
+        </member>
         <member name="P:TobiiTracker.Fakes.ShimFixationContextCollector.Stop">
             <summary>Sets the shim of FixationContextCollector.Stop()</summary>
+        </member>
+        <member name="P:TobiiTracker.Fakes.ShimFixationContextCollector.StoppedGet">
+            <summary>Sets the shim of FixationContextCollector.get_Stopped()</summary>
+        </member>
+        <member name="P:TobiiTracker.Fakes.ShimFixationContextCollector.StoppedSetBoolean">
+            <summary>Sets the shim of FixationContextCollector.set_Stopped(Boolean value)</summary>
         </member>
         <member name="T:TobiiTracker.Fakes.ShimFixationContextProvider">
             <summary>Shim type of TobiiTracker.FixationContextProvider</summary>
@@ -202,6 +244,15 @@
         <member name="P:TobiiTracker.Fakes.ShimFixationContextProvider.AllInstances.Start">
             <summary>Sets the shim of FixationContextProvider.Start()</summary>
         </member>
+        <member name="P:TobiiTracker.Fakes.ShimFixationContextProvider.AllInstances.Stop">
+            <summary>Sets the shim of FixationContextProvider.Stop()</summary>
+        </member>
+        <member name="P:TobiiTracker.Fakes.ShimFixationContextProvider.AllInstances.StoppedGet">
+            <summary>Sets the shim of FixationContextProvider.get_Stopped()</summary>
+        </member>
+        <member name="P:TobiiTracker.Fakes.ShimFixationContextProvider.AllInstances.StoppedSetBoolean">
+            <summary>Sets the shim of FixationContextProvider.set_Stopped(Boolean value)</summary>
+        </member>
         <member name="M:TobiiTracker.Fakes.ShimFixationContextProvider.BehaveAsCurrent">
             <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
         </member>
@@ -210,6 +261,9 @@
         </member>
         <member name="P:TobiiTracker.Fakes.ShimFixationContextProvider.Behavior">
             <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:TobiiTracker.Fakes.ShimFixationContextProvider.Bind(TobiiTracker.Helpers.IStoppable)">
+            <summary>Binds the members of the interface to the shim.</summary>
         </member>
         <member name="P:TobiiTracker.Fakes.ShimFixationContextProvider.ConstructorHost">
             <summary>Sets the shim of FixationContextProvider.FixationContextProvider(Host host)</summary>
@@ -225,6 +279,15 @@
         </member>
         <member name="P:TobiiTracker.Fakes.ShimFixationContextProvider.Start">
             <summary>Sets the shim of FixationContextProvider.Start()</summary>
+        </member>
+        <member name="P:TobiiTracker.Fakes.ShimFixationContextProvider.Stop">
+            <summary>Sets the shim of FixationContextProvider.Stop()</summary>
+        </member>
+        <member name="P:TobiiTracker.Fakes.ShimFixationContextProvider.StoppedGet">
+            <summary>Sets the shim of FixationContextProvider.get_Stopped()</summary>
+        </member>
+        <member name="P:TobiiTracker.Fakes.ShimFixationContextProvider.StoppedSetBoolean">
+            <summary>Sets the shim of FixationContextProvider.set_Stopped(Boolean value)</summary>
         </member>
         <member name="T:TobiiTracker.Fakes.ShimFixationSummaryCollector">
             <summary>Shim type of TobiiTracker.FixationSummaryCollector</summary>
@@ -244,8 +307,17 @@
         <member name="P:TobiiTracker.Fakes.ShimFixationSummaryCollector.AllInstances.SaveConditionallyInt32">
             <summary>Sets the shim of FixationSummaryCollector.SaveConditionally(Int32 threshold)</summary>
         </member>
+        <member name="P:TobiiTracker.Fakes.ShimFixationSummaryCollector.AllInstances.Start">
+            <summary>Sets the shim of FixationSummaryCollector.Start()</summary>
+        </member>
         <member name="P:TobiiTracker.Fakes.ShimFixationSummaryCollector.AllInstances.Stop">
             <summary>Sets the shim of FixationSummaryCollector.Stop()</summary>
+        </member>
+        <member name="P:TobiiTracker.Fakes.ShimFixationSummaryCollector.AllInstances.StoppedGet">
+            <summary>Sets the shim of FixationSummaryCollector.get_Stopped()</summary>
+        </member>
+        <member name="P:TobiiTracker.Fakes.ShimFixationSummaryCollector.AllInstances.StoppedSetBoolean">
+            <summary>Sets the shim of FixationSummaryCollector.set_Stopped(Boolean value)</summary>
         </member>
         <member name="M:TobiiTracker.Fakes.ShimFixationSummaryCollector.BehaveAsCurrent">
             <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
@@ -256,6 +328,9 @@
         <member name="P:TobiiTracker.Fakes.ShimFixationSummaryCollector.Behavior">
             <summary>Assigns the behavior for all methods of the shimmed type</summary>
         </member>
+        <member name="M:TobiiTracker.Fakes.ShimFixationSummaryCollector.Bind(TobiiTracker.Helpers.IStoppable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
         <member name="P:TobiiTracker.Fakes.ShimFixationSummaryCollector.CollectObjectFixationSummaryEntry">
             <summary>Sets the shim of FixationSummaryCollector.Collect(Object sender, FixationSummaryEntry fixationSummaryEntry)</summary>
         </member>
@@ -265,8 +340,17 @@
         <member name="P:TobiiTracker.Fakes.ShimFixationSummaryCollector.SaveConditionallyInt32">
             <summary>Sets the shim of FixationSummaryCollector.SaveConditionally(Int32 threshold)</summary>
         </member>
+        <member name="P:TobiiTracker.Fakes.ShimFixationSummaryCollector.Start">
+            <summary>Sets the shim of FixationSummaryCollector.Start()</summary>
+        </member>
         <member name="P:TobiiTracker.Fakes.ShimFixationSummaryCollector.Stop">
             <summary>Sets the shim of FixationSummaryCollector.Stop()</summary>
+        </member>
+        <member name="P:TobiiTracker.Fakes.ShimFixationSummaryCollector.StoppedGet">
+            <summary>Sets the shim of FixationSummaryCollector.get_Stopped()</summary>
+        </member>
+        <member name="P:TobiiTracker.Fakes.ShimFixationSummaryCollector.StoppedSetBoolean">
+            <summary>Sets the shim of FixationSummaryCollector.set_Stopped(Boolean value)</summary>
         </member>
         <member name="T:TobiiTracker.Fakes.ShimFixationSummaryProvider">
             <summary>Shim type of TobiiTracker.FixationSummaryProvider</summary>
@@ -298,6 +382,15 @@
         <member name="P:TobiiTracker.Fakes.ShimFixationSummaryProvider.AllInstances.Start">
             <summary>Sets the shim of FixationSummaryProvider.Start()</summary>
         </member>
+        <member name="P:TobiiTracker.Fakes.ShimFixationSummaryProvider.AllInstances.Stop">
+            <summary>Sets the shim of FixationSummaryProvider.Stop()</summary>
+        </member>
+        <member name="P:TobiiTracker.Fakes.ShimFixationSummaryProvider.AllInstances.StoppedGet">
+            <summary>Sets the shim of FixationSummaryProvider.get_Stopped()</summary>
+        </member>
+        <member name="P:TobiiTracker.Fakes.ShimFixationSummaryProvider.AllInstances.StoppedSetBoolean">
+            <summary>Sets the shim of FixationSummaryProvider.set_Stopped(Boolean value)</summary>
+        </member>
         <member name="M:TobiiTracker.Fakes.ShimFixationSummaryProvider.BehaveAsCurrent">
             <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
         </member>
@@ -306,6 +399,9 @@
         </member>
         <member name="P:TobiiTracker.Fakes.ShimFixationSummaryProvider.Behavior">
             <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:TobiiTracker.Fakes.ShimFixationSummaryProvider.Bind(TobiiTracker.Helpers.IStoppable)">
+            <summary>Binds the members of the interface to the shim.</summary>
         </member>
         <member name="P:TobiiTracker.Fakes.ShimFixationSummaryProvider.ConstructorHost">
             <summary>Sets the shim of FixationSummaryProvider.FixationSummaryProvider(Host host)</summary>
@@ -327,6 +423,294 @@
         </member>
         <member name="P:TobiiTracker.Fakes.ShimFixationSummaryProvider.Start">
             <summary>Sets the shim of FixationSummaryProvider.Start()</summary>
+        </member>
+        <member name="P:TobiiTracker.Fakes.ShimFixationSummaryProvider.Stop">
+            <summary>Sets the shim of FixationSummaryProvider.Stop()</summary>
+        </member>
+        <member name="P:TobiiTracker.Fakes.ShimFixationSummaryProvider.StoppedGet">
+            <summary>Sets the shim of FixationSummaryProvider.get_Stopped()</summary>
+        </member>
+        <member name="P:TobiiTracker.Fakes.ShimFixationSummaryProvider.StoppedSetBoolean">
+            <summary>Sets the shim of FixationSummaryProvider.set_Stopped(Boolean value)</summary>
+        </member>
+        <member name="T:TobiiTracker.Fakes.ShimFixationWindowCollector">
+            <summary>Shim type of TobiiTracker.FixationWindowCollector</summary>
+        </member>
+        <member name="M:TobiiTracker.Fakes.ShimFixationWindowCollector.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:TobiiTracker.Fakes.ShimFixationWindowCollector.#ctor(TobiiTracker.FixationWindowCollector)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:TobiiTracker.Fakes.ShimFixationWindowCollector.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:TobiiTracker.Fakes.ShimFixationWindowCollector.AllInstances.CollectObjectFixationWindowEntry">
+            <summary>Sets the shim of FixationWindowCollector.Collect(Object sender, FixationWindowEntry fixationWindowEntry)</summary>
+        </member>
+        <member name="P:TobiiTracker.Fakes.ShimFixationWindowCollector.AllInstances.SaveConditionallyInt32">
+            <summary>Sets the shim of FixationWindowCollector.SaveConditionally(Int32 threshold)</summary>
+        </member>
+        <member name="P:TobiiTracker.Fakes.ShimFixationWindowCollector.AllInstances.Start">
+            <summary>Sets the shim of FixationWindowCollector.Start()</summary>
+        </member>
+        <member name="P:TobiiTracker.Fakes.ShimFixationWindowCollector.AllInstances.Stop">
+            <summary>Sets the shim of FixationWindowCollector.Stop()</summary>
+        </member>
+        <member name="P:TobiiTracker.Fakes.ShimFixationWindowCollector.AllInstances.StoppedGet">
+            <summary>Sets the shim of FixationWindowCollector.get_Stopped()</summary>
+        </member>
+        <member name="P:TobiiTracker.Fakes.ShimFixationWindowCollector.AllInstances.StoppedSetBoolean">
+            <summary>Sets the shim of FixationWindowCollector.set_Stopped(Boolean value)</summary>
+        </member>
+        <member name="M:TobiiTracker.Fakes.ShimFixationWindowCollector.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:TobiiTracker.Fakes.ShimFixationWindowCollector.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:TobiiTracker.Fakes.ShimFixationWindowCollector.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:TobiiTracker.Fakes.ShimFixationWindowCollector.Bind(TobiiTracker.Helpers.IStoppable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:TobiiTracker.Fakes.ShimFixationWindowCollector.CollectObjectFixationWindowEntry">
+            <summary>Sets the shim of FixationWindowCollector.Collect(Object sender, FixationWindowEntry fixationWindowEntry)</summary>
+        </member>
+        <member name="P:TobiiTracker.Fakes.ShimFixationWindowCollector.Constructor">
+            <summary>Sets the shim of FixationWindowCollector.FixationWindowCollector()</summary>
+        </member>
+        <member name="P:TobiiTracker.Fakes.ShimFixationWindowCollector.SaveConditionallyInt32">
+            <summary>Sets the shim of FixationWindowCollector.SaveConditionally(Int32 threshold)</summary>
+        </member>
+        <member name="P:TobiiTracker.Fakes.ShimFixationWindowCollector.Start">
+            <summary>Sets the shim of FixationWindowCollector.Start()</summary>
+        </member>
+        <member name="P:TobiiTracker.Fakes.ShimFixationWindowCollector.Stop">
+            <summary>Sets the shim of FixationWindowCollector.Stop()</summary>
+        </member>
+        <member name="P:TobiiTracker.Fakes.ShimFixationWindowCollector.StoppedGet">
+            <summary>Sets the shim of FixationWindowCollector.get_Stopped()</summary>
+        </member>
+        <member name="P:TobiiTracker.Fakes.ShimFixationWindowCollector.StoppedSetBoolean">
+            <summary>Sets the shim of FixationWindowCollector.set_Stopped(Boolean value)</summary>
+        </member>
+        <member name="T:TobiiTracker.Fakes.ShimFixationWindowConsumer">
+            <summary>Shim type of TobiiTracker.FixationWindowConsumer</summary>
+        </member>
+        <member name="M:TobiiTracker.Fakes.ShimFixationWindowConsumer.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:TobiiTracker.Fakes.ShimFixationWindowConsumer.#ctor(TobiiTracker.FixationWindowConsumer)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:TobiiTracker.Fakes.ShimFixationWindowConsumer.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:TobiiTracker.Fakes.ShimFixationWindowConsumer.AllInstances.CollectObjectFixationWindowEntry">
+            <summary>Sets the shim of FixationWindowConsumer.Collect(Object sender, FixationWindowEntry fixationWindowEntry)</summary>
+        </member>
+        <member name="P:TobiiTracker.Fakes.ShimFixationWindowConsumer.AllInstances.Start">
+            <summary>Sets the shim of FixationWindowConsumer.Start()</summary>
+        </member>
+        <member name="P:TobiiTracker.Fakes.ShimFixationWindowConsumer.AllInstances.Stop">
+            <summary>Sets the shim of FixationWindowConsumer.Stop()</summary>
+        </member>
+        <member name="P:TobiiTracker.Fakes.ShimFixationWindowConsumer.AllInstances.StoppedGet">
+            <summary>Sets the shim of FixationWindowConsumer.get_Stopped()</summary>
+        </member>
+        <member name="P:TobiiTracker.Fakes.ShimFixationWindowConsumer.AllInstances.StoppedSetBoolean">
+            <summary>Sets the shim of FixationWindowConsumer.set_Stopped(Boolean value)</summary>
+        </member>
+        <member name="P:TobiiTracker.Fakes.ShimFixationWindowConsumer.AllInstances.VisualizePoint">
+            <summary>Sets the shim of FixationWindowConsumer.Visualize(Point point)</summary>
+        </member>
+        <member name="M:TobiiTracker.Fakes.ShimFixationWindowConsumer.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:TobiiTracker.Fakes.ShimFixationWindowConsumer.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:TobiiTracker.Fakes.ShimFixationWindowConsumer.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:TobiiTracker.Fakes.ShimFixationWindowConsumer.Bind(TobiiTracker.Helpers.IStoppable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:TobiiTracker.Fakes.ShimFixationWindowConsumer.CollectObjectFixationWindowEntry">
+            <summary>Sets the shim of FixationWindowConsumer.Collect(Object sender, FixationWindowEntry fixationWindowEntry)</summary>
+        </member>
+        <member name="P:TobiiTracker.Fakes.ShimFixationWindowConsumer.ConstructorHighlighterOverlay">
+            <summary>Sets the shim of FixationWindowConsumer.FixationWindowConsumer(HighlighterOverlay overlay)</summary>
+        </member>
+        <member name="P:TobiiTracker.Fakes.ShimFixationWindowConsumer.Start">
+            <summary>Sets the shim of FixationWindowConsumer.Start()</summary>
+        </member>
+        <member name="P:TobiiTracker.Fakes.ShimFixationWindowConsumer.Stop">
+            <summary>Sets the shim of FixationWindowConsumer.Stop()</summary>
+        </member>
+        <member name="P:TobiiTracker.Fakes.ShimFixationWindowConsumer.StoppedGet">
+            <summary>Sets the shim of FixationWindowConsumer.get_Stopped()</summary>
+        </member>
+        <member name="P:TobiiTracker.Fakes.ShimFixationWindowConsumer.StoppedSetBoolean">
+            <summary>Sets the shim of FixationWindowConsumer.set_Stopped(Boolean value)</summary>
+        </member>
+        <member name="P:TobiiTracker.Fakes.ShimFixationWindowConsumer.VisualizePoint">
+            <summary>Sets the shim of FixationWindowConsumer.Visualize(Point point)</summary>
+        </member>
+        <member name="T:TobiiTracker.Fakes.ShimFixationWindowProvider">
+            <summary>Shim type of TobiiTracker.FixationWindowProvider</summary>
+        </member>
+        <member name="M:TobiiTracker.Fakes.ShimFixationWindowProvider.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:TobiiTracker.Fakes.ShimFixationWindowProvider.#ctor(TobiiTracker.FixationWindowProvider)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:TobiiTracker.Fakes.ShimFixationWindowProvider.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:TobiiTracker.Fakes.ShimFixationWindowProvider.AllInstances.FixationStartedAddEventHandlerOfFixationWindowEntry">
+            <summary>Sets the shim of FixationWindowProvider.add_FixationStarted(EventHandler`1&lt;FixationWindowEntry&gt; value)</summary>
+        </member>
+        <member name="P:TobiiTracker.Fakes.ShimFixationWindowProvider.AllInstances.FixationStartedRemoveEventHandlerOfFixationWindowEntry">
+            <summary>Sets the shim of FixationWindowProvider.remove_FixationStarted(EventHandler`1&lt;FixationWindowEntry&gt; value)</summary>
+        </member>
+        <member name="P:TobiiTracker.Fakes.ShimFixationWindowProvider.AllInstances.LocateFixationDoubleDoubleDouble">
+            <summary>Sets the shim of FixationWindowProvider.LocateFixation(Double x, Double y, Double timestamp)</summary>
+        </member>
+        <member name="P:TobiiTracker.Fakes.ShimFixationWindowProvider.AllInstances.Start">
+            <summary>Sets the shim of FixationWindowProvider.Start()</summary>
+        </member>
+        <member name="P:TobiiTracker.Fakes.ShimFixationWindowProvider.AllInstances.Stop">
+            <summary>Sets the shim of FixationWindowProvider.Stop()</summary>
+        </member>
+        <member name="P:TobiiTracker.Fakes.ShimFixationWindowProvider.AllInstances.StoppedGet">
+            <summary>Sets the shim of FixationWindowProvider.get_Stopped()</summary>
+        </member>
+        <member name="P:TobiiTracker.Fakes.ShimFixationWindowProvider.AllInstances.StoppedSetBoolean">
+            <summary>Sets the shim of FixationWindowProvider.set_Stopped(Boolean value)</summary>
+        </member>
+        <member name="M:TobiiTracker.Fakes.ShimFixationWindowProvider.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:TobiiTracker.Fakes.ShimFixationWindowProvider.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:TobiiTracker.Fakes.ShimFixationWindowProvider.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:TobiiTracker.Fakes.ShimFixationWindowProvider.Bind(TobiiTracker.Helpers.IStoppable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:TobiiTracker.Fakes.ShimFixationWindowProvider.ConstructorHost">
+            <summary>Sets the shim of FixationWindowProvider.FixationWindowProvider(Host host)</summary>
+        </member>
+        <member name="P:TobiiTracker.Fakes.ShimFixationWindowProvider.FixationStartedAddEventHandlerOfFixationWindowEntry">
+            <summary>Sets the shim of FixationWindowProvider.add_FixationStarted(EventHandler`1&lt;FixationWindowEntry&gt; value)</summary>
+        </member>
+        <member name="P:TobiiTracker.Fakes.ShimFixationWindowProvider.FixationStartedRemoveEventHandlerOfFixationWindowEntry">
+            <summary>Sets the shim of FixationWindowProvider.remove_FixationStarted(EventHandler`1&lt;FixationWindowEntry&gt; value)</summary>
+        </member>
+        <member name="P:TobiiTracker.Fakes.ShimFixationWindowProvider.LocateFixationDoubleDoubleDouble">
+            <summary>Sets the shim of FixationWindowProvider.LocateFixation(Double x, Double y, Double timestamp)</summary>
+        </member>
+        <member name="P:TobiiTracker.Fakes.ShimFixationWindowProvider.Start">
+            <summary>Sets the shim of FixationWindowProvider.Start()</summary>
+        </member>
+        <member name="P:TobiiTracker.Fakes.ShimFixationWindowProvider.Stop">
+            <summary>Sets the shim of FixationWindowProvider.Stop()</summary>
+        </member>
+        <member name="P:TobiiTracker.Fakes.ShimFixationWindowProvider.StoppedGet">
+            <summary>Sets the shim of FixationWindowProvider.get_Stopped()</summary>
+        </member>
+        <member name="P:TobiiTracker.Fakes.ShimFixationWindowProvider.StoppedSetBoolean">
+            <summary>Sets the shim of FixationWindowProvider.set_Stopped(Boolean value)</summary>
+        </member>
+        <member name="T:TobiiTracker.Fakes.ShimHighlighterOverlay">
+            <summary>Shim type of TobiiTracker.HighlighterOverlay</summary>
+        </member>
+        <member name="M:TobiiTracker.Fakes.ShimHighlighterOverlay.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:TobiiTracker.Fakes.ShimHighlighterOverlay.#ctor(TobiiTracker.HighlighterOverlay)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:TobiiTracker.Fakes.ShimHighlighterOverlay.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:TobiiTracker.Fakes.ShimHighlighterOverlay.AllInstances.Dispose">
+            <summary>Sets the shim of HighlighterOverlay.Dispose()</summary>
+        </member>
+        <member name="P:TobiiTracker.Fakes.ShimHighlighterOverlay.AllInstances.DisposeBoolean">
+            <summary>Sets the shim of HighlighterOverlay.Dispose(Boolean disposing)</summary>
+        </member>
+        <member name="P:TobiiTracker.Fakes.ShimHighlighterOverlay.AllInstances.ShowPointInt32">
+            <summary>Sets the shim of HighlighterOverlay.Show(Point point, Int32 radius)</summary>
+        </member>
+        <member name="P:TobiiTracker.Fakes.ShimHighlighterOverlay.AllInstances.Start">
+            <summary>Sets the shim of HighlighterOverlay.Start()</summary>
+        </member>
+        <member name="P:TobiiTracker.Fakes.ShimHighlighterOverlay.AllInstances.Stop">
+            <summary>Sets the shim of HighlighterOverlay.Stop()</summary>
+        </member>
+        <member name="P:TobiiTracker.Fakes.ShimHighlighterOverlay.AllInstances.StoppedGet">
+            <summary>Sets the shim of HighlighterOverlay.get_Stopped()</summary>
+        </member>
+        <member name="P:TobiiTracker.Fakes.ShimHighlighterOverlay.AllInstances.StoppedSetBoolean">
+            <summary>Sets the shim of HighlighterOverlay.set_Stopped(Boolean value)</summary>
+        </member>
+        <member name="P:TobiiTracker.Fakes.ShimHighlighterOverlay.AllInstances._ctorb__15_0ObjectElapsedEventArgs">
+            <summary>Sets the shim of HighlighterOverlay.&lt;.ctor&gt;b__15_0(Object sender, ElapsedEventArgs args)</summary>
+        </member>
+        <member name="P:TobiiTracker.Fakes.ShimHighlighterOverlay.AllInstances._frameTimer_OnFrameFrameTimerD2DDevice">
+            <summary>Sets the shim of HighlighterOverlay._frameTimer_OnFrame(FrameTimer timer, D2DDevice device)</summary>
+        </member>
+        <member name="M:TobiiTracker.Fakes.ShimHighlighterOverlay.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:TobiiTracker.Fakes.ShimHighlighterOverlay.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:TobiiTracker.Fakes.ShimHighlighterOverlay.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:TobiiTracker.Fakes.ShimHighlighterOverlay.Bind(TobiiTracker.Helpers.IStoppable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:TobiiTracker.Fakes.ShimHighlighterOverlay.Bind(System.IDisposable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:TobiiTracker.Fakes.ShimHighlighterOverlay.Constructor">
+            <summary>Sets the shim of HighlighterOverlay.HighlighterOverlay()</summary>
+        </member>
+        <member name="P:TobiiTracker.Fakes.ShimHighlighterOverlay.Dispose">
+            <summary>Sets the shim of HighlighterOverlay.Dispose()</summary>
+        </member>
+        <member name="P:TobiiTracker.Fakes.ShimHighlighterOverlay.DisposeBoolean">
+            <summary>Sets the shim of HighlighterOverlay.Dispose(Boolean disposing)</summary>
+        </member>
+        <member name="P:TobiiTracker.Fakes.ShimHighlighterOverlay.ShowPointInt32">
+            <summary>Sets the shim of HighlighterOverlay.Show(Point point, Int32 radius)</summary>
+        </member>
+        <member name="P:TobiiTracker.Fakes.ShimHighlighterOverlay.Start">
+            <summary>Sets the shim of HighlighterOverlay.Start()</summary>
+        </member>
+        <member name="P:TobiiTracker.Fakes.ShimHighlighterOverlay.Stop">
+            <summary>Sets the shim of HighlighterOverlay.Stop()</summary>
+        </member>
+        <member name="P:TobiiTracker.Fakes.ShimHighlighterOverlay.StoppedGet">
+            <summary>Sets the shim of HighlighterOverlay.get_Stopped()</summary>
+        </member>
+        <member name="P:TobiiTracker.Fakes.ShimHighlighterOverlay.StoppedSetBoolean">
+            <summary>Sets the shim of HighlighterOverlay.set_Stopped(Boolean value)</summary>
+        </member>
+        <member name="P:TobiiTracker.Fakes.ShimHighlighterOverlay._ctorb__15_0ObjectElapsedEventArgs">
+            <summary>Sets the shim of HighlighterOverlay.&lt;.ctor&gt;b__15_0(Object sender, ElapsedEventArgs args)</summary>
+        </member>
+        <member name="P:TobiiTracker.Fakes.ShimHighlighterOverlay._frameTimer_OnFrameFrameTimerD2DDevice">
+            <summary>Sets the shim of HighlighterOverlay._frameTimer_OnFrame(FrameTimer timer, D2DDevice device)</summary>
         </member>
         <member name="T:TobiiTracker.Fakes.ShimSettings">
             <summary>Shim type of TobiiTracker.Settings</summary>
@@ -457,30 +841,6 @@
         <member name="P:TobiiTracker.Helpers.Fakes.ShimCircle.Behavior">
             <summary>Assigns the behavior for all methods of the shimmed type</summary>
         </member>
-        <member name="T:TobiiTracker.Helpers.Fakes.ShimNativeMethods">
-            <summary>Shim type of TobiiTracker.Helpers.NativeMethods</summary>
-        </member>
-        <member name="M:TobiiTracker.Helpers.Fakes.ShimNativeMethods.#ctor">
-            <summary>Initializes a new shim instance</summary>
-        </member>
-        <member name="M:TobiiTracker.Helpers.Fakes.ShimNativeMethods.BehaveAsCurrent">
-            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
-        </member>
-        <member name="M:TobiiTracker.Helpers.Fakes.ShimNativeMethods.BehaveAsNotImplemented">
-            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
-        </member>
-        <member name="P:TobiiTracker.Helpers.Fakes.ShimNativeMethods.Behavior">
-            <summary>Assigns the behavior for all methods of the shimmed type</summary>
-        </member>
-        <member name="P:TobiiTracker.Helpers.Fakes.ShimNativeMethods.GetProcessNameIntPtr">
-            <summary>Sets the shim of NativeMethods.GetProcessName(IntPtr window)</summary>
-        </member>
-        <member name="P:TobiiTracker.Helpers.Fakes.ShimNativeMethods.GetWindowFromPointDoubleDouble">
-            <summary>Sets the shim of NativeMethods.GetWindowFromPoint(Double x, Double y)</summary>
-        </member>
-        <member name="P:TobiiTracker.Helpers.Fakes.ShimNativeMethods.GetWindowTitleIntPtr">
-            <summary>Sets the shim of NativeMethods.GetWindowTitle(IntPtr window)</summary>
-        </member>
         <member name="T:TobiiTracker.Helpers.Fakes.ShimPoint">
             <summary>Shim type of TobiiTracker.Helpers.Point</summary>
         </member>
@@ -528,6 +888,123 @@
         </member>
         <member name="P:TobiiTracker.Helpers.Fakes.ShimSmallestEnclosingCircle.MakeDiameterPointPoint">
             <summary>Sets the shim of SmallestEnclosingCircle.MakeDiameter(Point a, Point b)</summary>
+        </member>
+        <member name="T:TobiiTracker.Helpers.Fakes.ShimWindowBlacklist">
+            <summary>Shim type of TobiiTracker.Helpers.WindowBlacklist</summary>
+        </member>
+        <member name="M:TobiiTracker.Helpers.Fakes.ShimWindowBlacklist.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:TobiiTracker.Helpers.Fakes.ShimWindowBlacklist.#ctor(TobiiTracker.Helpers.WindowBlacklist)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:TobiiTracker.Helpers.Fakes.ShimWindowBlacklist.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="M:TobiiTracker.Helpers.Fakes.ShimWindowBlacklist.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:TobiiTracker.Helpers.Fakes.ShimWindowBlacklist.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:TobiiTracker.Helpers.Fakes.ShimWindowBlacklist.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:TobiiTracker.Helpers.Fakes.ShimWindowBlacklist.Constructor">
+            <summary>Sets the shim of WindowBlacklist.WindowBlacklist()</summary>
+        </member>
+        <member name="P:TobiiTracker.Helpers.Fakes.ShimWindowBlacklist.IsBlacklistedStringString">
+            <summary>Sets the shim of WindowBlacklist.IsBlacklisted(String processName, String windowTitle)</summary>
+        </member>
+        <member name="P:TobiiTracker.Helpers.Fakes.ShimWindowBlacklist.StaticConstructor">
+            <summary>Sets the shim of WindowBlacklist.WindowBlacklist()</summary>
+        </member>
+        <member name="T:TobiiTracker.Helpers.Fakes.StubIStoppable">
+            <summary>Stub type of TobiiTracker.Helpers.IStoppable</summary>
+        </member>
+        <member name="M:TobiiTracker.Helpers.Fakes.StubIStoppable.#ctor">
+            <summary>Initializes a new instance of type StubIStoppable</summary>
+        </member>
+        <member name="F:TobiiTracker.Helpers.Fakes.StubIStoppable.Start">
+            <summary>Sets the stub of IStoppable.Start()</summary>
+        </member>
+        <member name="F:TobiiTracker.Helpers.Fakes.StubIStoppable.Stop">
+            <summary>Sets the stub of IStoppable.Stop()</summary>
+        </member>
+        <member name="P:TobiiTracker.Helpers.Fakes.StubIStoppable.TobiiTracker#Helpers#IStoppable#Stopped">
+            <summary>Sets the stub of IStoppable.get_Stopped()</summary>
+        </member>
+        <member name="F:TobiiTracker.Helpers.Fakes.StubIStoppable.StoppedGet">
+            <summary>Sets the stub of IStoppable.get_Stopped()</summary>
+        </member>
+        <member name="M:TobiiTracker.Helpers.Fakes.StubIStoppable.TobiiTracker#Helpers#IStoppable#Start">
+            <summary>Sets the stub of IStoppable.Start()</summary>
+        </member>
+        <member name="M:TobiiTracker.Helpers.Fakes.StubIStoppable.TobiiTracker#Helpers#IStoppable#Stop">
+            <summary>Sets the stub of IStoppable.Stop()</summary>
+        </member>
+        <member name="T:TobiiTracker.Helpers.Fakes.StubWindowBlacklist">
+            <summary>Stub type of TobiiTracker.Helpers.WindowBlacklist</summary>
+        </member>
+        <member name="M:TobiiTracker.Helpers.Fakes.StubWindowBlacklist.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:TobiiTracker.Helpers.Fakes.StubWindowBlacklist.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:TobiiTracker.Helpers.Fakes.StubWindowBlacklist.InitializeStub">
+            <summary>Initializes a new instance of type StubWindowBlacklist</summary>
+        </member>
+        <member name="P:TobiiTracker.Helpers.Fakes.StubWindowBlacklist.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:TobiiTracker.Helpers.Fakes.StubWindowBlacklist.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:TobiiTracker.Native.Fakes.ShimNativeMonitorMethods">
+            <summary>Shim type of TobiiTracker.Native.NativeMonitorMethods</summary>
+        </member>
+        <member name="M:TobiiTracker.Native.Fakes.ShimNativeMonitorMethods.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:TobiiTracker.Native.Fakes.ShimNativeMonitorMethods.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:TobiiTracker.Native.Fakes.ShimNativeMonitorMethods.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:TobiiTracker.Native.Fakes.ShimNativeMonitorMethods.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:TobiiTracker.Native.Fakes.ShimNativeMonitorMethods.GetPrimaryMonitorSize">
+            <summary>Sets the shim of NativeMonitorMethods.GetPrimaryMonitorSize()</summary>
+        </member>
+        <member name="T:TobiiTracker.Native.Fakes.ShimNativeWindowMethods">
+            <summary>Shim type of TobiiTracker.Native.NativeWindowMethods</summary>
+        </member>
+        <member name="M:TobiiTracker.Native.Fakes.ShimNativeWindowMethods.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:TobiiTracker.Native.Fakes.ShimNativeWindowMethods.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:TobiiTracker.Native.Fakes.ShimNativeWindowMethods.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:TobiiTracker.Native.Fakes.ShimNativeWindowMethods.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:TobiiTracker.Native.Fakes.ShimNativeWindowMethods.GetProcessNameIntPtr">
+            <summary>Sets the shim of NativeWindowMethods.GetProcessName(IntPtr window)</summary>
+        </member>
+        <member name="P:TobiiTracker.Native.Fakes.ShimNativeWindowMethods.GetRootWindowIntPtr">
+            <summary>Sets the shim of NativeWindowMethods.GetRootWindow(IntPtr hWnd)</summary>
+        </member>
+        <member name="P:TobiiTracker.Native.Fakes.ShimNativeWindowMethods.GetWindowFromPointDoubleDouble">
+            <summary>Sets the shim of NativeWindowMethods.GetWindowFromPoint(Double x, Double y)</summary>
+        </member>
+        <member name="P:TobiiTracker.Native.Fakes.ShimNativeWindowMethods.GetWindowTitleIntPtr">
+            <summary>Sets the shim of NativeWindowMethods.GetWindowTitle(IntPtr window)</summary>
         </member>
     </members>
 </doc>

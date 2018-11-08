@@ -14,12 +14,13 @@ namespace TobiiTrackerTests
         {
             using (ShimsContext.Create())
             {
-                var called = false;
+                var called = 0;
                 const string process = "__process__";
                 const string window = "__window__";
-                TobiiTracker.Helpers.Fakes.ShimNativeMethods.GetWindowFromPointDoubleDouble = (x, y) => new IntPtr(0);
-                TobiiTracker.Helpers.Fakes.ShimNativeMethods.GetProcessNameIntPtr = ptr => process;
-                TobiiTracker.Helpers.Fakes.ShimNativeMethods.GetWindowTitleIntPtr = ptr => window;
+                Action<double, double, double> fixationStart = (x, y, t) => { };
+                TobiiTracker.Native.Fakes.ShimNativeWindowMethods.GetWindowFromPointDoubleDouble = (x, y) => new IntPtr(0);
+                TobiiTracker.Native.Fakes.ShimNativeWindowMethods.GetProcessNameIntPtr = ptr => process;
+                TobiiTracker.Native.Fakes.ShimNativeWindowMethods.GetWindowTitleIntPtr = ptr => window;
                 var shimHost = new ShimHost
                 {
                     StreamsGet = () => new ShimGlobalDataStreamAgent
@@ -28,7 +29,7 @@ namespace TobiiTrackerTests
                         {
                             BeginActionOfDoubleDoubleDouble = action =>
                             {
-                                action(1, 1, 0);
+                                fixationStart = action;
                                 return new ShimFixationDataStream();
                             }
                         }
@@ -37,12 +38,18 @@ namespace TobiiTrackerTests
                 var fixationContextProvider = new FixationContextProvider(shimHost);
                 fixationContextProvider.FixationStarted += (sender, fixationContextEntry) =>
                 {
-                    called = true;
-                    Assert.AreEqual(process, fixationContextEntry.Process);
-                    Assert.AreEqual(window, fixationContextEntry.Window);
+                    called += 1;
+                    Assert.AreEqual(process, fixationContextEntry.ProcessName);
+                    Assert.AreEqual(window, fixationContextEntry.WindowTitle);
                 };
+                fixationStart(0, 0, 0);
+                Assert.AreEqual(0, called);
                 fixationContextProvider.Start();
-                Assert.IsTrue(called);
+                fixationStart(0, 0, 0);
+                Assert.AreEqual(1, called);
+                fixationContextProvider.Stop();
+                fixationStart(0, 0, 0);
+                Assert.AreEqual(1, called);
             }
         }
 
@@ -54,9 +61,9 @@ namespace TobiiTrackerTests
             {
                 const string process = "__process__";
                 const string window = "__window__";
-                TobiiTracker.Helpers.Fakes.ShimNativeMethods.GetWindowFromPointDoubleDouble = (x, y) => new IntPtr(0);
-                TobiiTracker.Helpers.Fakes.ShimNativeMethods.GetProcessNameIntPtr = ptr => process;
-                TobiiTracker.Helpers.Fakes.ShimNativeMethods.GetWindowTitleIntPtr = ptr => window;
+                TobiiTracker.Native.Fakes.ShimNativeWindowMethods.GetWindowFromPointDoubleDouble = (x, y) => new IntPtr(0);
+                TobiiTracker.Native.Fakes.ShimNativeWindowMethods.GetProcessNameIntPtr = ptr => process;
+                TobiiTracker.Native.Fakes.ShimNativeWindowMethods.GetWindowTitleIntPtr = ptr => window;
                 var shimHost = new ShimHost
                 {
                     StreamsGet = () => new ShimGlobalDataStreamAgent

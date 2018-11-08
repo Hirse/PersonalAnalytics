@@ -9,11 +9,12 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>TobiiTracker</RootNamespace>
     <AssemblyName>TobiiTracker</AssemblyName>
-    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -33,13 +34,20 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="GameOverlay, Version=3.7.7.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\GameOverlay.Net.3.7.7\lib\GameOverlay.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX, Version=4.2.0.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpDX.4.2.0\lib\net45\SharpDX.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.Direct2D1, Version=4.2.0.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpDX.Direct2D1.4.2.0\lib\net45\SharpDX.Direct2D1.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.DXGI, Version=4.2.0.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpDX.DXGI.4.2.0\lib\net45\SharpDX.DXGI.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="Microsoft.CSharp" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
     <Reference Include="Tobii.Interaction.Model, Version=0.7.3.333, Culture=neutral, PublicKeyToken=70326046dcdce6cb, processorArchitecture=MSIL">
       <HintPath>..\packages\Tobii.Interaction.0.7.3\lib\net45\Tobii.Interaction.Model.dll</HintPath>
@@ -51,14 +59,21 @@
   <ItemGroup>
     <Compile Include="Daemon.cs" />
     <Compile Include="Data\Queries.cs" />
+    <Compile Include="FixationWindowCollector.cs" />
     <Compile Include="FixationContextCollector.cs" />
+    <Compile Include="FixationWindowProvider.cs" />
     <Compile Include="FixationContextProvider.cs" />
+    <Compile Include="FixationWindowConsumer.cs" />
     <Compile Include="FixationSummaryCollector.cs" />
     <Compile Include="FixationSummaryProvider.cs" />
     <Compile Include="Helpers\Circle.cs" />
-    <Compile Include="Helpers\NativeMethods.cs" />
+    <Compile Include="Helpers\WindowBlacklist.cs" />
+    <Compile Include="Helpers\IStoppable.cs" />
+    <Compile Include="Native\NativeWindowMethods.cs" />
     <Compile Include="Helpers\Point.cs" />
     <Compile Include="Helpers\SmallestEnclosingCircle.cs" />
+    <Compile Include="HighlighterOverlay.cs" />
+    <Compile Include="Native\NativeMonitorMethods.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Settings.cs" />
   </ItemGroup>

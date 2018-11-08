@@ -18,6 +18,7 @@ namespace TobiiTrackerTests
                 ShimQueries.SaveFixationContextEntriesIEnumerableOfFixationContextEntry =
                     entry => { called = true; };
                 var fixationContextCollector = new FixationContextCollector();
+                fixationContextCollector.Start();
                 fixationContextCollector.Collect(null, new FixationContextEntry());
                 Assert.IsFalse(called);
                 for (var i = 0; i < 500; i++)
@@ -33,15 +34,17 @@ namespace TobiiTrackerTests
         {
             using (ShimsContext.Create())
             {
-                var called = false;
+                var called = 0;
                 ShimQueries.SaveFixationContextEntriesIEnumerableOfFixationContextEntry =
-                    entry => { called = true; };
+                    entry => { called += 1; };
                 var fixationContextCollector = new FixationContextCollector();
-                fixationContextCollector.Stop();
-                Assert.IsFalse(called);
+                fixationContextCollector.Collect(null, new FixationContextEntry());
+                Assert.AreEqual(0, called);
+                fixationContextCollector.Start();
                 fixationContextCollector.Collect(null, new FixationContextEntry());
                 fixationContextCollector.Stop();
-                Assert.IsTrue(called);
+                fixationContextCollector.Collect(null, new FixationContextEntry());
+                Assert.AreEqual(1, called);
             }
         }
     }

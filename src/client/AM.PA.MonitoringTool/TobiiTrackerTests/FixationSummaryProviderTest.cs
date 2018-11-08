@@ -1,5 +1,6 @@
 ﻿using Microsoft.QualityTools.Testing.Fakes;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System;
 using Tobii.Interaction.Fakes;
 using TobiiTracker;
 
@@ -13,7 +14,10 @@ namespace TobiiTrackerTests
         {
             using (ShimsContext.Create())
             {
-                var called = false;
+                var called = 0;
+                Action<double, double, double> fixationStart = (x, y, t) => { };
+                Action<double, double, double> fixationData = (x, y, t) => { };
+                Action<double, double, double> fixationEnd = (x, y, t) => { };
                 var shimHost = new ShimHost
                 {
                     StreamsGet = () => new ShimGlobalDataStreamAgent
@@ -22,26 +26,37 @@ namespace TobiiTrackerTests
                         {
                             BeginActionOfDoubleDoubleDouble = action =>
                             {
-                                action(1, 1, 0);
+                                fixationStart = action;
                                 return new ShimFixationDataStream();
                             },
                             DataActionOfDoubleDoubleDouble = action =>
                             {
-                                action(2, 2, 0);
+                                fixationData = action;
                                 return new ShimFixationDataStream();
                             },
                             EndActionOfDoubleDoubleDouble = action =>
                             {
-                                action(3, 3, 0);
+                                fixationEnd = action;
                                 return new ShimFixationDataStream();
                             }
                         }
                     }
                 };
                 var fixationSummaryProvider = new FixationSummaryProvider(shimHost);
-                fixationSummaryProvider.FixationEnded += (sender, fixationSummaryEntry) => { called = true; };
+                fixationSummaryProvider.FixationEnded += (sender, fixationSummaryEntry) => { called += 1; };
+                fixationStart(0, 0, 0);
+                fixationEnd(0, 0, 0);
                 fixationSummaryProvider.Start();
-                Assert.IsTrue(called);
+                Assert.AreEqual(0, called);
+                fixationStart(0, 0, 0);
+                fixationData(0, 0, 0);
+                fixationEnd(0, 0, 0);
+                Assert.AreEqual(1, called);
+                fixationSummaryProvider.Stop();
+                fixationStart(0, 0, 0);
+                fixationData(0, 0, 0);
+                fixationEnd(0, 0, 0);
+                Assert.AreEqual(1, called);
             }
         }
 

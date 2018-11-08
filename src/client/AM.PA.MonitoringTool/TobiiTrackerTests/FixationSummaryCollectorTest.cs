@@ -18,6 +18,7 @@ namespace TobiiTrackerTests
                 ShimQueries.SaveFixationSummaryEntriesIEnumerableOfFixationSummaryEntry =
                     entry => { called = true; };
                 var fixationSummaryCollector = new FixationSummaryCollector();
+                fixationSummaryCollector.Start();
                 fixationSummaryCollector.Collect(null, new FixationSummaryEntry());
                 Assert.IsFalse(called);
                 for (var i = 0; i < 500; i++)
@@ -33,15 +34,17 @@ namespace TobiiTrackerTests
         {
             using (ShimsContext.Create())
             {
-                var called = false;
+                var called = 0;
                 ShimQueries.SaveFixationSummaryEntriesIEnumerableOfFixationSummaryEntry =
-                    entry => { called = true; };
+                    entry => { called += 1; };
                 var fixationSummaryCollector = new FixationSummaryCollector();
-                fixationSummaryCollector.Stop();
-                Assert.IsFalse(called);
+                fixationSummaryCollector.Collect(null, new FixationSummaryEntry());
+                Assert.AreEqual(0, called);
+                fixationSummaryCollector.Start();
                 fixationSummaryCollector.Collect(null, new FixationSummaryEntry());
                 fixationSummaryCollector.Stop();
-                Assert.IsTrue(called);
+                fixationSummaryCollector.Collect(null, new FixationSummaryEntry());
+                Assert.AreEqual(1, called);
             }
         }
     }

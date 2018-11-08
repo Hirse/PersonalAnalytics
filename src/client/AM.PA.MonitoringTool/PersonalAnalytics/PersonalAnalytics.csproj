@@ -290,6 +290,10 @@
       <Project>{2bbdfa6d-20dd-4a7b-893e-43c388382c9a}</Project>
       <Name>Shared</Name>
     </ProjectReference>
+    <ProjectReference Include="..\TobiiTracker\TobiiTracker.csproj">
+      <Project>{5376ebf8-89b4-4e1e-951a-84d901865cde}</Project>
+      <Name>TobiiTracker</Name>
+    </ProjectReference>
     <ProjectReference Include="..\UserEfficiencyTracker\UserEfficiencyTracker.csproj">
       <Project>{30dda905-2068-4985-8372-ffb11c8ad4d9}</Project>
       <Name>UserEfficiencyTracker</Name>
