@@ -2,7 +2,7 @@
 
 namespace TobiiTracker.Helpers
 {
-    internal class WindowBlacklist
+    internal static class WindowBlacklist
     {
         private static readonly Dictionary<string, HashSet<string>> Blacklist = new Dictionary<string, HashSet<string>>
         {
@@ -25,6 +25,7 @@ namespace TobiiTracker.Helpers
                 "Windows Ink Workspace", //Win-W
                 "CONNECT", // Win-K
                 "Project", // Win-P
+                "New notification"
             }},
             {"SearchUI", new HashSet<string>
             {
@@ -33,16 +34,12 @@ namespace TobiiTracker.Helpers
             {"LockApp", new HashSet<string>
             {
                 "Windows Default Lock Screen" // Win-L lock screen
-            }},
-            {"dwm", new HashSet<string>
-            {
-                "" // Windows Desktop Manager
             }}
         };
 
         internal static bool IsBlacklisted(string processName, string windowTitle)
         {
-            return Blacklist.ContainsKey(processName) && Blacklist[processName].Contains(windowTitle);
+            return windowTitle == "" || Blacklist.ContainsKey(processName) && Blacklist[processName].Contains(windowTitle);
         }
     }
 }
