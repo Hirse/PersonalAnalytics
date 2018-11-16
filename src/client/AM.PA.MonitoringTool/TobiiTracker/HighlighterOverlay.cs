@@ -103,6 +103,7 @@ namespace TobiiTracker
                 _device.Dispose();
                 _frameTimer.Dispose();
                 _brush.Dispose();
+                _timer.Dispose();
             }
         }
     }

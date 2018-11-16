@@ -895,12 +895,6 @@
         <member name="M:TobiiTracker.Helpers.Fakes.ShimWindowBlacklist.#ctor">
             <summary>Initializes a new shim instance</summary>
         </member>
-        <member name="M:TobiiTracker.Helpers.Fakes.ShimWindowBlacklist.#ctor(TobiiTracker.Helpers.WindowBlacklist)">
-            <summary>Initializes a new shim for the given instance</summary>
-        </member>
-        <member name="T:TobiiTracker.Helpers.Fakes.ShimWindowBlacklist.AllInstances">
-            <summary>Define shims for all instances members</summary>
-        </member>
         <member name="M:TobiiTracker.Helpers.Fakes.ShimWindowBlacklist.BehaveAsCurrent">
             <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
         </member>
@@ -909,9 +903,6 @@
         </member>
         <member name="P:TobiiTracker.Helpers.Fakes.ShimWindowBlacklist.Behavior">
             <summary>Assigns the behavior for all methods of the shimmed type</summary>
-        </member>
-        <member name="P:TobiiTracker.Helpers.Fakes.ShimWindowBlacklist.Constructor">
-            <summary>Sets the shim of WindowBlacklist.WindowBlacklist()</summary>
         </member>
         <member name="P:TobiiTracker.Helpers.Fakes.ShimWindowBlacklist.IsBlacklistedStringString">
             <summary>Sets the shim of WindowBlacklist.IsBlacklisted(String processName, String windowTitle)</summary>
@@ -942,24 +933,6 @@
         </member>
         <member name="M:TobiiTracker.Helpers.Fakes.StubIStoppable.TobiiTracker#Helpers#IStoppable#Stop">
             <summary>Sets the stub of IStoppable.Stop()</summary>
-        </member>
-        <member name="T:TobiiTracker.Helpers.Fakes.StubWindowBlacklist">
-            <summary>Stub type of TobiiTracker.Helpers.WindowBlacklist</summary>
-        </member>
-        <member name="M:TobiiTracker.Helpers.Fakes.StubWindowBlacklist.#ctor">
-            <summary>Initializes a new instance</summary>
-        </member>
-        <member name="P:TobiiTracker.Helpers.Fakes.StubWindowBlacklist.CallBase">
-            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
-        </member>
-        <member name="M:TobiiTracker.Helpers.Fakes.StubWindowBlacklist.InitializeStub">
-            <summary>Initializes a new instance of type StubWindowBlacklist</summary>
-        </member>
-        <member name="P:TobiiTracker.Helpers.Fakes.StubWindowBlacklist.InstanceBehavior">
-            <summary>Gets or sets the instance behavior.</summary>
-        </member>
-        <member name="P:TobiiTracker.Helpers.Fakes.StubWindowBlacklist.InstanceObserver">
-            <summary>Gets or sets the instance observer.</summary>
         </member>
         <member name="T:TobiiTracker.Native.Fakes.ShimNativeMonitorMethods">
             <summary>Shim type of TobiiTracker.Native.NativeMonitorMethods</summary>

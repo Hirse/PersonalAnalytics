@@ -817,8 +817,8 @@
         <member name="P:Shared.Data.Fakes.ShimDatabaseImplementation.UpdateDbPragmaVersionInt32">
             <summary>Sets the shim of DatabaseImplementation.UpdateDbPragmaVersion(Int32 version)</summary>
         </member>
-        <member name="P:Shared.Data.Fakes.ShimDatabaseImplementation.WriteQueryToLogStringObjectArrayBoolean">
-            <summary>Sets the shim of DatabaseImplementation.WriteQueryToLog(String query, Object[] parameter, Boolean force)</summary>
+        <member name="P:Shared.Data.Fakes.ShimDatabaseImplementation.WriteQueryToLogStringIEnumerableBoolean">
+            <summary>Sets the shim of DatabaseImplementation.WriteQueryToLog(String query, IEnumerable parameter, Boolean force)</summary>
         </member>
         <member name="T:Shared.Data.Fakes.ShimFocusedWorkDto">
             <summary>Shim type of Shared.Data.FocusedWorkDto</summary>
@@ -1761,9 +1761,6 @@
         </member>
         <member name="P:Shared.Fakes.ShimLogger.LogExceptionTextWriter">
             <summary>Sets the shim of Logger.Log(Exception e, TextWriter w)</summary>
-        </member>
-        <member name="P:Shared.Fakes.ShimLogger.WriteString">
-            <summary>Sets the shim of Logger.Write(String message)</summary>
         </member>
         <member name="P:Shared.Fakes.ShimLogger.WriteToConsoleString">
             <summary>Sets the shim of Logger.WriteToConsole(String message)</summary>

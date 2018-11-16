@@ -62,7 +62,7 @@ namespace TobiiTracker.Native
         /// To get extended error information, call GetLastError.
         /// This function cannot retrieve the text of an edit control in another application.
         /// </returns>
-        [DllImport("user32.dll")]
+        [DllImport("user32.dll", CharSet = CharSet.Unicode)]
         private static extern int GetWindowText(IntPtr hWnd, StringBuilder lpString, int nMaxCount);
 
         /// <summary>

@@ -33,14 +33,14 @@ namespace TobiiTrackerTests
                 fixationWindowConsumer.Collect(null, new FixationWindowEntry
                 {
                     ProcessName = "explorer",
-                    WindowTitle = ""
+                    WindowTitle = "Window Title"
                 });
                 Assert.IsFalse(called, "Should not be called after blacklisted window");
 
                 fixationWindowConsumer.Collect(null, new FixationWindowEntry
                 {
                     ProcessName = "",
-                    WindowTitle = "",
+                    WindowTitle = "Window Title",
                     WindowHandle = new IntPtr(1),
                     X = x,
                     Y = y
@@ -50,7 +50,7 @@ namespace TobiiTrackerTests
                 fixationWindowConsumer.Collect(null, new FixationWindowEntry
                 {
                     ProcessName = "",
-                    WindowTitle = "",
+                    WindowTitle = "Window Title",
                     WindowHandle = new IntPtr(2)
                 });
                 Assert.IsFalse(called, "Should not be called after fixation on new window");
@@ -58,7 +58,7 @@ namespace TobiiTrackerTests
                 fixationWindowConsumer.Collect(null, new FixationWindowEntry
                 {
                     ProcessName = "",
-                    WindowTitle = "",
+                    WindowTitle = "Window Title",
                     WindowHandle = new IntPtr(2)
                 });
                 Assert.IsFalse(called, "Should not be called after fixation on same window");
@@ -66,7 +66,7 @@ namespace TobiiTrackerTests
                 fixationWindowConsumer.Collect(null, new FixationWindowEntry
                 {
                     ProcessName = "",
-                    WindowTitle = "",
+                    WindowTitle = "Window Title",
                     WindowHandle = new IntPtr(1)
                 });
                 Assert.IsTrue(called, "Should be called after fixation on previous window");
