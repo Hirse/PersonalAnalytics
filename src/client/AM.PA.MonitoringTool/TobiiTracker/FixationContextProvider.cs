@@ -33,9 +33,9 @@ namespace TobiiTracker
         private void LocateFixation(double x, double y, double timestamp)
         {
             if (Stopped) return;
-            var windowHandle = NativeWindowMethods.GetWindowFromPoint(x, y);
-            var processName = NativeWindowMethods.GetProcessName(windowHandle);
-            var windowTitle = NativeWindowMethods.GetWindowTitle(windowHandle);
+            var windowHandle = NativeMethods.GetWindowFromPoint(x, y);
+            var processName = NativeMethods.GetProcessName(windowHandle);
+            var windowTitle = NativeMethods.GetWindowTitle(windowHandle);
             FixationStarted?.Invoke(this, new FixationContextEntry
             {
                 ProcessName = processName,

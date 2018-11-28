@@ -70,11 +70,10 @@
     <Compile Include="Helpers\Circle.cs" />
     <Compile Include="Helpers\WindowBlacklist.cs" />
     <Compile Include="Helpers\IStoppable.cs" />
-    <Compile Include="Native\NativeWindowMethods.cs" />
+    <Compile Include="Native\NativeMethods.cs" />
     <Compile Include="Helpers\Point.cs" />
     <Compile Include="Helpers\SmallestEnclosingCircle.cs" />
     <Compile Include="HighlighterOverlay.cs" />
-    <Compile Include="Native\NativeMonitorMethods.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Settings.cs" />
   </ItemGroup>

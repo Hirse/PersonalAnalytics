@@ -30,7 +30,7 @@ namespace TobiiTracker
 
         internal HighlighterOverlay()
         {
-            var monitorSize = NativeMonitorMethods.GetPrimaryMonitorSize();
+            var monitorSize = NativeMethods.GetPrimaryMonitorSize();
 
             _window = new OverlayWindow(new OverlayOptions
             {

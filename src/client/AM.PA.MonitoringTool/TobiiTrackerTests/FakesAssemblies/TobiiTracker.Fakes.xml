@@ -934,50 +934,35 @@
         <member name="M:TobiiTracker.Helpers.Fakes.StubIStoppable.TobiiTracker#Helpers#IStoppable#Stop">
             <summary>Sets the stub of IStoppable.Stop()</summary>
         </member>
-        <member name="T:TobiiTracker.Native.Fakes.ShimNativeMonitorMethods">
-            <summary>Shim type of TobiiTracker.Native.NativeMonitorMethods</summary>
+        <member name="T:TobiiTracker.Native.Fakes.ShimNativeMethods">
+            <summary>Shim type of TobiiTracker.Native.NativeMethods</summary>
         </member>
-        <member name="M:TobiiTracker.Native.Fakes.ShimNativeMonitorMethods.#ctor">
+        <member name="M:TobiiTracker.Native.Fakes.ShimNativeMethods.#ctor">
             <summary>Initializes a new shim instance</summary>
         </member>
-        <member name="M:TobiiTracker.Native.Fakes.ShimNativeMonitorMethods.BehaveAsCurrent">
+        <member name="M:TobiiTracker.Native.Fakes.ShimNativeMethods.BehaveAsCurrent">
             <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
         </member>
-        <member name="M:TobiiTracker.Native.Fakes.ShimNativeMonitorMethods.BehaveAsNotImplemented">
+        <member name="M:TobiiTracker.Native.Fakes.ShimNativeMethods.BehaveAsNotImplemented">
             <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
         </member>
-        <member name="P:TobiiTracker.Native.Fakes.ShimNativeMonitorMethods.Behavior">
+        <member name="P:TobiiTracker.Native.Fakes.ShimNativeMethods.Behavior">
             <summary>Assigns the behavior for all methods of the shimmed type</summary>
         </member>
-        <member name="P:TobiiTracker.Native.Fakes.ShimNativeMonitorMethods.GetPrimaryMonitorSize">
-            <summary>Sets the shim of NativeMonitorMethods.GetPrimaryMonitorSize()</summary>
+        <member name="P:TobiiTracker.Native.Fakes.ShimNativeMethods.GetPrimaryMonitorSize">
+            <summary>Sets the shim of NativeMethods.GetPrimaryMonitorSize()</summary>
         </member>
-        <member name="T:TobiiTracker.Native.Fakes.ShimNativeWindowMethods">
-            <summary>Shim type of TobiiTracker.Native.NativeWindowMethods</summary>
+        <member name="P:TobiiTracker.Native.Fakes.ShimNativeMethods.GetProcessNameIntPtr">
+            <summary>Sets the shim of NativeMethods.GetProcessName(IntPtr window)</summary>
         </member>
-        <member name="M:TobiiTracker.Native.Fakes.ShimNativeWindowMethods.#ctor">
-            <summary>Initializes a new shim instance</summary>
+        <member name="P:TobiiTracker.Native.Fakes.ShimNativeMethods.GetRootWindowIntPtr">
+            <summary>Sets the shim of NativeMethods.GetRootWindow(IntPtr hWnd)</summary>
         </member>
-        <member name="M:TobiiTracker.Native.Fakes.ShimNativeWindowMethods.BehaveAsCurrent">
-            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        <member name="P:TobiiTracker.Native.Fakes.ShimNativeMethods.GetWindowFromPointDoubleDouble">
+            <summary>Sets the shim of NativeMethods.GetWindowFromPoint(Double x, Double y)</summary>
         </member>
-        <member name="M:TobiiTracker.Native.Fakes.ShimNativeWindowMethods.BehaveAsNotImplemented">
-            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
-        </member>
-        <member name="P:TobiiTracker.Native.Fakes.ShimNativeWindowMethods.Behavior">
-            <summary>Assigns the behavior for all methods of the shimmed type</summary>
-        </member>
-        <member name="P:TobiiTracker.Native.Fakes.ShimNativeWindowMethods.GetProcessNameIntPtr">
-            <summary>Sets the shim of NativeWindowMethods.GetProcessName(IntPtr window)</summary>
-        </member>
-        <member name="P:TobiiTracker.Native.Fakes.ShimNativeWindowMethods.GetRootWindowIntPtr">
-            <summary>Sets the shim of NativeWindowMethods.GetRootWindow(IntPtr hWnd)</summary>
-        </member>
-        <member name="P:TobiiTracker.Native.Fakes.ShimNativeWindowMethods.GetWindowFromPointDoubleDouble">
-            <summary>Sets the shim of NativeWindowMethods.GetWindowFromPoint(Double x, Double y)</summary>
-        </member>
-        <member name="P:TobiiTracker.Native.Fakes.ShimNativeWindowMethods.GetWindowTitleIntPtr">
-            <summary>Sets the shim of NativeWindowMethods.GetWindowTitle(IntPtr window)</summary>
+        <member name="P:TobiiTracker.Native.Fakes.ShimNativeMethods.GetWindowTitleIntPtr">
+            <summary>Sets the shim of NativeMethods.GetWindowTitle(IntPtr window)</summary>
         </member>
     </members>
 </doc>
