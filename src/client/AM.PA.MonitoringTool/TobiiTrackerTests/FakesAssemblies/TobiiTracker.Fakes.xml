@@ -646,8 +646,8 @@
         <member name="P:TobiiTracker.Fakes.ShimHighlighterOverlay.AllInstances.DisposeBoolean">
             <summary>Sets the shim of HighlighterOverlay.Dispose(Boolean disposing)</summary>
         </member>
-        <member name="P:TobiiTracker.Fakes.ShimHighlighterOverlay.AllInstances.ShowPointInt32">
-            <summary>Sets the shim of HighlighterOverlay.Show(Point point, Int32 radius)</summary>
+        <member name="P:TobiiTracker.Fakes.ShimHighlighterOverlay.AllInstances.ShowPoint">
+            <summary>Sets the shim of HighlighterOverlay.Show(Point point)</summary>
         </member>
         <member name="P:TobiiTracker.Fakes.ShimHighlighterOverlay.AllInstances.Start">
             <summary>Sets the shim of HighlighterOverlay.Start()</summary>
@@ -691,8 +691,8 @@
         <member name="P:TobiiTracker.Fakes.ShimHighlighterOverlay.DisposeBoolean">
             <summary>Sets the shim of HighlighterOverlay.Dispose(Boolean disposing)</summary>
         </member>
-        <member name="P:TobiiTracker.Fakes.ShimHighlighterOverlay.ShowPointInt32">
-            <summary>Sets the shim of HighlighterOverlay.Show(Point point, Int32 radius)</summary>
+        <member name="P:TobiiTracker.Fakes.ShimHighlighterOverlay.ShowPoint">
+            <summary>Sets the shim of HighlighterOverlay.Show(Point point)</summary>
         </member>
         <member name="P:TobiiTracker.Fakes.ShimHighlighterOverlay.Start">
             <summary>Sets the shim of HighlighterOverlay.Start()</summary>

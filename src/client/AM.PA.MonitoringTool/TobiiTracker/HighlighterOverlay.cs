@@ -1,17 +1,20 @@
 ﻿using GameOverlay.Graphics;
+using GameOverlay.Graphics.Primitives;
 using GameOverlay.Utilities;
 using GameOverlay.Windows;
 using System;
 using System.Timers;
 using TobiiTracker.Helpers;
 using TobiiTracker.Native;
+using Point = TobiiTracker.Helpers.Point;
 
 namespace TobiiTracker
 {
     internal class HighlighterOverlay : IDisposable, IStoppable
     {
         private const int FramesPerSecond = 60;
-        private const int HighlightTimeout = 3000;
+        private const int HighlightTimeout = 1000;
+        private const int Size = 100;
 
         private readonly OverlayWindow _window;
         private readonly D2DDevice _device;
@@ -22,7 +25,6 @@ namespace TobiiTracker
         private bool _shouldDraw;
         private float _x;
         private float _y;
-        private int _radius;
 
         public bool Stopped { get; private set; } = true;
 
@@ -49,7 +51,7 @@ namespace TobiiTracker
                 VSync = false
             });
 
-            _brush = _device.CreateSolidColorBrush(0x0, 0xFF, 0x0, 0x80);
+            _brush = _device.CreateSolidColorBrush(0x0, 0x00, 0x0, 0x40);
 
             _frameTimer = new FrameTimer(_device, FramesPerSecond);
             _frameTimer.OnFrame += _frameTimer_OnFrame;
@@ -71,11 +73,10 @@ namespace TobiiTracker
             Stopped = true;
         }
 
-        internal void Show(Point point, int radius)
+        internal void Show(Point point)
         {
             _x = (float)point.X;
             _y = (float)point.Y;
-            _radius = radius;
             _shouldDraw = true;
             _timer.Start();
         }
@@ -85,7 +86,10 @@ namespace TobiiTracker
             device.ClearScene();
             if (_shouldDraw)
             {
-                device.FillCircle(_x, _y, _radius, _brush);
+                device.FillRectangle(new Rectangle(0, 0, _x - Size, _y + Size), _brush);
+                device.FillRectangle(new Rectangle(_x - Size, 0, _window.Width, _y - Size), _brush);
+                device.FillRectangle(new Rectangle(_x + Size, _y - Size, _window.Width, _window.Height), _brush);
+                device.FillRectangle(new Rectangle(0, _y + Size, _x + Size, _window.Height), _brush);
             }
         }
 

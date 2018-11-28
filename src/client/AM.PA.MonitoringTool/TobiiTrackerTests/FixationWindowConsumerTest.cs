@@ -16,11 +16,11 @@ namespace TobiiTrackerTests
             using (ShimsContext.Create())
             {
                 var called = false;
-                const int x = 10;
-                const int y = 10;
+                const double x = 10L;
+                const double y = 10L;
                 var shimHighlighterOverlay = new ShimHighlighterOverlay
                 {
-                    ShowPointInt32 = (point, radius) =>
+                    ShowPoint = point =>
                     {
                         called = true;
                         Assert.AreEqual(x, point.X);

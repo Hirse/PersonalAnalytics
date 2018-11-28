@@ -7,8 +7,6 @@ namespace TobiiTracker
 {
     internal class FixationWindowConsumer : IStoppable
     {
-        private const int Radius = 50;
-
         private FixationWindowEntry _lastFixation;
         private readonly Dictionary<IntPtr, Point> _lastFixationOfWindow;
         private readonly HighlighterOverlay _overlay;
@@ -50,7 +48,7 @@ namespace TobiiTracker
 
         private void Visualize(Point point)
         {
-            _overlay.Show(point, Radius);
+            _overlay.Show(point);
         }
     }
 }
