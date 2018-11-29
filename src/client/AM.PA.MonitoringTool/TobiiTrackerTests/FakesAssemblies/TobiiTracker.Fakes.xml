@@ -664,8 +664,8 @@
         <member name="P:TobiiTracker.Fakes.ShimHighlighterOverlay.AllInstances.StoppedSetBoolean">
             <summary>Sets the shim of HighlighterOverlay.set_Stopped(Boolean value)</summary>
         </member>
-        <member name="P:TobiiTracker.Fakes.ShimHighlighterOverlay.AllInstances._ctorb__15_0ObjectElapsedEventArgs">
-            <summary>Sets the shim of HighlighterOverlay.&lt;.ctor&gt;b__15_0(Object sender, ElapsedEventArgs args)</summary>
+        <member name="P:TobiiTracker.Fakes.ShimHighlighterOverlay.AllInstances._ctorb__18_0ObjectElapsedEventArgs">
+            <summary>Sets the shim of HighlighterOverlay.&lt;.ctor&gt;b__18_0(Object sender, ElapsedEventArgs args)</summary>
         </member>
         <member name="P:TobiiTracker.Fakes.ShimHighlighterOverlay.AllInstances._frameTimer_OnFrameFrameTimerD2DDevice">
             <summary>Sets the shim of HighlighterOverlay._frameTimer_OnFrame(FrameTimer timer, D2DDevice device)</summary>
@@ -712,8 +712,8 @@
         <member name="P:TobiiTracker.Fakes.ShimHighlighterOverlay.StoppedSetBoolean">
             <summary>Sets the shim of HighlighterOverlay.set_Stopped(Boolean value)</summary>
         </member>
-        <member name="P:TobiiTracker.Fakes.ShimHighlighterOverlay._ctorb__15_0ObjectElapsedEventArgs">
-            <summary>Sets the shim of HighlighterOverlay.&lt;.ctor&gt;b__15_0(Object sender, ElapsedEventArgs args)</summary>
+        <member name="P:TobiiTracker.Fakes.ShimHighlighterOverlay._ctorb__18_0ObjectElapsedEventArgs">
+            <summary>Sets the shim of HighlighterOverlay.&lt;.ctor&gt;b__18_0(Object sender, ElapsedEventArgs args)</summary>
         </member>
         <member name="P:TobiiTracker.Fakes.ShimHighlighterOverlay._frameTimer_OnFrameFrameTimerD2DDevice">
             <summary>Sets the shim of HighlighterOverlay._frameTimer_OnFrame(FrameTimer timer, D2DDevice device)</summary>

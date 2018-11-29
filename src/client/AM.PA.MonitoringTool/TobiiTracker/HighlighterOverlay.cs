@@ -13,18 +13,21 @@ namespace TobiiTracker
     internal class HighlighterOverlay : IDisposable, IStoppable
     {
         private const int FramesPerSecond = 60;
+        private const int TransitionSteps = 12; // 200ms transition
         private const int HighlightTimeout = 3000;
         private const int Size = 100;
+        private const int ColorAlpha = 64;
 
         private readonly OverlayWindow _window;
         private readonly D2DDevice _device;
         private readonly FrameTimer _frameTimer;
-        private readonly D2DSolidColorBrush _brush;
+        private readonly D2DSolidColorBrush[] _brushes;
         private readonly Timer _timer;
 
         private bool _shouldDraw;
         private float _x;
         private float _y;
+        private int _brushIndex;
 
         public bool Stopped { get; private set; } = true;
 
@@ -51,7 +54,15 @@ namespace TobiiTracker
                 VSync = false
             });
 
-            _brush = _device.CreateSolidColorBrush(0x0, 0x00, 0x0, 0x40);
+            const double alphaStep = ColorAlpha / (double)TransitionSteps;
+            _brushes = new D2DSolidColorBrush[TransitionSteps];
+            for (var i = 0; i < TransitionSteps; i++)
+            {
+                var alpha = (int)Math.Floor(alphaStep * i);
+                _brushes[i] = _device.CreateSolidColorBrush(0, 0, 0, alpha);
+            }
+
+            _brushIndex = 0;
 
             _frameTimer = new FrameTimer(_device, FramesPerSecond);
             _frameTimer.OnFrame += _frameTimer_OnFrame;
@@ -77,6 +88,7 @@ namespace TobiiTracker
         {
             _x = (float)point.X;
             _y = (float)point.Y;
+            _brushIndex = 0;
             _shouldDraw = true;
             _timer.Start();
         }
@@ -94,10 +106,12 @@ namespace TobiiTracker
             device.ClearScene();
             if (_shouldDraw)
             {
-                device.FillRectangle(new Rectangle(0, 0, _x - Size, _y + Size), _brush);
-                device.FillRectangle(new Rectangle(_x - Size, 0, _window.Width, _y - Size), _brush);
-                device.FillRectangle(new Rectangle(_x + Size, _y - Size, _window.Width, _window.Height), _brush);
-                device.FillRectangle(new Rectangle(0, _y + Size, _x + Size, _window.Height), _brush);
+                device.FillRectangle(new Rectangle(0, 0, _x - Size, _y + Size), _brushes[_brushIndex]);
+                device.FillRectangle(new Rectangle(_x - Size, 0, _window.Width, _y - Size), _brushes[_brushIndex]);
+                device.FillRectangle(new Rectangle(_x + Size, _y - Size, _window.Width, _window.Height), _brushes[_brushIndex]);
+                device.FillRectangle(new Rectangle(0, _y + Size, _x + Size, _window.Height), _brushes[_brushIndex]);
+
+                _brushIndex = Math.Min(TransitionSteps - 1, _brushIndex + 1);
             }
         }
 
@@ -114,8 +128,11 @@ namespace TobiiTracker
                 _window.Dispose();
                 _device.Dispose();
                 _frameTimer.Dispose();
-                _brush.Dispose();
                 _timer.Dispose();
+                foreach (var brush in _brushes)
+                {
+                    brush.Dispose();
+                }
             }
         }
     }
