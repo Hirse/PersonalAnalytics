@@ -1,8 +1,9 @@
 ﻿using System.Collections.Generic;
+using TobiiTracker.Data;
 
 namespace TobiiTracker.Helpers
 {
-    internal static class WindowBlacklist
+    internal static class WindowUtils
     {
         private static readonly Dictionary<string, HashSet<string>> Blacklist = new Dictionary<string, HashSet<string>>
         {
@@ -40,6 +41,17 @@ namespace TobiiTracker.Helpers
         internal static bool IsBlacklisted(string processName, string windowTitle)
         {
             return windowTitle == "" || Blacklist.ContainsKey(processName) && Blacklist[processName].Contains(windowTitle);
+        }
+
+        internal static bool AreWindowsEqual(FixationWindowEntry entryA, FixationWindowEntry entryB)
+        {
+            if (entryA.WindowHandle == entryB.WindowHandle)
+            {
+                return true;
+            }
+
+            // Visual Studio has a multi-window layout so consider windows equal if they have the same title
+            return entryA.ProcessName == "devenv" && entryB.ProcessName == "devenv" && entryA.WindowTitle == entryB.WindowTitle;
         }
     }
 }

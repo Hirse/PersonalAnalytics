@@ -509,7 +509,7 @@
             <summary>Define shims for all instances members</summary>
         </member>
         <member name="P:TobiiTracker.Fakes.ShimFixationWindowConsumer.AllInstances.CollectObjectFixationWindowEntry">
-            <summary>Sets the shim of FixationWindowConsumer.Collect(Object sender, FixationWindowEntry fixationWindowEntry)</summary>
+            <summary>Sets the shim of FixationWindowConsumer.Collect(Object sender, FixationWindowEntry currentFixation)</summary>
         </member>
         <member name="P:TobiiTracker.Fakes.ShimFixationWindowConsumer.AllInstances.Start">
             <summary>Sets the shim of FixationWindowConsumer.Start()</summary>
@@ -539,7 +539,7 @@
             <summary>Binds the members of the interface to the shim.</summary>
         </member>
         <member name="P:TobiiTracker.Fakes.ShimFixationWindowConsumer.CollectObjectFixationWindowEntry">
-            <summary>Sets the shim of FixationWindowConsumer.Collect(Object sender, FixationWindowEntry fixationWindowEntry)</summary>
+            <summary>Sets the shim of FixationWindowConsumer.Collect(Object sender, FixationWindowEntry currentFixation)</summary>
         </member>
         <member name="P:TobiiTracker.Fakes.ShimFixationWindowConsumer.ConstructorHighlighterOverlay">
             <summary>Sets the shim of FixationWindowConsumer.FixationWindowConsumer(HighlighterOverlay overlay)</summary>
@@ -646,6 +646,9 @@
         <member name="P:TobiiTracker.Fakes.ShimHighlighterOverlay.AllInstances.DisposeBoolean">
             <summary>Sets the shim of HighlighterOverlay.Dispose(Boolean disposing)</summary>
         </member>
+        <member name="P:TobiiTracker.Fakes.ShimHighlighterOverlay.AllInstances.HideConditionallyDoubleDouble">
+            <summary>Sets the shim of HighlighterOverlay.HideConditionally(Double x, Double y)</summary>
+        </member>
         <member name="P:TobiiTracker.Fakes.ShimHighlighterOverlay.AllInstances.ShowPoint">
             <summary>Sets the shim of HighlighterOverlay.Show(Point point)</summary>
         </member>
@@ -690,6 +693,9 @@
         </member>
         <member name="P:TobiiTracker.Fakes.ShimHighlighterOverlay.DisposeBoolean">
             <summary>Sets the shim of HighlighterOverlay.Dispose(Boolean disposing)</summary>
+        </member>
+        <member name="P:TobiiTracker.Fakes.ShimHighlighterOverlay.HideConditionallyDoubleDouble">
+            <summary>Sets the shim of HighlighterOverlay.HideConditionally(Double x, Double y)</summary>
         </member>
         <member name="P:TobiiTracker.Fakes.ShimHighlighterOverlay.ShowPoint">
             <summary>Sets the shim of HighlighterOverlay.Show(Point point)</summary>
@@ -889,26 +895,29 @@
         <member name="P:TobiiTracker.Helpers.Fakes.ShimSmallestEnclosingCircle.MakeDiameterPointPoint">
             <summary>Sets the shim of SmallestEnclosingCircle.MakeDiameter(Point a, Point b)</summary>
         </member>
-        <member name="T:TobiiTracker.Helpers.Fakes.ShimWindowBlacklist">
-            <summary>Shim type of TobiiTracker.Helpers.WindowBlacklist</summary>
+        <member name="T:TobiiTracker.Helpers.Fakes.ShimWindowUtils">
+            <summary>Shim type of TobiiTracker.Helpers.WindowUtils</summary>
         </member>
-        <member name="M:TobiiTracker.Helpers.Fakes.ShimWindowBlacklist.#ctor">
+        <member name="M:TobiiTracker.Helpers.Fakes.ShimWindowUtils.#ctor">
             <summary>Initializes a new shim instance</summary>
         </member>
-        <member name="M:TobiiTracker.Helpers.Fakes.ShimWindowBlacklist.BehaveAsCurrent">
+        <member name="P:TobiiTracker.Helpers.Fakes.ShimWindowUtils.AreWindowsEqualFixationWindowEntryFixationWindowEntry">
+            <summary>Sets the shim of WindowUtils.AreWindowsEqual(FixationWindowEntry entryA, FixationWindowEntry entryB)</summary>
+        </member>
+        <member name="M:TobiiTracker.Helpers.Fakes.ShimWindowUtils.BehaveAsCurrent">
             <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
         </member>
-        <member name="M:TobiiTracker.Helpers.Fakes.ShimWindowBlacklist.BehaveAsNotImplemented">
+        <member name="M:TobiiTracker.Helpers.Fakes.ShimWindowUtils.BehaveAsNotImplemented">
             <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
         </member>
-        <member name="P:TobiiTracker.Helpers.Fakes.ShimWindowBlacklist.Behavior">
+        <member name="P:TobiiTracker.Helpers.Fakes.ShimWindowUtils.Behavior">
             <summary>Assigns the behavior for all methods of the shimmed type</summary>
         </member>
-        <member name="P:TobiiTracker.Helpers.Fakes.ShimWindowBlacklist.IsBlacklistedStringString">
-            <summary>Sets the shim of WindowBlacklist.IsBlacklisted(String processName, String windowTitle)</summary>
+        <member name="P:TobiiTracker.Helpers.Fakes.ShimWindowUtils.IsBlacklistedStringString">
+            <summary>Sets the shim of WindowUtils.IsBlacklisted(String processName, String windowTitle)</summary>
         </member>
-        <member name="P:TobiiTracker.Helpers.Fakes.ShimWindowBlacklist.StaticConstructor">
-            <summary>Sets the shim of WindowBlacklist.WindowBlacklist()</summary>
+        <member name="P:TobiiTracker.Helpers.Fakes.ShimWindowUtils.StaticConstructor">
+            <summary>Sets the shim of WindowUtils.WindowUtils()</summary>
         </member>
         <member name="T:TobiiTracker.Helpers.Fakes.StubIStoppable">
             <summary>Stub type of TobiiTracker.Helpers.IStoppable</summary>

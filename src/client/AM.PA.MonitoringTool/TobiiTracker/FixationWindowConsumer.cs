@@ -19,19 +19,22 @@ namespace TobiiTracker
             _overlay = overlay;
         }
 
-        internal void Collect(object sender, FixationWindowEntry fixationWindowEntry)
+        internal void Collect(object sender, FixationWindowEntry currentFixation)
         {
             if (Stopped) return;
 
-            if (WindowBlacklist.IsBlacklisted(fixationWindowEntry.ProcessName, fixationWindowEntry.WindowTitle)) return;
-
-            if (fixationWindowEntry.WindowHandle != _lastFixation.WindowHandle && _lastFixationOfWindow.ContainsKey(fixationWindowEntry.WindowHandle))
+            if (WindowUtils.IsBlacklisted(currentFixation.ProcessName, currentFixation.WindowTitle)) return;
+            if (WindowUtils.AreWindowsEqual(currentFixation, _lastFixation))
             {
-                Visualize(_lastFixationOfWindow[fixationWindowEntry.WindowHandle]);
+                _overlay.HideConditionally(currentFixation.X, currentFixation.Y);
+            }
+            else if (_lastFixationOfWindow.ContainsKey(currentFixation.WindowHandle))
+            {
+                Visualize(_lastFixationOfWindow[currentFixation.WindowHandle]);
             }
 
-            _lastFixation = fixationWindowEntry;
-            _lastFixationOfWindow[_lastFixation.WindowHandle] = new Point(fixationWindowEntry.X, fixationWindowEntry.Y);
+            _lastFixation = currentFixation;
+            _lastFixationOfWindow[_lastFixation.WindowHandle] = new Point(currentFixation.X, currentFixation.Y);
         }
 
         public void Start()

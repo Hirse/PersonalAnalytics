@@ -13,7 +13,7 @@ namespace TobiiTracker
     internal class HighlighterOverlay : IDisposable, IStoppable
     {
         private const int FramesPerSecond = 60;
-        private const int HighlightTimeout = 1000;
+        private const int HighlightTimeout = 3000;
         private const int Size = 100;
 
         private readonly OverlayWindow _window;
@@ -79,6 +79,14 @@ namespace TobiiTracker
             _y = (float)point.Y;
             _shouldDraw = true;
             _timer.Start();
+        }
+
+        internal void HideConditionally(double x, double y)
+        {
+            if (Math.Abs(_x - x) < Size / 2F && Math.Abs(_y - y) < Size / 2F)
+            {
+                _shouldDraw = false;
+            }
         }
 
         private void _frameTimer_OnFrame(FrameTimer timer, D2DDevice device)

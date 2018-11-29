@@ -74,6 +74,65 @@ namespace TobiiTrackerTests
         }
 
         [TestMethod]
+        public void TestBlacklisted()
+        {
+            using (ShimsContext.Create())
+            {
+                var hideCalled = false;
+                var showCalled = false;
+                var shimHighlighterOverlay = new ShimHighlighterOverlay
+                {
+                    HideConditionallyDoubleDouble = (x, y) => hideCalled = true,
+                    ShowPoint = p => showCalled = true
+                };
+                var fixationWindowConsumer = new FixationWindowConsumer(shimHighlighterOverlay);
+                fixationWindowConsumer.Start();
+                fixationWindowConsumer.Collect(null, new FixationWindowEntry
+                {
+                    ProcessName = "",
+                    WindowTitle = ""
+                });
+
+                Assert.IsFalse(hideCalled);
+                Assert.IsFalse(showCalled);
+            }
+        }
+
+        [TestMethod]
+        public void TestHideConditionally()
+        {
+            using (ShimsContext.Create())
+            {
+                var hideCalled = false;
+                const double x = 10L;
+                const double y = 10L;
+                var shimHighlighterOverlay = new ShimHighlighterOverlay
+                {
+                    HideConditionallyDoubleDouble = (_, __) => hideCalled = true
+                };
+                var fixationWindowConsumer = new FixationWindowConsumer(shimHighlighterOverlay);
+                fixationWindowConsumer.Start();
+                fixationWindowConsumer.Collect(null, new FixationWindowEntry
+                {
+                    ProcessName = "",
+                    WindowTitle = "Window Title",
+                    WindowHandle = new IntPtr(1),
+                    X = x,
+                    Y = y
+                });
+                fixationWindowConsumer.Collect(null, new FixationWindowEntry
+                {
+                    ProcessName = "",
+                    WindowTitle = "Window Title",
+                    WindowHandle = new IntPtr(1),
+                    X = x,
+                    Y = y
+                });
+                Assert.IsTrue(hideCalled);
+            }
+        }
+
+        [TestMethod]
         public void TestStoppable()
         {
             using (ShimsContext.Create())

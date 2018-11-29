@@ -68,7 +68,7 @@
     <Compile Include="FixationSummaryCollector.cs" />
     <Compile Include="FixationSummaryProvider.cs" />
     <Compile Include="Helpers\Circle.cs" />
-    <Compile Include="Helpers\WindowBlacklist.cs" />
+    <Compile Include="Helpers\WindowUtils.cs" />
     <Compile Include="Helpers\IStoppable.cs" />
     <Compile Include="Native\NativeMethods.cs" />
     <Compile Include="Helpers\Point.cs" />

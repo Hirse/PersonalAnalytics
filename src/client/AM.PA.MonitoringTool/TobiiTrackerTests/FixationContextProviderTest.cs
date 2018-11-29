@@ -3,6 +3,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using Tobii.Interaction.Fakes;
 using TobiiTracker;
+using TobiiTracker.Native.Fakes;
 
 namespace TobiiTrackerTests
 {
@@ -18,9 +19,9 @@ namespace TobiiTrackerTests
                 const string process = "__process__";
                 const string window = "__window__";
                 Action<double, double, double> fixationStart = (x, y, t) => { };
-                TobiiTracker.Native.Fakes.ShimNativeMethods.GetWindowFromPointDoubleDouble = (x, y) => new IntPtr(0);
-                TobiiTracker.Native.Fakes.ShimNativeMethods.GetProcessNameIntPtr = ptr => process;
-                TobiiTracker.Native.Fakes.ShimNativeMethods.GetWindowTitleIntPtr = ptr => window;
+                ShimNativeMethods.GetWindowFromPointDoubleDouble = (x, y) => new IntPtr(0);
+                ShimNativeMethods.GetProcessNameIntPtr = ptr => process;
+                ShimNativeMethods.GetWindowTitleIntPtr = ptr => window;
                 var shimHost = new ShimHost
                 {
                     StreamsGet = () => new ShimGlobalDataStreamAgent
@@ -61,9 +62,9 @@ namespace TobiiTrackerTests
             {
                 const string process = "__process__";
                 const string window = "__window__";
-                TobiiTracker.Native.Fakes.ShimNativeMethods.GetWindowFromPointDoubleDouble = (x, y) => new IntPtr(0);
-                TobiiTracker.Native.Fakes.ShimNativeMethods.GetProcessNameIntPtr = ptr => process;
-                TobiiTracker.Native.Fakes.ShimNativeMethods.GetWindowTitleIntPtr = ptr => window;
+                ShimNativeMethods.GetWindowFromPointDoubleDouble = (x, y) => new IntPtr(0);
+                ShimNativeMethods.GetProcessNameIntPtr = ptr => process;
+                ShimNativeMethods.GetWindowTitleIntPtr = ptr => window;
                 var shimHost = new ShimHost
                 {
                     StreamsGet = () => new ShimGlobalDataStreamAgent
