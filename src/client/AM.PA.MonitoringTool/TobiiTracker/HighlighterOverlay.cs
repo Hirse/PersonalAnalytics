@@ -67,8 +67,14 @@ namespace TobiiTracker
             _frameTimer = new FrameTimer(_device, FramesPerSecond);
             _frameTimer.OnFrame += _frameTimer_OnFrame;
 
-            _timer = new Timer(HighlightTimeout);
-            _timer.Elapsed += (sender, args) => { _shouldDraw = false; };
+            _timer = new Timer(HighlightTimeout)
+            {
+                AutoReset = false
+            };
+            _timer.Elapsed += (sender, args) =>
+            {
+                _shouldDraw = false;
+            };
         }
 
         public void Start()
