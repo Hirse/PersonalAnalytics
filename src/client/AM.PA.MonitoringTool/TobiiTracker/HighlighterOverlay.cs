@@ -99,6 +99,7 @@ namespace TobiiTracker
             _y = (float)y;
             _brushIndex = 0;
             _shouldDraw = true;
+            _timer.Stop();
             _timer.Start();
         }
 
@@ -107,6 +108,7 @@ namespace TobiiTracker
             if (Math.Abs(_x - x) < Size / 2F && Math.Abs(_y - y) < Size / 2F)
             {
                 _shouldDraw = false;
+                _timer.Stop();
             }
         }
 
