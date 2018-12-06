@@ -511,6 +511,9 @@
         <member name="P:TobiiTracker.Fakes.ShimFixationWindowConsumer.AllInstances.CollectObjectFixationWindowEntry">
             <summary>Sets the shim of FixationWindowConsumer.Collect(Object sender, FixationWindowEntry currentFixation)</summary>
         </member>
+        <member name="P:TobiiTracker.Fakes.ShimFixationWindowConsumer.AllInstances.MissingGazeTimerOnElapsedObjectElapsedEventArgs">
+            <summary>Sets the shim of FixationWindowConsumer.MissingGazeTimerOnElapsed(Object sender, ElapsedEventArgs e)</summary>
+        </member>
         <member name="P:TobiiTracker.Fakes.ShimFixationWindowConsumer.AllInstances.Start">
             <summary>Sets the shim of FixationWindowConsumer.Start()</summary>
         </member>
@@ -543,6 +546,9 @@
         </member>
         <member name="P:TobiiTracker.Fakes.ShimFixationWindowConsumer.ConstructorHighlighterOverlay">
             <summary>Sets the shim of FixationWindowConsumer.FixationWindowConsumer(HighlighterOverlay overlay)</summary>
+        </member>
+        <member name="P:TobiiTracker.Fakes.ShimFixationWindowConsumer.MissingGazeTimerOnElapsedObjectElapsedEventArgs">
+            <summary>Sets the shim of FixationWindowConsumer.MissingGazeTimerOnElapsed(Object sender, ElapsedEventArgs e)</summary>
         </member>
         <member name="P:TobiiTracker.Fakes.ShimFixationWindowConsumer.Start">
             <summary>Sets the shim of FixationWindowConsumer.Start()</summary>
@@ -900,9 +906,6 @@
         </member>
         <member name="M:TobiiTracker.Helpers.Fakes.ShimWindowUtils.#ctor">
             <summary>Initializes a new shim instance</summary>
-        </member>
-        <member name="P:TobiiTracker.Helpers.Fakes.ShimWindowUtils.AreWindowsEqualFixationWindowEntryFixationWindowEntry">
-            <summary>Sets the shim of WindowUtils.AreWindowsEqual(FixationWindowEntry entryA, FixationWindowEntry entryB)</summary>
         </member>
         <member name="M:TobiiTracker.Helpers.Fakes.ShimWindowUtils.BehaveAsCurrent">
             <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>

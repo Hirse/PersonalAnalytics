@@ -42,7 +42,7 @@ namespace TobiiTracker
                 ProcessName = processName,
                 Time = DateTime.UtcNow,
                 WindowTitle = windowTitle,
-                WindowHandle = windowHandle,
+                WindowHandle = rootWindowHandle,
                 X = x,
                 Y = y
             });

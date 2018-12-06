@@ -38,7 +38,7 @@ namespace TobiiTracker
 
             if (WindowUtils.IsBlacklisted(currentFixation.ProcessName, currentFixation.WindowTitle)) return;
 
-            if (WindowUtils.AreWindowsEqual(currentFixation, _lastFixation))
+            if (currentFixation.WindowHandle == _lastFixation.WindowHandle)
             {
                 _overlay.HideConditionally(currentFixation.X, currentFixation.Y);
             }
