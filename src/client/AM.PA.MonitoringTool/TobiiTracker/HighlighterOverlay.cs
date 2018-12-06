@@ -3,6 +3,7 @@ using GameOverlay.Graphics.Primitives;
 using GameOverlay.Utilities;
 using GameOverlay.Windows;
 using System;
+using System.IO;
 using System.Timers;
 using TobiiTracker.Helpers;
 using TobiiTracker.Native;
@@ -23,6 +24,7 @@ namespace TobiiTracker
         private readonly FrameTimer _frameTimer;
         private readonly D2DSolidColorBrush[] _brushes;
         private readonly Timer _timer;
+        private readonly D2DImage _image;
 
         private bool _shouldDraw;
         private float _x;
@@ -63,6 +65,8 @@ namespace TobiiTracker
             }
 
             _brushIndex = 0;
+
+            _image = _device.LoadImage(Path.Combine(Environment.CurrentDirectory, "Assets/cutout.png"));
 
             _frameTimer = new FrameTimer(_device, FramesPerSecond);
             _frameTimer.OnFrame += _frameTimer_OnFrame;
@@ -116,6 +120,7 @@ namespace TobiiTracker
                 device.FillRectangle(new Rectangle(_x - Size, 0, _window.Width, _y - Size), _brushes[_brushIndex]);
                 device.FillRectangle(new Rectangle(_x + Size, _y - Size, _window.Width, _window.Height), _brushes[_brushIndex]);
                 device.FillRectangle(new Rectangle(0, _y + Size, _x + Size, _window.Height), _brushes[_brushIndex]);
+                device.DrawImage(_image, _x - Size, _y - Size, Size * 2, Size * 2, _brushes[_brushIndex].Color.A);
 
                 _brushIndex = Math.Min(TransitionSteps - 1, _brushIndex + 1);
             }
@@ -135,6 +140,7 @@ namespace TobiiTracker
                 _device.Dispose();
                 _frameTimer.Dispose();
                 _timer.Dispose();
+                _image.Dispose();
                 foreach (var brush in _brushes)
                 {
                     brush.Dispose();
