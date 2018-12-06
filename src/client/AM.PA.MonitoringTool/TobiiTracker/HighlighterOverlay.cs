@@ -7,7 +7,6 @@ using System.IO;
 using System.Timers;
 using TobiiTracker.Helpers;
 using TobiiTracker.Native;
-using Point = TobiiTracker.Helpers.Point;
 
 namespace TobiiTracker
 {
@@ -94,10 +93,10 @@ namespace TobiiTracker
             Stopped = true;
         }
 
-        internal void Show(Point point)
+        internal void Show(double x, double y)
         {
-            _x = (float)point.X;
-            _y = (float)point.Y;
+            _x = (float)x;
+            _y = (float)y;
             _brushIndex = 0;
             _shouldDraw = true;
             _timer.Start();

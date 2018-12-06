@@ -9,8 +9,9 @@ namespace TobiiTracker
     internal class FixationWindowConsumer : IStoppable
     {
         private const int MissingGazeTimeout = 5000;
+        private const int VisualizationThreshold = 500;
 
-        private readonly Dictionary<IntPtr, Point> _lastFixationOfWindow;
+        private readonly Dictionary<IntPtr, FixationWindowEntry> _lastFixationOfWindow;
         private readonly HighlighterOverlay _overlay;
         private readonly Timer _missingGazeTimer;
 
@@ -20,7 +21,7 @@ namespace TobiiTracker
 
         internal FixationWindowConsumer(HighlighterOverlay overlay)
         {
-            _lastFixationOfWindow = new Dictionary<IntPtr, Point>();
+            _lastFixationOfWindow = new Dictionary<IntPtr, FixationWindowEntry>();
             _missingGazeTimer = new Timer(MissingGazeTimeout)
             {
                 AutoReset = false
@@ -44,11 +45,15 @@ namespace TobiiTracker
             }
             else if (_lastFixationOfWindow.ContainsKey(currentFixation.WindowHandle))
             {
-                Visualize(_lastFixationOfWindow[currentFixation.WindowHandle]);
+                var timeDiff = currentFixation.Time - _lastFixationOfWindow[currentFixation.WindowHandle].Time;
+                if (timeDiff.TotalMilliseconds > VisualizationThreshold)
+                {
+                    Visualize(_lastFixationOfWindow[currentFixation.WindowHandle]);
+                }
             }
 
             _lastFixation = currentFixation;
-            _lastFixationOfWindow[_lastFixation.WindowHandle] = new Point(currentFixation.X, currentFixation.Y);
+            _lastFixationOfWindow[_lastFixation.WindowHandle] = currentFixation;
         }
 
         public void Start()
@@ -64,9 +69,9 @@ namespace TobiiTracker
             Stopped = true;
         }
 
-        private void Visualize(Point point)
+        private void Visualize(FixationWindowEntry fixationWindowEntry)
         {
-            _overlay.Show(point);
+            _overlay.Show(fixationWindowEntry.X, fixationWindowEntry.Y);
         }
 
         private void MissingGazeTimerOnElapsed(object sender, ElapsedEventArgs e)
