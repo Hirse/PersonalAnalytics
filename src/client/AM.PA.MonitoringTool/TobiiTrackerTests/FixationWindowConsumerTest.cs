@@ -20,11 +20,11 @@ namespace TobiiTrackerTests
                 const double y = 10L;
                 var shimHighlighterOverlay = new ShimHighlighterOverlay
                 {
-                    ShowPoint = point =>
+                    ShowDoubleDouble = (px, py) =>
                     {
                         called = true;
-                        Assert.AreEqual(x, point.X);
-                        Assert.AreEqual(y, point.Y);
+                        Assert.AreEqual(x, px);
+                        Assert.AreEqual(y, py);
                     }
                 };
                 var fixationWindowConsumer = new FixationWindowConsumer(shimHighlighterOverlay);
@@ -43,7 +43,8 @@ namespace TobiiTrackerTests
                     WindowTitle = "Window Title",
                     WindowHandle = new IntPtr(1),
                     X = x,
-                    Y = y
+                    Y = y,
+                    Time = new DateTime(2000, 5,5, 5, 5, 0)
                 });
                 Assert.IsFalse(called, "Should not be called after first fixation");
 
@@ -67,7 +68,8 @@ namespace TobiiTrackerTests
                 {
                     ProcessName = "",
                     WindowTitle = "Window Title",
-                    WindowHandle = new IntPtr(1)
+                    WindowHandle = new IntPtr(1),
+                    Time = new DateTime(2000, 5, 5, 5, 5, 10)
                 });
                 Assert.IsTrue(called, "Should be called after fixation on previous window");
             }
@@ -83,7 +85,7 @@ namespace TobiiTrackerTests
                 var shimHighlighterOverlay = new ShimHighlighterOverlay
                 {
                     HideConditionallyDoubleDouble = (x, y) => hideCalled = true,
-                    ShowPoint = p => showCalled = true
+                    ShowDoubleDouble = (px, py) => showCalled = true
                 };
                 var fixationWindowConsumer = new FixationWindowConsumer(shimHighlighterOverlay);
                 fixationWindowConsumer.Start();

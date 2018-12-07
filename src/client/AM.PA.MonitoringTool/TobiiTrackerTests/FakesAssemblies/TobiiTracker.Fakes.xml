@@ -511,9 +511,6 @@
         <member name="P:TobiiTracker.Fakes.ShimFixationWindowConsumer.AllInstances.CollectObjectFixationWindowEntry">
             <summary>Sets the shim of FixationWindowConsumer.Collect(Object sender, FixationWindowEntry currentFixation)</summary>
         </member>
-        <member name="P:TobiiTracker.Fakes.ShimFixationWindowConsumer.AllInstances.MissingGazeTimerOnElapsedObjectElapsedEventArgs">
-            <summary>Sets the shim of FixationWindowConsumer.MissingGazeTimerOnElapsed(Object sender, ElapsedEventArgs e)</summary>
-        </member>
         <member name="P:TobiiTracker.Fakes.ShimFixationWindowConsumer.AllInstances.Start">
             <summary>Sets the shim of FixationWindowConsumer.Start()</summary>
         </member>
@@ -526,8 +523,8 @@
         <member name="P:TobiiTracker.Fakes.ShimFixationWindowConsumer.AllInstances.StoppedSetBoolean">
             <summary>Sets the shim of FixationWindowConsumer.set_Stopped(Boolean value)</summary>
         </member>
-        <member name="P:TobiiTracker.Fakes.ShimFixationWindowConsumer.AllInstances.VisualizePoint">
-            <summary>Sets the shim of FixationWindowConsumer.Visualize(Point point)</summary>
+        <member name="P:TobiiTracker.Fakes.ShimFixationWindowConsumer.AllInstances.VisualizeFixationWindowEntry">
+            <summary>Sets the shim of FixationWindowConsumer.Visualize(FixationWindowEntry fixationWindowEntry)</summary>
         </member>
         <member name="M:TobiiTracker.Fakes.ShimFixationWindowConsumer.BehaveAsCurrent">
             <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
@@ -547,9 +544,6 @@
         <member name="P:TobiiTracker.Fakes.ShimFixationWindowConsumer.ConstructorHighlighterOverlay">
             <summary>Sets the shim of FixationWindowConsumer.FixationWindowConsumer(HighlighterOverlay overlay)</summary>
         </member>
-        <member name="P:TobiiTracker.Fakes.ShimFixationWindowConsumer.MissingGazeTimerOnElapsedObjectElapsedEventArgs">
-            <summary>Sets the shim of FixationWindowConsumer.MissingGazeTimerOnElapsed(Object sender, ElapsedEventArgs e)</summary>
-        </member>
         <member name="P:TobiiTracker.Fakes.ShimFixationWindowConsumer.Start">
             <summary>Sets the shim of FixationWindowConsumer.Start()</summary>
         </member>
@@ -562,8 +556,8 @@
         <member name="P:TobiiTracker.Fakes.ShimFixationWindowConsumer.StoppedSetBoolean">
             <summary>Sets the shim of FixationWindowConsumer.set_Stopped(Boolean value)</summary>
         </member>
-        <member name="P:TobiiTracker.Fakes.ShimFixationWindowConsumer.VisualizePoint">
-            <summary>Sets the shim of FixationWindowConsumer.Visualize(Point point)</summary>
+        <member name="P:TobiiTracker.Fakes.ShimFixationWindowConsumer.VisualizeFixationWindowEntry">
+            <summary>Sets the shim of FixationWindowConsumer.Visualize(FixationWindowEntry fixationWindowEntry)</summary>
         </member>
         <member name="T:TobiiTracker.Fakes.ShimFixationWindowProvider">
             <summary>Shim type of TobiiTracker.FixationWindowProvider</summary>
@@ -655,8 +649,8 @@
         <member name="P:TobiiTracker.Fakes.ShimHighlighterOverlay.AllInstances.HideConditionallyDoubleDouble">
             <summary>Sets the shim of HighlighterOverlay.HideConditionally(Double x, Double y)</summary>
         </member>
-        <member name="P:TobiiTracker.Fakes.ShimHighlighterOverlay.AllInstances.ShowPoint">
-            <summary>Sets the shim of HighlighterOverlay.Show(Point point)</summary>
+        <member name="P:TobiiTracker.Fakes.ShimHighlighterOverlay.AllInstances.ShowDoubleDouble">
+            <summary>Sets the shim of HighlighterOverlay.Show(Double x, Double y)</summary>
         </member>
         <member name="P:TobiiTracker.Fakes.ShimHighlighterOverlay.AllInstances.Start">
             <summary>Sets the shim of HighlighterOverlay.Start()</summary>
@@ -670,8 +664,8 @@
         <member name="P:TobiiTracker.Fakes.ShimHighlighterOverlay.AllInstances.StoppedSetBoolean">
             <summary>Sets the shim of HighlighterOverlay.set_Stopped(Boolean value)</summary>
         </member>
-        <member name="P:TobiiTracker.Fakes.ShimHighlighterOverlay.AllInstances._ctorb__18_0ObjectElapsedEventArgs">
-            <summary>Sets the shim of HighlighterOverlay.&lt;.ctor&gt;b__18_0(Object sender, ElapsedEventArgs args)</summary>
+        <member name="P:TobiiTracker.Fakes.ShimHighlighterOverlay.AllInstances._ctorb__19_0ObjectElapsedEventArgs">
+            <summary>Sets the shim of HighlighterOverlay.&lt;.ctor&gt;b__19_0(Object sender, ElapsedEventArgs args)</summary>
         </member>
         <member name="P:TobiiTracker.Fakes.ShimHighlighterOverlay.AllInstances._frameTimer_OnFrameFrameTimerD2DDevice">
             <summary>Sets the shim of HighlighterOverlay._frameTimer_OnFrame(FrameTimer timer, D2DDevice device)</summary>
@@ -703,8 +697,8 @@
         <member name="P:TobiiTracker.Fakes.ShimHighlighterOverlay.HideConditionallyDoubleDouble">
             <summary>Sets the shim of HighlighterOverlay.HideConditionally(Double x, Double y)</summary>
         </member>
-        <member name="P:TobiiTracker.Fakes.ShimHighlighterOverlay.ShowPoint">
-            <summary>Sets the shim of HighlighterOverlay.Show(Point point)</summary>
+        <member name="P:TobiiTracker.Fakes.ShimHighlighterOverlay.ShowDoubleDouble">
+            <summary>Sets the shim of HighlighterOverlay.Show(Double x, Double y)</summary>
         </member>
         <member name="P:TobiiTracker.Fakes.ShimHighlighterOverlay.Start">
             <summary>Sets the shim of HighlighterOverlay.Start()</summary>
@@ -718,8 +712,8 @@
         <member name="P:TobiiTracker.Fakes.ShimHighlighterOverlay.StoppedSetBoolean">
             <summary>Sets the shim of HighlighterOverlay.set_Stopped(Boolean value)</summary>
         </member>
-        <member name="P:TobiiTracker.Fakes.ShimHighlighterOverlay._ctorb__18_0ObjectElapsedEventArgs">
-            <summary>Sets the shim of HighlighterOverlay.&lt;.ctor&gt;b__18_0(Object sender, ElapsedEventArgs args)</summary>
+        <member name="P:TobiiTracker.Fakes.ShimHighlighterOverlay._ctorb__19_0ObjectElapsedEventArgs">
+            <summary>Sets the shim of HighlighterOverlay.&lt;.ctor&gt;b__19_0(Object sender, ElapsedEventArgs args)</summary>
         </member>
         <member name="P:TobiiTracker.Fakes.ShimHighlighterOverlay._frameTimer_OnFrameFrameTimerD2DDevice">
             <summary>Sets the shim of HighlighterOverlay._frameTimer_OnFrame(FrameTimer timer, D2DDevice device)</summary>
